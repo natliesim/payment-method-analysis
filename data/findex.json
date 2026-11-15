@@ -1,0 +1,1169 @@
+{
+ "source": "World Bank Global Findex Database (API source 28)",
+ "indicators": {
+  "account.t.d": "Has an account (% age 15+)",
+  "fin2.t.d": "Owns a debit card (% age 15+)",
+  "fin10": "Owns a credit card (% age 15+)",
+  "g20.made": "Made a digital payment (% age 15+)",
+  "merchant.pay": "Made a digital merchant payment (% age 15+)",
+  "con1": "Owns a mobile phone (% age 15+)"
+ },
+ "markets": {
+  "Australia": {
+   "account.t.d": {
+    "value": 98.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 91.9,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 97.2,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 95.5,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.5,
+    "year": "2017"
+   }
+  },
+  "China": {
+   "account.t.d": {
+    "value": 89.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 81.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 46.0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 84.2,
+    "year": "2021"
+   },
+   "merchant.pay": {
+    "value": 79.6,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 96.6,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 79.5,
+    "year": "2017"
+   }
+  },
+  "Hong Kong": {
+   "account.t.d": {
+    "value": 97.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 88.2,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 86.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 95.3,
+    "year": "2017"
+   }
+  },
+  "India": {
+   "account.t.d": {
+    "value": 89.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 37.6,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 4.6,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 29.3,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 18.3,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 66.5,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 79.9,
+    "year": "2017"
+   }
+  },
+  "Indonesia": {
+   "account.t.d": {
+    "value": 56.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 41.4,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 5.9,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 30.0,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 13.6,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 80.3,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 48.9,
+    "year": "2017"
+   }
+  },
+  "Japan": {
+   "account.t.d": {
+    "value": 98.5,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 91.5,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 88.3,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 93.8,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 98.2,
+    "year": "2017"
+   }
+  },
+  "Malaysia": {
+   "account.t.d": {
+    "value": 88.7,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 80.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 13.2,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 56.8,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 52.2,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 94.7,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 85.3,
+    "year": "2017"
+   }
+  },
+  "New Zealand": {
+   "account.t.d": {
+    "value": 97.9,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 93.7,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 97.2,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 94.4,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.2,
+    "year": "2017"
+   }
+  },
+  "Philippines": {
+   "account.t.d": {
+    "value": 50.2,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 20.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 3.0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 32.1,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 13.4,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 78.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 34.5,
+    "year": "2017"
+   }
+  },
+  "Singapore": {
+   "account.t.d": {
+    "value": 98.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 95.0,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 91.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 97.2,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 97.9,
+    "year": "2017"
+   }
+  },
+  "South Korea": {
+   "account.t.d": {
+    "value": 96.9,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 79.6,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 96.2,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 96.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 94.9,
+    "year": "2017"
+   }
+  },
+  "Taiwan": {
+   "account.t.d": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 88.3,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 80.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 94.2,
+    "year": "2017"
+   }
+  },
+  "Thailand": {
+   "account.t.d": {
+    "value": 91.8,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 56.9,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 8.0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 59.1,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 51.3,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 92.1,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 81.6,
+    "year": "2017"
+   }
+  },
+  "Vietnam": {
+   "account.t.d": {
+    "value": 70.6,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 64.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 5.8,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 56.5,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 51.1,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 97.8,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 30.8,
+    "year": "2017"
+   }
+  },
+  "Belgium": {
+   "account.t.d": {
+    "value": 98.2,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 96.4,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 97.3,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 94.3,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 98.6,
+    "year": "2017"
+   }
+  },
+  "Denmark": {
+   "account.t.d": {
+    "value": 98.7,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 97.3,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 99.9,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 99.4,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.9,
+    "year": "2017"
+   }
+  },
+  "Finland": {
+   "account.t.d": {
+    "value": 99.8,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 98.9,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 97.7,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 99.2,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.8,
+    "year": "2017"
+   }
+  },
+  "France": {
+   "account.t.d": {
+    "value": 99.2,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 92.7,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 91.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 94.0,
+    "year": "2017"
+   }
+  },
+  "Germany": {
+   "account.t.d": {
+    "value": 98.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 94.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 99.4,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 92.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.1,
+    "year": "2017"
+   }
+  },
+  "Ireland": {
+   "account.t.d": {
+    "value": 98.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 94.2,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 92.7,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 95.3,
+    "year": "2017"
+   }
+  },
+  "Italy": {
+   "account.t.d": {
+    "value": 86.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 81.0,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 92.9,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 99.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 93.8,
+    "year": "2017"
+   }
+  },
+  "Netherlands": {
+   "account.t.d": {
+    "value": 99.2,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 97.2,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 95.2,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.6,
+    "year": "2017"
+   }
+  },
+  "Norway": {
+   "account.t.d": {
+    "value": 98.6,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 96.0,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 99.4,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 99.8,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
+  "Poland": {
+   "account.t.d": {
+    "value": 86.1,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 81.4,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 20.3,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 74.7,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 78.1,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 94.6,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 86.7,
+    "year": "2017"
+   }
+  },
+  "Portugal": {
+   "account.t.d": {
+    "value": 91.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 87.0,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 87.2,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 94.7,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 92.3,
+    "year": "2017"
+   }
+  },
+  "Spain": {
+   "account.t.d": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 85.9,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 97.1,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 97.5,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 93.8,
+    "year": "2017"
+   }
+  },
+  "Sweden": {
+   "account.t.d": {
+    "value": 98.6,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 97.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.4,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 99.1,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
+  "Switzerland": {
+   "account.t.d": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 86.4,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.0,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 91.5,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 98.4,
+    "year": "2017"
+   }
+  },
+  "Turkey": {
+   "account.t.d": {
+    "value": 81.6,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 79.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 43.7,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 62.4,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 51.5,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 97.4,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 68.6,
+    "year": "2017"
+   }
+  },
+  "United Kingdom": {
+   "account.t.d": {
+    "value": 99.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.6,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 91.8,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 96.4,
+    "year": "2017"
+   }
+  },
+  "Argentina": {
+   "account.t.d": {
+    "value": 81.7,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 64.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 29.9,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 65.4,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 60.2,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 90.5,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 48.7,
+    "year": "2017"
+   }
+  },
+  "Brazil": {
+   "account.t.d": {
+    "value": 86.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 73.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 43.5,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 70.0,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 60.1,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 92.1,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 70.0,
+    "year": "2017"
+   }
+  },
+  "Chile": {
+   "account.t.d": {
+    "value": 85.1,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 80.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 77.3,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 74.3,
+    "year": "2017"
+   }
+  },
+  "Colombia": {
+   "account.t.d": {
+    "value": 57.1,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 26.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 8.7,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 42.5,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 26.1,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 88.1,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 45.8,
+    "year": "2017"
+   }
+  },
+  "Mexico": {
+   "account.t.d": {
+    "value": 53.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 40.1,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 14.2,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 29.5,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 26.0,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 83.3,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 36.0,
+    "year": "2017"
+   }
+  },
+  "Peru": {
+   "account.t.d": {
+    "value": 59.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 36.7,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 12.6,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 46.5,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 32.7,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 85.7,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 42.6,
+    "year": "2017"
+   }
+  },
+  "Nigeria": {
+   "account.t.d": {
+    "value": 63.3,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 48.3,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 3.2,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 43.9,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 28.4,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 83.8,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 39.7,
+    "year": "2017"
+   }
+  },
+  "Saudi Arabia": {
+   "account.t.d": {
+    "value": 78.8,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 76.0,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 30.1,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 71.7,
+    "year": "2021"
+   },
+   "merchant.pay": {
+    "value": 64.2,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 97.9,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 71.7,
+    "year": "2017"
+   }
+  },
+  "South Africa": {
+   "account.t.d": {
+    "value": 81.1,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 59.8,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 9.7,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 44.6,
+    "year": "2024"
+   },
+   "merchant.pay": {
+    "value": 46.9,
+    "year": "2024"
+   },
+   "con1": {
+    "value": 87.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 69.2,
+    "year": "2017"
+   }
+  },
+  "UAE": {
+   "account.t.d": {
+    "value": 85.7,
+    "year": "2021"
+   },
+   "fin2.t.d": {
+    "value": 68.8,
+    "year": "2021"
+   },
+   "fin10": {
+    "value": 26.8,
+    "year": "2021"
+   },
+   "g20.made": {
+    "value": 74.8,
+    "year": "2021"
+   },
+   "account_2017": {
+    "value": 88.2,
+    "year": "2017"
+   }
+  },
+  "Canada": {
+   "account.t.d": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 94.5,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 98.1,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 89.4,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
+  "United States": {
+   "account.t.d": {
+    "value": 97.0,
+    "year": "2024"
+   },
+   "fin2.t.d": {
+    "value": 87.4,
+    "year": "2024"
+   },
+   "fin10": {
+    "value": 0,
+    "year": "2024"
+   },
+   "g20.made": {
+    "value": 91.3,
+    "year": "2021"
+   },
+   "con1": {
+    "value": 98.0,
+    "year": "2024"
+   },
+   "account_2017": {
+    "value": 93.1,
+    "year": "2017"
+   }
+  }
+ }
+}

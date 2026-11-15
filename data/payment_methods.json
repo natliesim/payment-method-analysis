@@ -148,18 +148,28 @@
     "s": "paypal"
    }
   ],
-  "feat": [
-   37,
-   48,
-   0,
-   63,
-   24,
-   12
-  ],
+  "findex": {
+   "account": {
+    "value": 98,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 91.9,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 97.2,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.5,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.176,
-   -0.635
+   1.922,
+   0.46
   ]
  },
  "China": {
@@ -301,18 +311,28 @@
     "s": "unionpay"
    }
   ],
-  "feat": [
-   7,
-   91,
-   1,
-   6,
-   88,
-   4
-  ],
+  "findex": {
+   "account": {
+    "value": 89.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 81.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 84.2,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 79.5,
+    "year": "2017"
+   }
+  },
   "cluster": 1,
   "pc": [
-   -4.018,
-   -3.35
+   -1.265,
+   4.871
   ]
  },
  "Hong Kong": {
@@ -474,18 +494,28 @@
     "s": "wechat-pay-hk"
    }
   ],
-  "feat": [
-   34,
-   60,
-   2,
-   38,
-   54,
-   6
-  ],
-  "cluster": 1,
+  "findex": {
+   "account": {
+    "value": 97.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 88.2,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 86,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 95.3,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   -0.706,
-   -1.477
+   1.709,
+   2.243
   ]
  },
  "India": {
@@ -637,18 +667,28 @@
     "s": "google-pay"
    }
   ],
-  "feat": [
-   20,
-   72,
-   6,
-   20,
-   65,
-   14
-  ],
+  "findex": {
+   "account": {
+    "value": 89,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 37.6,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 29.3,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 79.9,
+    "year": "2017"
+   }
+  },
   "cluster": 1,
   "pc": [
-   -2.644,
-   -1.292
+   -3.843,
+   2.106
   ]
  },
  "Indonesia": {
@@ -800,18 +840,28 @@
     "s": "ovo"
    }
   ],
-  "feat": [
-   5,
-   76,
-   13,
-   18,
-   45,
-   36
-  ],
+  "findex": {
+   "account": {
+    "value": 56.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 41.4,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 30,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 48.9,
+    "year": "2017"
+   }
+  },
   "cluster": 3,
   "pc": [
-   -3.634,
-   0.54
+   -5.594,
+   0.022
   ]
  },
  "Japan": {
@@ -961,18 +1011,28 @@
     "s": "jcb"
    }
   ],
-  "feat": [
-   58,
-   32,
-   5,
-   38,
-   24,
-   38
-  ],
+  "findex": {
+   "account": {
+    "value": 98.5,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 91.5,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 88.3,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 98.2,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   0.751,
-   2.347
+   0.68,
+   -2.412
   ]
  },
  "Malaysia": {
@@ -1129,18 +1189,28 @@
     "s": "boost"
    }
   ],
-  "feat": [
-   25,
-   61,
-   8,
-   29,
-   46,
-   22
-  ],
+  "findex": {
+   "account": {
+    "value": 88.7,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 80.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 56.8,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 85.3,
+    "year": "2017"
+   }
+  },
   "cluster": 1,
   "pc": [
-   -1.737,
-   -0.017
+   -1.987,
+   0.732
   ]
  },
  "New Zealand": {
@@ -1297,18 +1367,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   45,
-   40,
-   0,
-   71,
-   17,
-   10
-  ],
+  "findex": {
+   "account": {
+    "value": 97.9,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 93.7,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 97.2,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.2,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   2.075,
-   -0.326
+   2.344,
+   -0.662
   ]
  },
  "Philippines": {
@@ -1470,18 +1550,28 @@
     "s": "shopeepay"
    }
   ],
-  "feat": [
-   18,
-   54,
-   23,
-   22,
-   36,
-   42
-  ],
+  "findex": {
+   "account": {
+    "value": 50.2,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 20.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 32.1,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 34.5,
+    "year": "2017"
+   }
+  },
   "cluster": 3,
   "pc": [
-   -3.033,
-   2.761
+   -5.603,
+   -1.283
   ]
  },
  "Singapore": {
@@ -1638,18 +1728,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   43,
-   51,
-   0,
-   39,
-   48,
-   12
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 98,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 95,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 91,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 97.9,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   0.012,
-   -0.801
+   0.777,
+   1.083
   ]
  },
  "South Korea": {
@@ -1791,18 +1891,28 @@
     "s": "toss"
    }
   ],
-  "feat": [
-   55,
-   42,
-   0,
-   67,
-   26,
-   6
-  ],
+  "findex": {
+   "account": {
+    "value": 96.9,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 79.6,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 96.2,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 94.9,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   2.041,
-   -0.541
+   2.917,
+   -0.274
   ]
  },
  "Taiwan": {
@@ -1959,18 +2069,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   43,
-   40,
-   15,
-   35,
-   38,
-   25
-  ],
+  "findex": {
+   "account": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 88.3,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 80,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 94.2,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   -0.742,
-   1.794
+   0.151,
+   -0.465
   ]
  },
  "Thailand": {
@@ -2122,18 +2242,28 @@
     "s": "line-pay"
    }
   ],
-  "feat": [
-   13,
-   69,
-   15,
-   12,
-   56,
-   30
-  ],
-  "cluster": 3,
+  "findex": {
+   "account": {
+    "value": 91.8,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 56.9,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 59.1,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 81.6,
+    "year": "2017"
+   }
+  },
+  "cluster": 1,
   "pc": [
-   -3.64,
-   0.596
+   -3.617,
+   1.414
   ]
  },
  "Vietnam": {
@@ -2285,18 +2415,28 @@
     "s": "shopeepay"
    }
   ],
-  "feat": [
-   16,
-   66,
-   16,
-   14,
-   52,
-   33
-  ],
+  "findex": {
+   "account": {
+    "value": 70.6,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 64.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 56.5,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 30.8,
+    "year": "2017"
+   }
+  },
   "cluster": 3,
   "pc": [
-   -3.436,
-   1.046
+   -4.538,
+   0.491
   ]
  },
  "Belgium": {
@@ -2448,18 +2588,28 @@
     "s": "paypal"
    }
   ],
-  "feat": [
-   37,
-   48,
-   0,
-   64,
-   23,
-   12
-  ],
+  "findex": {
+   "account": {
+    "value": 98.2,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 96.4,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 97.3,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 98.6,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.227,
-   -0.627
+   2.178,
+   0.195
   ]
  },
  "Denmark": {
@@ -2611,18 +2761,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   37,
-   50,
-   0,
-   66,
-   26,
-   7
-  ],
+  "findex": {
+   "account": {
+    "value": 98.7,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 97.3,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 99.9,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.9,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.243,
-   -1.035
+   2.533,
+   0.621
   ]
  },
  "Finland": {
@@ -2769,18 +2929,28 @@
     "s": "trustly"
    }
   ],
-  "feat": [
-   17,
-   62,
-   0,
-   75,
-   17,
-   7
-  ],
+  "findex": {
+   "account": {
+    "value": 99.8,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 98.9,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 97.7,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.8,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   0.776,
-   -1.675
+   2.268,
+   1.219
   ]
  },
  "France": {
@@ -2937,18 +3107,28 @@
     "s": "paypal"
    }
   ],
-  "feat": [
-   48,
-   44,
-   0,
-   71,
-   16,
-   12
-  ],
+  "findex": {
+   "account": {
+    "value": 99.2,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 92.7,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 94,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   2.021,
-   -0.256
+   2.317,
+   -0.726
   ]
  },
  "Germany": {
@@ -3100,18 +3280,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   11,
-   67,
-   2,
-   47,
-   19,
-   32
-  ],
-  "cluster": 1,
+  "findex": {
+   "account": {
+    "value": 98.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 94.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 99.4,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.1,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   -0.966,
-   -0.124
+   0.02,
+   0.685
   ]
  },
  "Ireland": {
@@ -3241,18 +3431,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   47,
-   46,
-   0,
-   59,
-   26,
-   15
-  ],
+  "findex": {
+   "account": {
+    "value": 98.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 94.2,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 95.3,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.301,
-   -0.222
+   1.703,
+   -0.131
   ]
  },
  "Italy": {
@@ -3409,18 +3609,28 @@
     "s": "paypal"
    }
   ],
-  "feat": [
-   42,
-   50,
-   0,
-   52,
-   19,
-   24
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 86,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 81,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 92.9,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 93.8,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   0.853,
-   0.252
+   0.867,
+   -0.601
   ]
  },
  "Netherlands": {
@@ -3572,18 +3782,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   13,
-   76,
-   0,
-   66,
-   26,
-   7
-  ],
-  "cluster": 1,
+  "findex": {
+   "account": {
+    "value": 99.2,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 97.2,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.6,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   -0.233,
-   -2.222
+   1.628,
+   2.178
   ]
  },
  "Norway": {
@@ -3735,18 +3955,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   35,
-   43,
-   1,
-   66,
-   30,
-   4
-  ],
+  "findex": {
+   "account": {
+    "value": 98.6,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 96,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 99.4,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.295,
-   -1.015
+   2.529,
+   0.663
   ]
  },
  "Poland": {
@@ -3888,18 +4118,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   5,
-   83,
-   4,
-   34,
-   43,
-   23
-  ],
+  "findex": {
+   "account": {
+    "value": 86.1,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 81.4,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 74.7,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 86.7,
+    "year": "2017"
+   }
+  },
   "cluster": 1,
   "pc": [
-   -2.529,
-   -1.308
+   -1.592,
+   2.466
   ]
  },
  "Portugal": {
@@ -4051,18 +4291,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   35,
-   56,
-   0,
-   58,
-   14,
-   27
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 91.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 87,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 87.2,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 92.3,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   0.693,
-   0.157
+   0.696,
+   -0.424
   ]
  },
  "Spain": {
@@ -4209,18 +4459,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   39,
-   55,
-   0,
-   50,
-   16,
-   34
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 85.9,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 97.1,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 93.8,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   0.434,
-   0.692
+   0.746,
+   -0.555
   ]
  },
  "Sweden": {
@@ -4367,18 +4627,28 @@
     "s": "paypal"
    }
   ],
-  "feat": [
-   26,
-   48,
-   0,
-   65,
-   28,
-   5
-  ],
+  "findex": {
+   "account": {
+    "value": 98.6,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 97.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98.4,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   0.96,
-   -1.316
+   2.659,
+   1.027
   ]
  },
  "Switzerland": {
@@ -4535,18 +4805,28 @@
     "s": "klarna"
    }
   ],
-  "feat": [
-   48,
-   39,
-   0,
-   53,
-   28,
-   19
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 86.4,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 98.4,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   1.256,
-   0.243
+   2.201,
+   -0.555
   ]
  },
  "Turkey": {
@@ -4703,18 +4983,28 @@
     "s": "tosla"
    }
   ],
-  "feat": [
-   64,
-   27,
-   5,
-   54,
-   22,
-   20
-  ],
+  "findex": {
+   "account": {
+    "value": 81.6,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 79.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 62.4,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 68.6,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   1.909,
-   1.471
+   0.834,
+   -2.287
   ]
  },
  "United Kingdom": {
@@ -4856,18 +5146,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   45,
-   46,
-   0,
-   69,
-   20,
-   9
-  ],
+  "findex": {
+   "account": {
+    "value": 99.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 95.6,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98.6,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 96.4,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   1.782,
-   -0.588
+   2.798,
+   0.079
   ]
  },
  "Argentina": {
@@ -5024,18 +5324,28 @@
     "s": "uala"
    }
   ],
-  "feat": [
-   42,
-   54,
-   2,
-   38,
-   43,
-   17
-  ],
+  "findex": {
+   "account": {
+    "value": 81.7,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 64.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 65.4,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 48.7,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   -0.239,
-   -0.353
+   -1.323,
+   -0.061
   ]
  },
  "Brazil": {
@@ -5187,18 +5497,28 @@
     "s": "nubank"
    }
   ],
-  "feat": [
-   44,
-   52,
-   3,
-   40,
-   46,
-   12
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 86.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 73.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 70,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 70,
+    "year": "2017"
+   }
+  },
+  "cluster": 0,
   "pc": [
-   -0.11,
-   -0.52
+   0.398,
+   0.89
   ]
  },
  "Chile": {
@@ -5350,18 +5670,28 @@
     "s": "mercado-pago"
    }
   ],
-  "feat": [
-   62,
-   35,
-   0,
-   74,
-   9,
-   16
-  ],
-  "cluster": 0,
+  "findex": {
+   "account": {
+    "value": 85.1,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 80.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 77.3,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 74.3,
+    "year": "2017"
+   }
+  },
+  "cluster": 2,
   "pc": [
-   2.867,
-   0.575
+   1.239,
+   -2.292
   ]
  },
  "Colombia": {
@@ -5513,18 +5843,28 @@
     "s": "bre-b"
    }
   ],
-  "feat": [
-   27,
-   63,
-   7,
-   48,
-   20,
-   32
-  ],
-  "cluster": 2,
+  "findex": {
+   "account": {
+    "value": 57.1,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 26.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 42.5,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 45.8,
+    "year": "2017"
+   }
+  },
+  "cluster": 3,
   "pc": [
-   -0.721,
-   0.707
+   -2.978,
+   -0.927
   ]
  },
  "Mexico": {
@@ -5664,18 +6004,28 @@
     "s": "mercado-pago"
    }
   ],
-  "feat": [
-   55,
-   32,
-   9,
-   52,
-   9,
-   40
-  ],
+  "findex": {
+   "account": {
+    "value": 53,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 40.1,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 29.5,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 36,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   1.112,
-   2.892
+   -1.716,
+   -4.124
   ]
  },
  "Peru": {
@@ -5815,18 +6165,28 @@
     "s": "pagoefectivo"
    }
   ],
-  "feat": [
-   41,
-   50,
-   7,
-   31,
-   38,
-   30
-  ],
+  "findex": {
+   "account": {
+    "value": 59.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 36.7,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 46.5,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 42.6,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   -0.79,
-   1.072
+   -1.528,
+   -0.975
   ]
  },
  "Nigeria": {
@@ -5973,18 +6333,28 @@
     "s": "nqr"
    }
   ],
-  "feat": [
-   27,
-   57,
-   11,
-   15,
-   46,
-   39
-  ],
+  "findex": {
+   "account": {
+    "value": 63.3,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 48.3,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 43.9,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 39.7,
+    "year": "2017"
+   }
+  },
   "cluster": 3,
   "pc": [
-   -2.465,
-   1.491
+   -4.881,
+   -0.667
   ]
  },
  "Saudi Arabia": {
@@ -6136,18 +6506,28 @@
     "s": "apple-pay"
    }
   ],
-  "feat": [
-   38,
-   49,
-   8,
-   43,
-   43,
-   14
-  ],
+  "findex": {
+   "account": {
+    "value": 78.8,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 76,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 71.7,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 71.7,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   -0.399,
-   0.044
+   -1.065,
+   -0.067
   ]
  },
  "South Africa": {
@@ -6294,18 +6674,28 @@
     "s": "samsung-wallet"
    }
   ],
-  "feat": [
-   43,
-   45,
-   6,
-   60,
-   12,
-   26
-  ],
+  "findex": {
+   "account": {
+    "value": 81.1,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 59.8,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 44.6,
+    "year": "2024"
+   },
+   "account2017": {
+    "value": 69.2,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   0.988,
-   1.114
+   -1.664,
+   -2.034
   ]
  },
  "UAE": {
@@ -6462,18 +6852,28 @@
     "s": "eand-money"
    }
   ],
-  "feat": [
-   42,
-   45,
-   7,
-   55,
-   29,
-   15
-  ],
+  "findex": {
+   "account": {
+    "value": 85.7,
+    "year": "2021"
+   },
+   "debitCard": {
+    "value": 68.8,
+    "year": "2021"
+   },
+   "digitalPayment": {
+    "value": 74.8,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 88.2,
+    "year": "2017"
+   }
+  },
   "cluster": 2,
   "pc": [
-   0.553,
-   0.326
+   -0.106,
+   -0.426
   ]
  },
  "Canada": {
@@ -6630,18 +7030,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   55,
-   37,
-   0,
-   76,
-   13,
-   10
-  ],
+  "findex": {
+   "account": {
+    "value": 98.4,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 94.5,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 98.1,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 99.7,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   2.681,
-   -0.034
+   2.686,
+   -1.086
   ]
  },
  "United States": {
@@ -6788,18 +7198,28 @@
     "s": "google-wallet"
    }
   ],
-  "feat": [
-   48,
-   44,
-   0,
-   71,
-   17,
-   10
-  ],
+  "findex": {
+   "account": {
+    "value": 97,
+    "year": "2024"
+   },
+   "debitCard": {
+    "value": 87.4,
+    "year": "2024"
+   },
+   "digitalPayment": {
+    "value": 91.3,
+    "year": "2021"
+   },
+   "account2017": {
+    "value": 93.1,
+    "year": "2017"
+   }
+  },
   "cluster": 0,
   "pc": [
-   2.036,
-   -0.387
+   2.499,
+   -0.412
   ]
  }
 }

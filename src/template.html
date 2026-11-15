@@ -145,12 +145,12 @@ td.m { font: 500 15px var(--serif); }
 
   <h2 class="sec">The four groups, from a Mastercard view</h2>
   <div class="groups" id="groups"></div>
-  <p class="caveat">The grouping uses payment-mix data only. Statements above about bank account ownership, phone use and access are not measured in this report and need outside data, such as the World Bank Global Findex, to confirm.</p>
+  <p class="caveat">Every figure above is a group average from the Worldpay report (payment mix, 2030 forecast) or the World Bank Global Findex (accounts, debit cards, digital payments). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
 
-  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. The clusters are our own k-means grouping of the report's figures, and the Mastercard view of each group is commentary, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. Account, debit card and digital payment figures are from the World Bank Global Findex Database (2024 survey round where available, otherwise 2021). The clusters are our own k-means grouping of those figures and the report's, not something either source publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
 
 <script>
@@ -214,7 +214,8 @@ function cardHtml(node) {
     '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + '</p>';
   const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
   return head + '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
-    '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
+    '<p class="size">Adults with an account: ' + c.findex.account.value + '% · made a digital payment: ' + c.findex.digitalPayment.value + '% (World Bank Findex)</p>' +
+    '<p class="size" style="margin-top:4px">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
 }
 
 function show(node, px, py) {
@@ -272,8 +273,8 @@ function matrix() {
     const o = opts.find(([lx, ly]) => lx > 0 && lx + w < W && !boxes.some(b => hit([lx, ly, lx + w, ly + 10], b))) || opts[0];
     boxes.push([o[0], o[1], o[0] + w, o[1] + 10]); labels += '<text class="lab" x="' + o[0].toFixed(1) + '" y="' + (o[1] + 9).toFixed(1) + '">' + ISO[k] + '</text>'; });
   out += labels + keys.map(k => shape(DATA[k].cluster, +pos[k][0].toFixed(1), +pos[k][1].toFixed(1), 5.5, ' data-k="' + esc(k) + '" tabindex="0" aria-label="' + esc(DATA[k].name + ', ' + CL.clusters[DATA[k].cluster].name) + '"')).join('');
-  out += '<text class="cap" x="' + m.l + '" y="' + (H - 8) + '">← more wallets, transfers and cash</text><text class="cap" text-anchor="end" x="' + (W - m.r) + '" y="' + (H - 8) + '">more cards →</text>' +
-    '<text class="cap" transform="translate(12 ' + (H - m.b) + ') rotate(-90)">← more wallets and transfers</text><text class="cap" text-anchor="end" transform="translate(12 ' + m.t + ') rotate(-90)">more cash →</text>';
+  out += '<text class="cap" x="' + m.l + '" y="' + (H - 8) + '">← more cash, faster growth</text><text class="cap" text-anchor="end" x="' + (W - m.r) + '" y="' + (H - 8) + '">more accounts and cards →</text>' +
+    '<text class="cap" transform="translate(12 ' + (H - m.b) + ') rotate(-90)">← more cards</text><text class="cap" text-anchor="end" transform="translate(12 ' + m.t + ') rotate(-90)">more wallets and transfers →</text>';
   const plot = document.getElementById('plot'); plot.innerHTML = out;
   const nodeFor = k => svg.querySelector('[data-k="' + k + '"]');
   plot.addEventListener('pointerover', e => { const r = e.target.closest('[data-k]'); r ? show(nodeFor(r.dataset.k)) : hide(); });
@@ -281,17 +282,15 @@ function matrix() {
   plot.addEventListener('focusin', e => { const r = e.target.closest('[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
   plot.addEventListener('focusout', hide);
   plot.addEventListener('click', e => { const r = e.target.closest('[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
-  document.getElementById('mxnote').textContent = 'Each mark is a market, placed by its 2025 payment mix: the share of spending on cards, on wallets plus bank transfers (A2A), and on cash, online and in store. ' +
-    'Those six features are squeezed onto two axes (principal components) that keep ' + (CL.pcaShare[0] + CL.pcaShare[1]) + '% of the variation. Markets that sit close together pay in similar ways. ' +
-    'Shaded areas outline the ' + CL.k + ' k-means groups; silhouette score ' + CL.silhouette + ', so groups touch at the edges.';
+  document.getElementById('mxnote').textContent = 'Each mark is a market, placed by ' + CL.features.length + ' features: its 2025 payment mix (cards, wallets plus bank transfers, cash; online and in store), ' +
+    'the report\'s 2030 forecast (change in card and cash share, market growth) and World Bank Findex access data (adults with an account, adults who made a digital payment). ' +
+    'The two axes keep ' + (CL.pcaShare[0] + CL.pcaShare[1]) + '% of the variation. Shaded areas outline the ' + CL.k + ' k-means groups; silhouette score ' + CL.silhouette + ', so groups touch at the edges.';
   document.getElementById('pkey').innerHTML = CL.clusters.map((cl, g) => '<span>' + icon(g) + esc(cl.name) + ' (' + cl.members.length + ')</span>').join('');
-  const f = CL.features;
   document.getElementById('groups').innerHTML = CL.clusters.map((cl, g) => {
-    const avg = ch => f.map((x, i) => [x, cl.centroid[i]]).filter(([x]) => x.ch === ch).map(([x, v]) => x.short.toLowerCase().replace('a2a', 'A2A') + ' ' + v + '%').join(', ');
     const mc = cl.members.map(k => DATA[k].schemes.find(r => r.m === 'Mastercard')).filter(Boolean);
     return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.desc) + '</p><p class="ev"><b>' + cl.members.length + ' markets:</b> ' +
-      esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>From the data:</b> in store ' + esc(avg('pos')) + '; online ' + esc(avg('ecom')) +
-      '. Mastercard averages ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share here (2024' + (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
+      esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>Mastercard today:</b> ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share on average (2024' +
+      (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
 }
 
 function table() {

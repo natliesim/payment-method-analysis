@@ -50,39 +50,64 @@ for (const r of raw) {
     }) };
 }
 
-// K-means on each market's 2025 payment mix, summarised as six features:
-// the share of spending on cards, on wallets plus bank transfers (A2A), and on cash, online and in store.
-// Features are standardised (z-scores) before clustering so that cash, which varies less, counts as much as the others.
+// K-means on twelve features per market, standardised (z-scores) so each counts equally:
+//  - 2025 payment mix (report): share of spending on cards, wallets plus bank transfers (A2A), and cash, online and in store
+//  - 2030 forecast (report): change in card and cash share in store, and yearly market growth online and in store
+//  - access (World Bank Global Findex): adults with an account, adults who made a digital payment
+const findex = JSON.parse(fs.readFileSync('data/findex.json', 'utf8')).markets;
 const CARDS = ['Credit cards', 'Debit cards', 'Prepaid cards'], DIGITAL = ['Digital wallets', 'A2A'], CASH = ['Cash'];
-const FEATURES = [['ecom', 'Cards', CARDS], ['ecom', 'Wallets + A2A', DIGITAL], ['ecom', 'Cash', CASH], ['pos', 'Cards', CARDS], ['pos', 'Wallets + A2A', DIGITAL], ['pos', 'Cash', CASH]];
+const sh = (c, ch, ms, f = 'a') => c[ch].filter(r => ms.includes(r.m)).reduce((t, r) => t + r[f], 0);
+const FEATURES = [
+  ['ecCards', 'Online: card share 2025 (%)', c => sh(c, 'ecom', CARDS)], ['ecDig', 'Online: wallet + A2A share 2025 (%)', c => sh(c, 'ecom', DIGITAL)], ['ecCash', 'Online: cash share 2025 (%)', c => sh(c, 'ecom', CASH)],
+  ['posCards', 'In store: card share 2025 (%)', c => sh(c, 'pos', CARDS)], ['posDig', 'In store: wallet + A2A share 2025 (%)', c => sh(c, 'pos', DIGITAL)], ['posCash', 'In store: cash share 2025 (%)', c => sh(c, 'pos', CASH)],
+  ['dCards', 'In store: change in card share 2025-2030 (pts)', c => sh(c, 'pos', CARDS, 'b') - sh(c, 'pos', CARDS)], ['dCash', 'In store: change in cash share 2025-2030 (pts)', c => sh(c, 'pos', CASH, 'b') - sh(c, 'pos', CASH)],
+  ['ecCagr', 'Online market growth 2025-2030 (% a year)', c => parseFloat(c.size.ecom[2])], ['posCagr', 'In-store market growth 2025-2030 (% a year)', c => parseFloat(c.size.pos[2])],
+  ['acct', 'Adults with an account (%)', (c, k) => findex[k]['account.t.d'].value], ['digpay', 'Adults who made a digital payment (%)', (c, k) => findex[k]['g20.made'].value]];
+// Shown as evidence but not clustered on.
+const EXTRA = [['dDig', c => sh(c, 'pos', DIGITAL, 'b') - sh(c, 'pos', DIGITAL)], ['debit', (c, k) => findex[k]['fin2.t.d'].value], ['acct17', (c, k) => findex[k].account_2017.value]];
 const K = 4;
 const keys = Object.keys(data);
-const X = keys.map(k => FEATURES.map(([ch, , ms]) => data[k][ch].filter(r => ms.includes(r.m)).reduce((t, r) => t + r.a, 0)));
-keys.forEach((k, j) => { data[k].feat = X[j]; });
-const col = f => X.map(x => x[f]), mean = v => v.reduce((a, b) => a + b, 0) / v.length;
+const X = keys.map(k => FEATURES.map(([, , fn]) => fn(data[k], k)));
+keys.forEach(k => { const f = findex[k]; data[k].findex = { account: f['account.t.d'], debitCard: f['fin2.t.d'], digitalPayment: f['g20.made'], account2017: f.account_2017 }; });
+const mean = v => v.reduce((a, b) => a + b, 0) / v.length, col = f => X.map(x => x[f]);
 const mu = FEATURES.map((_, f) => mean(col(f))), sd = FEATURES.map((_, f) => Math.sqrt(mean(col(f).map(v => (v - mu[f]) ** 2))));
 const Z = X.map(x => x.map((v, f) => (v - mu[f]) / sd[f]));
 const km = kmeans(Z, K);
 const sil = silhouette(Z, km.labels);
-const groups = [...Array(K).keys()].map(ci => { const m = X.filter((_, j) => km.labels[j] === ci);
-  return { ci, centroid: FEATURES.map((_, f) => Math.round(mean(m.map(x => x[f])))), members: keys.filter((_, j) => km.labels[j] === ci) }; });
-// Name each group from its averages: most cash in store, most cards in store, most wallets and transfers; the one left is in between.
-const NAMES = [
-  ['Mature card markets', 'Most adults have bank accounts and cards, and digital payments are part of daily life. Card use is deeply established, so growth is slower. The opportunity is in new areas such as B2B payments, fraud prevention, data and security services, and cross-border payments. The main risk is regulation (fee caps) and competition from account-to-account payments.'],
-  ['Wallet and A2A-first markets', 'Digital payments are high, but a large share happens through mobile wallets, QR codes or direct bank transfers instead of cards. Cards can be bypassed here, so this group is the biggest threat to Mastercard’s core business. The strategy is partnership: work with wallets and national payment systems, and offer infrastructure, security and cross-border services that earn fees on any payment type.'],
-  ['Growing digital markets', 'Account ownership and mobile phone use are rising, and people mix cash with digital methods. Card use is growing, but QR and wallets are growing too. The opportunity is to expand acceptance at shops, especially small businesses, and make cards work alongside QR rather than compete with it.'],
-  ['Cash-heavy, low-access markets', 'Many adults have no bank account, and cash dominates. Digital payments are limited by access, trust and infrastructure, not by competition. The opportunity is financial inclusion: programs like Strive, simple low-cost digital payment options, and partnerships with banks and governments. Growth is slow at first but has the most long-term potential.']];
+const groups = [...Array(K).keys()].map(ci => { const members = keys.filter((_, j) => km.labels[j] === ci), avg = {};
+  FEATURES.forEach(([id, , fn]) => { avg[id] = Math.round(mean(members.map(k => fn(data[k], k)))); });
+  EXTRA.forEach(([id, fn]) => { avg[id] = Math.round(mean(members.map(k => fn(data[k], k)))); });
+  return { members, avg }; });
+// Order the groups: most cash in store, most cards in store, most wallets and transfers; the one left is in between.
 const pick = (left, score) => left.sort((a, b) => score(b) - score(a))[0];
 let left = [...groups];
-const cash = pick(left, g => g.centroid[5]); left = left.filter(g => g !== cash);
-const card = pick(left, g => g.centroid[3]); left = left.filter(g => g !== card);
-const digital = pick(left, g => g.centroid[1] + g.centroid[4]); left = left.filter(g => g !== digital);
-const clusters = [card, digital, left[0], cash].map((g, i) => ({ name: NAMES[i][0], desc: NAMES[i][1], centroid: g.centroid, members: g.members }));
+const cash = pick(left, g => g.avg.posCash); left = left.filter(g => g !== cash);
+const card = pick(left, g => g.avg.posCards); left = left.filter(g => g !== card);
+const digital = pick(left, g => g.avg.ecDig + g.avg.posDig); left = left.filter(g => g !== digital);
+const growing = left[0];
+// Each sentence below is tied to a figure. The checks stop the build if a comparison in the text stops being true.
+const only = (g, id, dir) => groups.every(o => o === g || (dir > 0 ? o.avg[id] < g.avg[id] : o.avg[id] > g.avg[id]));
+const must = (ok, msg) => { if (!ok) throw new Error('Insight no longer supported by the data: ' + msg); };
+must(only(card, 'posCagr', -1) && only(card, 'ecCagr', -1), 'mature card markets grow slowest');
+must(only(card, 'acct', 1), 'mature card markets have the highest account ownership');
+must(only(digital, 'posCards', -1), 'wallet markets have the lowest in-store card share');
+must(only(cash, 'posCash', 1) && only(cash, 'acct', -1), 'cash-heavy markets have most cash and fewest accounts');
+must(only(cash, 'ecCagr', 1) && only(cash, 'posCagr', 1), 'cash-heavy markets grow fastest');
+must(growing.avg.acct > growing.avg.acct17 && cash.avg.acct > cash.avg.acct17, 'account ownership is rising');
+must(card.avg.dCards < 0 && growing.avg.dCards < 0 && growing.avg.dDig > 0 && cash.avg.dCash < 0, 'forecast direction');
+const a = g => g.avg;
+const clusters = [
+  ['Mature card markets', card, `Most adults have bank accounts and cards: ${a(card).acct}% have an account, ${a(card).debit}% own a debit card and ${a(card).digpay}% made a digital payment in the past year. Card use is deeply established, at ${a(card).posCards}% of in-store spending, so growth is the slowest of the four groups: ${a(card).posCagr}% a year in store and ${a(card).ecCagr}% online to 2030. Cards are forecast to lose ${-a(card).dCards} points of in-store share by 2030 while wallets and bank transfers gain ${a(card).dDig}.`],
+  ['Wallet and A2A-first markets', digital, `A large share of spending goes through mobile wallets or direct bank transfers instead of cards: ${a(digital).ecDig}% online and ${a(digital).posDig}% in store. Cards can be bypassed here; they carry ${a(digital).posCards}% of in-store spending, the lowest of any group. ${a(digital).acct}% of adults have an account.`],
+  ['Growing digital markets', growing, `Account ownership is rising, from ${a(growing).acct17}% of adults in 2017 to ${a(growing).acct}%, and people mix cash with digital methods: in store, cards take ${a(growing).posCards}%, wallets and transfers ${a(growing).posDig}% and cash ${a(growing).posCash}%. Wallets and transfers are forecast to gain ${a(growing).dDig} points of in-store share by 2030 while cards lose ${-a(growing).dCards}.`],
+  ['Cash-heavy, low-access markets', cash, `Many adults have no bank account: ${a(cash).acct}% have one, up from ${a(cash).acct17}% in 2017, and ${a(cash).digpay}% made a digital payment in the past year. Cash takes ${a(cash).posCash}% of in-store spending, the most of any group. These are also the fastest-growing markets, at ${a(cash).ecCagr}% a year online and ${a(cash).posCagr}% in store, and cash is forecast to lose ${-a(cash).dCash} points of in-store share by 2030.`],
+].map(([name, g, desc]) => ({ name, desc, avg: g.avg, members: g.members }));
 clusters.forEach((c, i) => c.members.forEach(k => { data[k].cluster = i; }));
-// Two-dimensional view of the six standardised features for the cluster plot.
+// Two-dimensional view of the standardised features for the cluster plot.
 const pca = pca2(Z);
 keys.forEach((k, j) => { data[k].pc = pca.points[j].map(v => +v.toFixed(3)); });
-const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([ch, short]) => ({ ch, short })), clusters, pcaShare: pca.comps.map(c => Math.round(c.share * 100)) };
+console.log(pca.comps.map(c => c.share.toFixed(2) + ' ' + c.vec.map((v, i) => FEATURES[i][0] + ' ' + v.toFixed(2)).join(', ')).join('\n'));
+const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([id, label]) => ({ id, label })), clusters, pcaShare: pca.comps.map(c => Math.round(c.share * 100)) };
 
 const W = 960, H = 470;
 const fc = feature(world, world.objects.countries);
@@ -104,7 +129,7 @@ fs.writeFileSync('data/payment_methods.csv', csv.join('\n') + '\n');
 const scsv = ['market,region,scheme,share_2024_pct,report_page'];
 for (const c of Object.values(data)) for (const r of c.schemes) scsv.push([c.name, c.region, r.m, r.as.replace('%', ''), c.page].map(v => `"${v}"`).join(','));
 fs.writeFileSync('data/card_scheme_share.csv', scsv.join('\n') + '\n');
-const ccsv = ['market,region,cluster,' + FEATURES.map(([ch, m]) => `${ch}_${m.toLowerCase().replace(/[^a-z0-9]+/g, '_')}_pct`).join(',')];
+const ccsv = ['market,region,cluster,' + FEATURES.map(([, label]) => `"${label}"`).join(',')];
 keys.forEach((k, j) => ccsv.push([`"${data[k].name}"`, `"${data[k].region}"`, `"${clusters[data[k].cluster].name}"`, ...X[j]].join(',')));
 fs.writeFileSync('data/clusters.csv', ccsv.join('\n') + '\n');
 const bcsv = ['market,region,brand,what_it_is,report_page'];
