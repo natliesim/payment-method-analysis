@@ -50,13 +50,12 @@ for (const r of raw) {
     }) };
 }
 
-// K-means on seventeen features per market, standardised (z-scores) so each counts equally:
+// K-means on eight features per market, standardised (z-scores):
 //  - 2025 payment mix (report): share of spending on cards, wallets plus bank transfers (A2A), and cash, online and in store
-//  - 2030 forecast (report): change in card and cash share in store, and yearly market growth online and in store
+//  - the report's 2030 forecast is kept as reference data but not clustered on
 //  - access (World Bank Global Findex): adults with an account, adults who made a digital payment
-//  - infrastructure and cards (IMF Financial Access Survey, 2025 or latest earlier year): ATMs, bank branches, credit cards,
-//    debit cards and mobile/internet banking transactions per adult. These are log-scaled because a few markets are far
-//    above the rest, and a market with no figure keeps a null that the clustering skips.
+// The IMF Financial Access Survey figures (ATMs, branches, cards and banking transactions per adult) are kept as
+// reference data on the page but are not clustered on: their gaps made the groups change from one random start to the next.
 const findex = JSON.parse(fs.readFileSync('data/findex.json', 'utf8')).markets;
 const imfFile = JSON.parse(fs.readFileSync('data/imf_fas.json', 'utf8')), imf = imfFile.markets;
 const lg = v => (v ? Math.log10(v.value) : null);
@@ -65,13 +64,11 @@ const sh = (c, ch, ms, f = 'a') => c[ch].filter(r => ms.includes(r.m)).reduce((t
 const FEATURES = [
   ['ecCards', 'Online: card share 2025 (%)', c => sh(c, 'ecom', CARDS)], ['ecDig', 'Online: wallet + A2A share 2025 (%)', c => sh(c, 'ecom', DIGITAL)], ['ecCash', 'Online: cash share 2025 (%)', c => sh(c, 'ecom', CASH)],
   ['posCards', 'In store: card share 2025 (%)', c => sh(c, 'pos', CARDS)], ['posDig', 'In store: wallet + A2A share 2025 (%)', c => sh(c, 'pos', DIGITAL)], ['posCash', 'In store: cash share 2025 (%)', c => sh(c, 'pos', CASH)],
-  ['dCards', 'In store: change in card share 2025-2030 (pts)', c => sh(c, 'pos', CARDS, 'b') - sh(c, 'pos', CARDS)], ['dCash', 'In store: change in cash share 2025-2030 (pts)', c => sh(c, 'pos', CASH, 'b') - sh(c, 'pos', CASH)],
-  ['ecCagr', 'Online market growth 2025-2030 (% a year)', c => parseFloat(c.size.ecom[2])], ['posCagr', 'In-store market growth 2025-2030 (% a year)', c => parseFloat(c.size.pos[2])],
-  ['acct', 'Adults with an account (%)', (c, k) => findex[k]['account.t.d'].value], ['digpay', 'Adults who made a digital payment (%)', (c, k) => findex[k]['g20.made'].value],
-  ...Object.entries(imfFile.indicators).map(([id, label]) => [id, label + ' (log10)', (c, k) => lg(imf[k][id])])];
+  ['acct', 'Adults with an account (%)', (c, k) => findex[k]['account.t.d'].value], ['digpay', 'Adults who made a digital payment (%)', (c, k) => findex[k]['g20.made'].value]];
 // Shown as evidence but not clustered on.
 const imfRaw = id => (c, k) => (imf[k][id] ? imf[k][id].value : null);
-const EXTRA = [['creditRaw', imfRaw('creditCards')], ['debitRaw', imfRaw('debitCards')], ['atmRaw', imfRaw('atms')], ['dDig', c => sh(c, 'pos', DIGITAL, 'b') - sh(c, 'pos', DIGITAL)], ['debit', (c, k) => findex[k]['fin2.t.d'].value], ['acct17', (c, k) => findex[k].account_2017.value]];
+const EXTRA = [['dCards', c => sh(c, 'pos', CARDS, 'b') - sh(c, 'pos', CARDS)], ['dCash', c => sh(c, 'pos', CASH, 'b') - sh(c, 'pos', CASH)], ['ecCagr', c => parseFloat(c.size.ecom[2])], ['posCagr', c => parseFloat(c.size.pos[2])],
+  ['creditRaw', imfRaw('creditCards')], ['debitRaw', imfRaw('debitCards')], ['atmRaw', imfRaw('atms')], ['dDig', c => sh(c, 'pos', DIGITAL, 'b') - sh(c, 'pos', DIGITAL)], ['debit', (c, k) => findex[k]['fin2.t.d'].value], ['acct17', (c, k) => findex[k].account_2017.value]];
 const K = 4;
 const keys = Object.keys(data);
 const X = keys.map(k => FEATURES.map(([, , fn]) => fn(data[k], k)));
@@ -79,13 +76,12 @@ keys.forEach(k => { const f = findex[k]; data[k].imf = imf[k]; data[k].findex = 
 const mean = v => { v = v.filter(x => x != null); return v.reduce((a, b) => a + b, 0) / v.length; }, col = f => X.map(x => x[f]);
 const mu = FEATURES.map((_, f) => mean(col(f))), sd = FEATURES.map((_, f) => Math.sqrt(mean(col(f).map(v => (v - mu[f]) ** 2))));
 // z-scores, capped at 3 standard deviations so one extreme figure cannot dominate; nulls stay null.
-// The six payment-mix features count MIX_WEIGHT times as much as each other feature (a weight w scales a z-score by sqrt(w)),
-// so that how people pay today leads the grouping and access and infrastructure refine it.
-const MIX_WEIGHT = +(process.env.MIX_WEIGHT || 3);
-const MIX = ['ecCards', 'ecDig', 'ecCash', 'posCards', 'posDig', 'posCash'];
-const wt = FEATURES.map(([id]) => Math.sqrt(MIX.includes(id) ? MIX_WEIGHT : 1));
+// The two access features count twice as much as each payment-mix feature (a weight w scales a z-score by sqrt(w)).
+// Of the weightings tried, this one gave the best-separated groups and the same groups from every random start.
+const ACCESS_WEIGHT = 2;
+const wt = FEATURES.map(([id]) => Math.sqrt(['acct', 'digpay'].includes(id) ? ACCESS_WEIGHT : 1));
 const Z = X.map(x => x.map((v, f) => (v == null ? null : wt[f] * Math.max(-3, Math.min(3, (v - mu[f]) / sd[f])))));
-const km = kmeans(Z, K);
+const km = kmeans(Z, K, { restarts: 1000 });
 const sil = silhouette(Z, km.labels);
 const groups = [...Array(K).keys()].map(ci => { const members = keys.filter((_, j) => km.labels[j] === ci), avg = {};
   FEATURES.forEach(([id, , fn]) => { avg[id] = Math.round(mean(members.map(k => fn(data[k], k)))); });
@@ -105,9 +101,9 @@ const must = (ok, msg) => { if (!ok) throw new Error('Insight no longer supporte
 must(only(card, 'ecCagr', -1) && groups.every(o => o.avg.posCagr >= card.avg.posCagr), 'mature card markets grow slowest');
 must(only(card, 'acct', 1) && only(card, 'posCards', 1), 'mature card markets have the highest account ownership and in-store card share');
 must(digital.avg.ecDig > digital.avg.ecCards && digital.avg.posDig > digital.avg.posCards && only(digital, 'debitRaw', 1), 'wallet markets spend more through wallets and transfers than cards, and have the most debit cards');
-must(only(cash, 'posCash', 1) && only(cash, 'acct', -1) && only(cash, 'posCards', -1), 'cash-heavy markets have most cash, fewest accounts and lowest in-store card share');
+must(only(cash, 'posCash', 1) && only(cash, 'acct', -1), 'cash-heavy markets have most cash and fewest accounts');
 must(only(cash, 'creditRaw', -1) && only(cash, 'atmRaw', -1), 'cash-heavy markets have fewest credit cards and ATMs');
-must(only(cash, 'ecCagr', 1) && only(cash, 'posCagr', 1), 'cash-heavy markets grow fastest');
+must(only(cash, 'ecCagr', 1), 'cash-heavy markets grow fastest online');
 must(growing.avg.acct > growing.avg.acct17 && cash.avg.acct > cash.avg.acct17, 'account ownership is rising');
 must(card.avg.dCards < 0 && growing.avg.dCards < 0 && growing.avg.dDig > 0 && cash.avg.dCash < 0, 'forecast direction');
 const a = g => g.avg, per = v => (v / 1000).toFixed(v < 995 ? 2 : 1);
@@ -122,7 +118,7 @@ const clusters = [
     `${a(digital).acct}% of adults have an account. There are ${per(a(digital).debitRaw)} debit cards per adult, the most of any group, so cards are available but used less.`],
   ['Mixed-payment markets', growing, 'Spending is spread across cards, wallets and cash with no single method in charge, and more people are opening bank accounts each year.',
     `${a(growing).acct}% of adults have an account, up from ${a(growing).acct17}% in 2017. ${a(growing).digpay}% made a digital payment in the past year.`],
-  ['Cash-heavy, low-access markets', cash, 'Cash is used more here than in any other group, many adults have no bank account, and spending is growing fastest.',
+  ['Cash-heavy, low-access markets', cash, 'Cash is used more here than in any other group, many adults have no bank account, and online spending is growing fastest.',
     `${a(cash).acct}% of adults have an account, the fewest of any group, up from ${a(cash).acct17}% in 2017. Cards and cash machines are scarce: ${per(a(cash).creditRaw)} credit cards per adult and ${a(cash).atmRaw} ATMs per 100,000 adults, both the lowest.`],
 ].map(([name, g, lead, access]) => ({ name, lead, points: [['How people pay', pay(g)], ['Access', access]], avg: g.avg, members: g.members }));
 clusters.forEach((c, i) => c.members.forEach(k => { data[k].cluster = i; }));
