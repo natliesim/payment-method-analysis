@@ -12,6 +12,8 @@
   --shadow: 0 10px 30px rgba(20, 20, 19, .16);
   /* Claude's own typefaces are not publicly hosted; they are used if installed, else the closest open match. */
   --serif: "Anthropic Serif", "Tiempos Text", "Source Serif 4", Georgia, "Times New Roman", serif;
+  /* Cluster colours, validated for colour-blind separation; each group also has its own marker shape. */
+  --g0: #2a78d6; --g1: #e87ba4; --g2: #008300; --g3: #eda100;
   --sans: "Anthropic Sans", "Styrene B", "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
 /* One hue per view: blue for online, teal for in store, violet for card schemes. */
@@ -68,28 +70,26 @@ h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
 .panel { min-width: 0; font-family: var(--sans); }
 .panel h2 { font: 500 22px/1.2 var(--serif); margin: 0; }
 .panel p { font-size: 13px; color: var(--ink-2); margin: 6px 0 12px; }
-.mxwrap { overflow-x: auto; }
-.mx { border-collapse: separate; border-spacing: 2px; width: auto; font-size: 12px; }
-.mx th, .mx td { padding: 0; border: 0; }
-.mx thead th { font-weight: 500; color: var(--ink-3); font-size: 11px; }
-.mx thead .grp { text-align: left; padding: 0 0 2px 2px; letter-spacing: .05em; text-transform: uppercase; }
-.mx thead .col { vertical-align: bottom; line-height: 1.15; padding-bottom: 3px; font-size: 10px; }
-.mx .gap { width: 6px; }
-.mx tbody th { text-align: left; font-weight: 400; color: var(--ink); padding-right: 8px; white-space: nowrap; height: 15px; line-height: 15px; }
-.mx tbody td { width: 44px; min-width: 44px; height: 15px; border-radius: 2px; text-align: center; font-size: 10px; line-height: 15px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
-.mx tbody td.dk { color: #ffffff; }
-.mx tbody td.gap { width: 6px; min-width: 6px; }
-.mx tr.ch th { font: 600 12px var(--sans); color: var(--ink); padding: 10px 0 3px; height: auto; }
-.mx tr.ch th small { font-weight: 400; color: var(--ink-3); font-size: 11px; }
-.mx tr[data-k] { cursor: pointer; }
-.mx tr[data-k].on th, .mx tr[data-k]:hover th { font-weight: 600; text-decoration: underline; }
-.mxkey { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--ink-3); margin-top: 10px; }
-.mxkey i { display: block; width: 120px; height: 8px; border-radius: 2px; background: linear-gradient(90deg, var(--track), var(--s5)); }
-.csum { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px 24px; font-family: var(--sans); }
-.csum div { border-top: 1px solid var(--line); padding-top: 10px; }
-.csum b { font: 500 16px var(--serif); display: block; }
-.csum span { font-size: 13px; color: var(--ink-2); display: block; margin-top: 2px; }
-.csum em { font-style: normal; font-size: 12px; color: var(--ink-3); display: block; margin-top: 4px; }
+.plot { display: block; width: 100%; height: auto; overflow: visible; }
+.plot .ax { stroke: var(--line); stroke-width: 1; }
+.plot .cap { font: 11px var(--sans); fill: var(--ink-3); }
+.plot .lab { font: 500 10px var(--sans); fill: var(--ink-2); pointer-events: none; }
+.plot .pt { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+.plot .pt.on, .plot .pt:hover, .plot .pt:focus-visible { stroke: var(--ink); stroke-width: 2; outline: none; }
+.g0 { fill: var(--g0); } .g1 { fill: var(--g1); } .g2 { fill: var(--g2); } .g3 { fill: var(--g3); }
+.hull.g0, .hull.g1, .hull.g2, .hull.g3 { fill-opacity: .1; stroke-width: 1; stroke-opacity: .5; stroke-linejoin: round; }
+.hull.g0 { stroke: var(--g0); } .hull.g1 { stroke: var(--g1); } .hull.g2 { stroke: var(--g2); } .hull.g3 { stroke: var(--g3); }
+.pkey { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; font-size: 12px; color: var(--ink-2); margin-top: 8px; }
+.pkey span { display: flex; align-items: center; gap: 7px; }
+.pkey svg, .grp h3 svg { width: 14px; height: 14px; flex: none; }
+.groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 40px; }
+@media (max-width: 820px) { .groups { grid-template-columns: minmax(0, 1fr); } }
+.grp { border-top: 1px solid var(--line); padding-top: 14px; min-width: 0; }
+.grp h3 { font: 500 19px/1.25 var(--serif); margin: 0 0 6px; display: flex; align-items: center; gap: 9px; }
+.grp p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 68ch; }
+.grp .ev { font: 13px/1.5 var(--sans); color: var(--ink-3); margin-top: 10px; }
+.grp .ev b { font-weight: 600; color: var(--ink-2); }
+.caveat { font: 13px/1.5 var(--sans); color: var(--ink-2); margin: 0; max-width: 95ch; }
 .card .note { font-size: 12px; color: var(--ink-2); margin: 8px 0 0; }
 @media (max-width: 1040px) { .main { grid-template-columns: minmax(0, 1fr); } }
 .tablewrap { overflow-x: auto; }
@@ -133,21 +133,24 @@ td.m { font: 500 15px var(--serif); }
         <div class="card" id="card" hidden></div>
       </div>
       <p class="hint">On a touch screen, tap a country. Hong Kong and Singapore are shown as dots.</p>
-      <div class="csum" id="csum"></div>
     </div>
 
     <aside class="panel">
-      <h2>Markets grouped by k-means</h2>
+      <h2>K-means clusters</h2>
       <p id="mxnote"></p>
-      <div class="mxwrap"><table class="mx" id="mx"></table></div>
-      <div class="mxkey"><span>Darker = bigger share of spending. Blue columns are online, teal are in store.</span></div>
+      <svg class="plot" id="plot" viewBox="0 0 460 430" role="img" aria-label="Scatter plot of the 42 markets coloured by k-means cluster"></svg>
+      <div class="pkey" id="pkey"></div>
     </aside>
   </div>
+
+  <h2 class="sec">The four groups, from a Mastercard view</h2>
+  <div class="groups" id="groups"></div>
+  <p class="caveat">The grouping uses payment-mix data only. Statements above about bank account ownership, phone use and access are not measured in this report and need outside data, such as the World Bank Global Findex, to confirm.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
 
-  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. The clusters are our own k-means grouping of the report's figures, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. The clusters are our own k-means grouping of the report's figures, and the Mastercard view of each group is commentary, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
 
 <script>
@@ -232,28 +235,63 @@ function show(node, px, py) {
   card.style.left = x + 'px'; card.style.top = y + 'px';
 }
 function hide() { if (current) current.classList.remove('on'); current = null; card.hidden = true; markRow(null); }
-function markRow(k) { document.querySelectorAll('#mx tr[data-k]').forEach(r => r.classList.toggle('on', r.dataset.k === k)); }
+function markRow(k) { document.querySelectorAll('#plot [data-k]').forEach(r => r.classList.toggle('on', r.dataset.k === k)); }
+
+const ISO = { Australia: 'AU', China: 'CN', 'Hong Kong': 'HK', India: 'IN', Indonesia: 'ID', Japan: 'JP', Malaysia: 'MY', 'New Zealand': 'NZ', Philippines: 'PH', Singapore: 'SG',
+  'South Korea': 'KR', Taiwan: 'TW', Thailand: 'TH', Vietnam: 'VN', Belgium: 'BE', Denmark: 'DK', Finland: 'FI', France: 'FR', Germany: 'DE', Ireland: 'IE', Italy: 'IT', Netherlands: 'NL',
+  Norway: 'NO', Poland: 'PL', Portugal: 'PT', Spain: 'ES', Sweden: 'SE', Switzerland: 'CH', Turkey: 'TR', 'United Kingdom': 'GB', Argentina: 'AR', Brazil: 'BR', Chile: 'CL', Colombia: 'CO',
+  Mexico: 'MX', Peru: 'PE', Nigeria: 'NG', 'Saudi Arabia': 'SA', 'South Africa': 'ZA', UAE: 'AE', Canada: 'CA', 'United States': 'US' };
+// One marker shape per group, so groups are never told apart by colour alone.
+const shape = (g, x, y, r, extra) => {
+  const a = 'class="' + (extra ? 'pt ' : '') + 'g' + g + '"' + (extra || '');
+  if (g === 0) return '<circle ' + a + ' cx="' + x + '" cy="' + y + '" r="' + r + '"/>';
+  if (g === 1) return '<rect ' + a + ' x="' + (x - r * .9) + '" y="' + (y - r * .9) + '" width="' + r * 1.8 + '" height="' + r * 1.8 + '"/>';
+  const pts = g === 2 ? [[0, -1.25], [1.15, .85], [-1.15, .85]] : [[0, -1.3], [1.3, 0], [0, 1.3], [-1.3, 0]];
+  return '<polygon ' + a + ' points="' + pts.map(([dx, dy]) => (x + dx * r).toFixed(1) + ',' + (y + dy * r).toFixed(1)).join(' ') + '"/>';
+};
+const icon = g => '<svg viewBox="0 0 14 14" aria-hidden="true">' + shape(g, 7, 7, 5) + '</svg>';
+function hull(P) {
+  P = P.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]), half = pts => { const h = [];
+    for (const p of pts) { while (h.length > 1 && cross(h[h.length - 2], h[h.length - 1], p) <= 0) h.pop(); h.push(p); } h.pop(); return h; };
+  return half(P).concat(half(P.reverse()));
+}
 
 function matrix() {
-  const f = CL.features, n = f.filter(x => x.ch === 'ecom').length;
-  const cell = (v, x) => { const al = Math.min(1, 0.06 + v / 75 * 0.94);
-    return '<td' + (al > 0.5 ? ' class="dk"' : '') + ' title="' + esc((x.ch === 'ecom' ? 'Online, ' : 'In store, ') + x.short + ': ' + v + '%') + '" style="background:' +
-      (v < 1 ? 'var(--track)' : 'rgba(' + (x.ch === 'ecom' ? '12,63,125,' : '11,90,78,') + al.toFixed(2) + ')') + '"></td>'; };
-  const head = '<thead><tr><th></th><th class="grp" colspan="' + n + '">Online</th><th class="gap"></th><th class="grp" colspan="' + (f.length - n) + '">In store</th></tr><tr><th></th>' +
-    f.map((x, i) => (i === n ? '<th class="gap"></th>' : '') + '<th class="col">' + esc(x.short).replace(' + ', '<br>+ ') + '</th>').join('') + '</tr></thead>';
-  const body = CL.clusters.map(cl => '<tr class="ch"><th colspan="' + (f.length + 2) + '">' + esc(cl.name) + ' <small>· ' + cl.members.length + ' markets</small></th></tr>' +
-    cl.members.map(k => '<tr data-k="' + esc(k) + '"><th>' + esc(DATA[k].name) + '</th>' +
-      f.map((x, i) => (i === n ? '<td class="gap"></td>' : '') + cell(DATA[k].feat[i], x)).join('') + '</tr>').join('')).join('');
-  const mx = document.getElementById('mx'); mx.innerHTML = head + '<tbody>' + body + '</tbody>';
+  const W = 460, H = 430, m = { l: 26, r: 14, t: 12, b: 30 }, keys = Object.keys(DATA);
+  const xs = keys.map(k => DATA[k].pc[0]), ys = keys.map(k => DATA[k].pc[1]);
+  const pad = (lo, hi) => [lo - (hi - lo) * .06, hi + (hi - lo) * .06], [x0, x1] = pad(Math.min(...xs), Math.max(...xs)), [y0, y1] = pad(Math.min(...ys), Math.max(...ys));
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r), Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+  const pos = Object.fromEntries(keys.map(k => [k, [X(DATA[k].pc[0]), Y(DATA[k].pc[1])]]));
+  let out = '<line class="ax" x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Y(0) + '" y2="' + Y(0) + '"/><line class="ax" y1="' + m.t + '" y2="' + (H - m.b) + '" x1="' + X(0) + '" x2="' + X(0) + '"/>';
+  CL.clusters.forEach((cl, g) => { const h = hull(cl.members.map(k => pos[k])); if (h.length > 2) out += '<polygon class="hull g' + g + '" points="' + h.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ') + '"/>'; });
+  // Place each country code beside its marker, trying four sides and keeping the first that hits nothing.
+  const boxes = keys.map(k => [pos[k][0] - 7, pos[k][1] - 7, pos[k][0] + 7, pos[k][1] + 7]), hit = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+  let labels = '';
+  keys.forEach(k => { const [x, y] = pos[k], w = 15, opts = [[x + 8, y - 5, 'start'], [x - 8 - w, y - 5, 'start'], [x - w / 2, y - 18, 'start'], [x - w / 2, y + 8, 'start']];
+    const o = opts.find(([lx, ly]) => lx > 0 && lx + w < W && !boxes.some(b => hit([lx, ly, lx + w, ly + 10], b))) || opts[0];
+    boxes.push([o[0], o[1], o[0] + w, o[1] + 10]); labels += '<text class="lab" x="' + o[0].toFixed(1) + '" y="' + (o[1] + 9).toFixed(1) + '">' + ISO[k] + '</text>'; });
+  out += labels + keys.map(k => shape(DATA[k].cluster, +pos[k][0].toFixed(1), +pos[k][1].toFixed(1), 5.5, ' data-k="' + esc(k) + '" tabindex="0" aria-label="' + esc(DATA[k].name + ', ' + CL.clusters[DATA[k].cluster].name) + '"')).join('');
+  out += '<text class="cap" x="' + m.l + '" y="' + (H - 8) + '">← more wallets, transfers and cash</text><text class="cap" text-anchor="end" x="' + (W - m.r) + '" y="' + (H - 8) + '">more cards →</text>' +
+    '<text class="cap" transform="translate(12 ' + (H - m.b) + ') rotate(-90)">← more wallets and transfers</text><text class="cap" text-anchor="end" transform="translate(12 ' + m.t + ') rotate(-90)">more cash →</text>';
+  const plot = document.getElementById('plot'); plot.innerHTML = out;
   const nodeFor = k => svg.querySelector('[data-k="' + k + '"]');
-  mx.addEventListener('pointerover', e => { const r = e.target.closest('tr[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
-  mx.addEventListener('pointerleave', hide);
-  mx.addEventListener('click', e => { const r = e.target.closest('tr[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
-  document.getElementById('mxnote').textContent = 'K-means (k = ' + CL.k + ') on six features per market: the 2025 share of spending on cards, on wallets plus bank transfers (A2A), and on cash, ' +
-    'online and in store. Darker cells mean a bigger share. Features are standardised before clustering. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
-  document.getElementById('csum').innerHTML = CL.clusters.map(cl => {
+  plot.addEventListener('pointerover', e => { const r = e.target.closest('[data-k]'); r ? show(nodeFor(r.dataset.k)) : hide(); });
+  plot.addEventListener('pointerleave', hide);
+  plot.addEventListener('focusin', e => { const r = e.target.closest('[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
+  plot.addEventListener('focusout', hide);
+  plot.addEventListener('click', e => { const r = e.target.closest('[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
+  document.getElementById('mxnote').textContent = 'Each mark is a market, placed by its 2025 payment mix: the share of spending on cards, on wallets plus bank transfers (A2A), and on cash, online and in store. ' +
+    'Those six features are squeezed onto two axes (principal components) that keep ' + (CL.pcaShare[0] + CL.pcaShare[1]) + '% of the variation. Markets that sit close together pay in similar ways. ' +
+    'Shaded areas outline the ' + CL.k + ' k-means groups; silhouette score ' + CL.silhouette + ', so groups touch at the edges.';
+  document.getElementById('pkey').innerHTML = CL.clusters.map((cl, g) => '<span>' + icon(g) + esc(cl.name) + ' (' + cl.members.length + ')</span>').join('');
+  const f = CL.features;
+  document.getElementById('groups').innerHTML = CL.clusters.map((cl, g) => {
     const avg = ch => f.map((x, i) => [x, cl.centroid[i]]).filter(([x]) => x.ch === ch).map(([x, v]) => x.short.toLowerCase().replace('a2a', 'A2A') + ' ' + v + '%').join(', ');
-    return '<div><b>' + esc(cl.name) + '</b><span>' + esc(cl.desc) + '</span><em>' + cl.members.length + ' markets. Average in store: ' + esc(avg('pos')) + '. Online: ' + esc(avg('ecom')) + '.</em></div>'; }).join('');
+    const mc = cl.members.map(k => DATA[k].schemes.find(r => r.m === 'Mastercard')).filter(Boolean);
+    return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.desc) + '</p><p class="ev"><b>' + cl.members.length + ' markets:</b> ' +
+      esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>From the data:</b> in store ' + esc(avg('pos')) + '; online ' + esc(avg('ecom')) +
+      '. Mastercard averages ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share here (2024' + (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
 }
 
 function table() {

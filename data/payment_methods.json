@@ -156,7 +156,11 @@
    24,
    12
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.176,
+   -0.635
+  ]
  },
  "China": {
   "name": "China",
@@ -305,7 +309,11 @@
    88,
    4
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -4.018,
+   -3.35
+  ]
  },
  "Hong Kong": {
   "name": "Hong Kong",
@@ -474,7 +482,11 @@
    54,
    6
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -0.706,
+   -1.477
+  ]
  },
  "India": {
   "name": "India",
@@ -633,7 +645,11 @@
    65,
    14
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -2.644,
+   -1.292
+  ]
  },
  "Indonesia": {
   "name": "Indonesia",
@@ -792,7 +808,11 @@
    45,
    36
   ],
-  "cluster": 3
+  "cluster": 3,
+  "pc": [
+   -3.634,
+   0.54
+  ]
  },
  "Japan": {
   "name": "Japan",
@@ -949,7 +969,11 @@
    24,
    38
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.751,
+   2.347
+  ]
  },
  "Malaysia": {
   "name": "Malaysia",
@@ -1113,7 +1137,11 @@
    46,
    22
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -1.737,
+   -0.017
+  ]
  },
  "New Zealand": {
   "name": "New Zealand",
@@ -1277,7 +1305,11 @@
    17,
    10
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.075,
+   -0.326
+  ]
  },
  "Philippines": {
   "name": "Philippines",
@@ -1446,7 +1478,11 @@
    36,
    42
   ],
-  "cluster": 3
+  "cluster": 3,
+  "pc": [
+   -3.033,
+   2.761
+  ]
  },
  "Singapore": {
   "name": "Singapore",
@@ -1610,7 +1646,11 @@
    48,
    12
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.012,
+   -0.801
+  ]
  },
  "South Korea": {
   "name": "South Korea",
@@ -1759,7 +1799,11 @@
    26,
    6
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.041,
+   -0.541
+  ]
  },
  "Taiwan": {
   "name": "Taiwan",
@@ -1923,7 +1967,11 @@
    38,
    25
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.742,
+   1.794
+  ]
  },
  "Thailand": {
   "name": "Thailand",
@@ -2082,7 +2130,11 @@
    56,
    30
   ],
-  "cluster": 3
+  "cluster": 3,
+  "pc": [
+   -3.64,
+   0.596
+  ]
  },
  "Vietnam": {
   "name": "Vietnam",
@@ -2241,7 +2293,11 @@
    52,
    33
   ],
-  "cluster": 3
+  "cluster": 3,
+  "pc": [
+   -3.436,
+   1.046
+  ]
  },
  "Belgium": {
   "name": "Belgium",
@@ -2400,7 +2456,11 @@
    23,
    12
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.227,
+   -0.627
+  ]
  },
  "Denmark": {
   "name": "Denmark",
@@ -2559,7 +2619,11 @@
    26,
    7
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.243,
+   -1.035
+  ]
  },
  "Finland": {
   "name": "Finland",
@@ -2713,7 +2777,11 @@
    17,
    7
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   0.776,
+   -1.675
+  ]
  },
  "France": {
   "name": "France",
@@ -2877,7 +2945,11 @@
    16,
    12
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.021,
+   -0.256
+  ]
  },
  "Germany": {
   "name": "Germany",
@@ -3036,7 +3108,11 @@
    19,
    32
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -0.966,
+   -0.124
+  ]
  },
  "Ireland": {
   "name": "Ireland",
@@ -3173,7 +3249,11 @@
    26,
    15
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.301,
+   -0.222
+  ]
  },
  "Italy": {
   "name": "Italy",
@@ -3337,7 +3417,11 @@
    19,
    24
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.853,
+   0.252
+  ]
  },
  "Netherlands": {
   "name": "Netherlands",
@@ -3496,7 +3580,11 @@
    26,
    7
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -0.233,
+   -2.222
+  ]
  },
  "Norway": {
   "name": "Norway",
@@ -3655,7 +3743,11 @@
    30,
    4
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.295,
+   -1.015
+  ]
  },
  "Poland": {
   "name": "Poland",
@@ -3804,7 +3896,11 @@
    43,
    23
   ],
-  "cluster": 1
+  "cluster": 1,
+  "pc": [
+   -2.529,
+   -1.308
+  ]
  },
  "Portugal": {
   "name": "Portugal",
@@ -3963,7 +4059,11 @@
    14,
    27
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.693,
+   0.157
+  ]
  },
  "Spain": {
   "name": "Spain",
@@ -4117,7 +4217,11 @@
    16,
    34
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.434,
+   0.692
+  ]
  },
  "Sweden": {
   "name": "Sweden",
@@ -4271,7 +4375,11 @@
    28,
    5
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   0.96,
+   -1.316
+  ]
  },
  "Switzerland": {
   "name": "Switzerland",
@@ -4435,7 +4543,11 @@
    28,
    19
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   1.256,
+   0.243
+  ]
  },
  "Turkey": {
   "name": "Turkey",
@@ -4599,7 +4711,11 @@
    22,
    20
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   1.909,
+   1.471
+  ]
  },
  "United Kingdom": {
   "name": "United Kingdom",
@@ -4748,7 +4864,11 @@
    20,
    9
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   1.782,
+   -0.588
+  ]
  },
  "Argentina": {
   "name": "Argentina",
@@ -4912,7 +5032,11 @@
    43,
    17
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.239,
+   -0.353
+  ]
  },
  "Brazil": {
   "name": "Brazil",
@@ -5071,7 +5195,11 @@
    46,
    12
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.11,
+   -0.52
+  ]
  },
  "Chile": {
   "name": "Chile",
@@ -5230,7 +5358,11 @@
    9,
    16
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.867,
+   0.575
+  ]
  },
  "Colombia": {
   "name": "Colombia",
@@ -5389,7 +5521,11 @@
    20,
    32
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.721,
+   0.707
+  ]
  },
  "Mexico": {
   "name": "Mexico",
@@ -5536,7 +5672,11 @@
    9,
    40
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   1.112,
+   2.892
+  ]
  },
  "Peru": {
   "name": "Peru",
@@ -5683,7 +5823,11 @@
    38,
    30
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.79,
+   1.072
+  ]
  },
  "Nigeria": {
   "name": "Nigeria",
@@ -5837,7 +5981,11 @@
    46,
    39
   ],
-  "cluster": 3
+  "cluster": 3,
+  "pc": [
+   -2.465,
+   1.491
+  ]
  },
  "Saudi Arabia": {
   "name": "Saudi Arabia",
@@ -5996,7 +6144,11 @@
    43,
    14
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   -0.399,
+   0.044
+  ]
  },
  "South Africa": {
   "name": "South Africa",
@@ -6150,7 +6302,11 @@
    12,
    26
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.988,
+   1.114
+  ]
  },
  "UAE": {
   "name": "United Arab Emirates",
@@ -6314,7 +6470,11 @@
    29,
    15
   ],
-  "cluster": 2
+  "cluster": 2,
+  "pc": [
+   0.553,
+   0.326
+  ]
  },
  "Canada": {
   "name": "Canada",
@@ -6478,7 +6638,11 @@
    13,
    10
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.681,
+   -0.034
+  ]
  },
  "United States": {
   "name": "United States",
@@ -6632,6 +6796,10 @@
    17,
    10
   ],
-  "cluster": 0
+  "cluster": 0,
+  "pc": [
+   2.036,
+   -0.387
+  ]
  }
 }

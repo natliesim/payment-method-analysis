@@ -5,6 +5,7 @@ import { geoPath, geoEqualEarth } from 'd3-geo';
 import { feature } from 'topojson-client';
 import { createRequire } from 'node:module';
 import { kmeans, silhouette } from './kmeans.mjs';
+import { pca2 } from './pca.mjs';
 const require = createRequire(import.meta.url);
 const world = require('world-atlas/countries-110m.json');
 const raw = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
@@ -66,10 +67,11 @@ const sil = silhouette(Z, km.labels);
 const groups = [...Array(K).keys()].map(ci => { const m = X.filter((_, j) => km.labels[j] === ci);
   return { ci, centroid: FEATURES.map((_, f) => Math.round(mean(m.map(x => x[f])))), members: keys.filter((_, j) => km.labels[j] === ci) }; });
 // Name each group from its averages: most cash in store, most cards in store, most wallets and transfers; the one left is in between.
-const NAMES = [['Mature card markets', 'Cards carry most in-store spending and cash is small.'],
-  ['Wallet and A2A driven', 'Digital wallets and bank transfers lead, most of all online.'],
-  ['Going digital', 'A mix of cards, wallets and cash, with no single method dominant yet.'],
-  ['Cash-heavy', 'Cash still takes a large share in store, and some of it online.']];
+const NAMES = [
+  ['Mature card markets', 'Most adults have bank accounts and cards, and digital payments are part of daily life. Card use is deeply established, so growth is slower. The opportunity is in new areas such as B2B payments, fraud prevention, data and security services, and cross-border payments. The main risk is regulation (fee caps) and competition from account-to-account payments.'],
+  ['Wallet and A2A-first markets', 'Digital payments are high, but a large share happens through mobile wallets, QR codes or direct bank transfers instead of cards. Cards can be bypassed here, so this group is the biggest threat to Mastercard’s core business. The strategy is partnership: work with wallets and national payment systems, and offer infrastructure, security and cross-border services that earn fees on any payment type.'],
+  ['Growing digital markets', 'Account ownership and mobile phone use are rising, and people mix cash with digital methods. Card use is growing, but QR and wallets are growing too. The opportunity is to expand acceptance at shops, especially small businesses, and make cards work alongside QR rather than compete with it.'],
+  ['Cash-heavy, low-access markets', 'Many adults have no bank account, and cash dominates. Digital payments are limited by access, trust and infrastructure, not by competition. The opportunity is financial inclusion: programs like Strive, simple low-cost digital payment options, and partnerships with banks and governments. Growth is slow at first but has the most long-term potential.']];
 const pick = (left, score) => left.sort((a, b) => score(b) - score(a))[0];
 let left = [...groups];
 const cash = pick(left, g => g.centroid[5]); left = left.filter(g => g !== cash);
@@ -77,7 +79,10 @@ const card = pick(left, g => g.centroid[3]); left = left.filter(g => g !== card)
 const digital = pick(left, g => g.centroid[1] + g.centroid[4]); left = left.filter(g => g !== digital);
 const clusters = [card, digital, left[0], cash].map((g, i) => ({ name: NAMES[i][0], desc: NAMES[i][1], centroid: g.centroid, members: g.members }));
 clusters.forEach((c, i) => c.members.forEach(k => { data[k].cluster = i; }));
-const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([ch, short]) => ({ ch, short })), clusters };
+// Two-dimensional view of the six standardised features for the cluster plot.
+const pca = pca2(Z);
+keys.forEach((k, j) => { data[k].pc = pca.points[j].map(v => +v.toFixed(3)); });
+const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([ch, short]) => ({ ch, short })), clusters, pcaShare: pca.comps.map(c => Math.round(c.share * 100)) };
 
 const W = 960, H = 470;
 const fc = feature(world, world.objects.countries);
