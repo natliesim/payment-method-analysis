@@ -79,7 +79,12 @@ keys.forEach(k => { const f = findex[k]; data[k].imf = imf[k]; data[k].findex = 
 const mean = v => { v = v.filter(x => x != null); return v.reduce((a, b) => a + b, 0) / v.length; }, col = f => X.map(x => x[f]);
 const mu = FEATURES.map((_, f) => mean(col(f))), sd = FEATURES.map((_, f) => Math.sqrt(mean(col(f).map(v => (v - mu[f]) ** 2))));
 // z-scores, capped at 3 standard deviations so one extreme figure cannot dominate; nulls stay null.
-const Z = X.map(x => x.map((v, f) => (v == null ? null : Math.max(-3, Math.min(3, (v - mu[f]) / sd[f])))));
+// The six payment-mix features count MIX_WEIGHT times as much as each other feature (a weight w scales a z-score by sqrt(w)),
+// so that how people pay today leads the grouping and access and infrastructure refine it.
+const MIX_WEIGHT = +(process.env.MIX_WEIGHT || 3);
+const MIX = ['ecCards', 'ecDig', 'ecCash', 'posCards', 'posDig', 'posCash'];
+const wt = FEATURES.map(([id]) => Math.sqrt(MIX.includes(id) ? MIX_WEIGHT : 1));
+const Z = X.map(x => x.map((v, f) => (v == null ? null : wt[f] * Math.max(-3, Math.min(3, (v - mu[f]) / sd[f])))));
 const km = kmeans(Z, K);
 const sil = silhouette(Z, km.labels);
 const groups = [...Array(K).keys()].map(ci => { const members = keys.filter((_, j) => km.labels[j] === ci), avg = {};
@@ -97,9 +102,9 @@ if (process.env.DUMP) { for (const g of [card, digital, growing, cash]) console.
 // Each sentence below is tied to a figure. The checks stop the build if a comparison in the text stops being true.
 const only = (g, id, dir) => groups.every(o => o === g || (dir > 0 ? o.avg[id] < g.avg[id] : o.avg[id] > g.avg[id]));
 const must = (ok, msg) => { if (!ok) throw new Error('Insight no longer supported by the data: ' + msg); };
-must(only(card, 'posCagr', -1) && only(card, 'ecCagr', -1), 'mature card markets grow slowest');
-must(only(card, 'acct', 1) && only(card, 'creditRaw', 1), 'mature card markets have the highest account ownership and most credit cards');
-must(only(digital, 'ecDig', 1) && only(digital, 'ecCards', -1), 'wallet markets have the most wallet and transfer spending online and the least card spending online');
+must(only(card, 'ecCagr', -1) && groups.every(o => o.avg.posCagr >= card.avg.posCagr), 'mature card markets grow slowest');
+must(only(card, 'acct', 1) && only(card, 'posCards', 1), 'mature card markets have the highest account ownership and in-store card share');
+must(digital.avg.ecDig > digital.avg.ecCards && digital.avg.posDig > digital.avg.posCards && only(digital, 'debitRaw', 1), 'wallet markets spend more through wallets and transfers than cards, and have the most debit cards');
 must(only(cash, 'posCash', 1) && only(cash, 'acct', -1) && only(cash, 'posCards', -1), 'cash-heavy markets have most cash, fewest accounts and lowest in-store card share');
 must(only(cash, 'creditRaw', -1) && only(cash, 'atmRaw', -1), 'cash-heavy markets have fewest credit cards and ATMs');
 must(only(cash, 'ecCagr', 1) && only(cash, 'posCagr', 1), 'cash-heavy markets grow fastest');
@@ -107,8 +112,8 @@ must(growing.avg.acct > growing.avg.acct17 && cash.avg.acct > cash.avg.acct17, '
 must(card.avg.dCards < 0 && growing.avg.dCards < 0 && growing.avg.dDig > 0 && cash.avg.dCash < 0, 'forecast direction');
 const a = g => g.avg, per = v => (v / 1000).toFixed(v < 995 ? 2 : 1);
 const clusters = [
-  ['Mature card markets', card, `Most adults have bank accounts and cards: ${a(card).acct}% have an account, ${a(card).debit}% own a debit card, and there are ${per(a(card).creditRaw)} credit cards per adult, the most of any group. Card use is deeply established, at ${a(card).posCards}% of in-store spending, so growth is the slowest of the four groups: ${a(card).posCagr}% a year in store and ${a(card).ecCagr}% online to 2030. Cards are forecast to lose ${-a(card).dCards} points of in-store share by 2030 while wallets and bank transfers gain ${a(card).dDig}.`],
-  ['Wallet and A2A-first markets', digital, `A large share of spending goes through wallets or direct bank transfers instead of cards: ${a(digital).ecDig}% online and ${a(digital).posDig}% in store. Cards can be bypassed here, most of all online, where they carry ${a(digital).ecCards}% of spending, the lowest of any group. Access is not the constraint: ${a(digital).acct}% of adults have an account and there are ${per(a(digital).debitRaw)} debit cards per adult.`],
+  ['Mature card markets', card, `Most adults have bank accounts and cards: ${a(card).acct}% have an account and ${a(card).debit}% own a debit card. Card use is deeply established, at ${a(card).posCards}% of in-store spending, the highest of any group, so growth is slow: ${a(card).posCagr}% a year in store and ${a(card).ecCagr}% online to 2030, the slowest online growth of the four. Cards are forecast to lose ${-a(card).dCards} points of in-store share by 2030 while wallets and bank transfers gain ${a(card).dDig}.`],
+  ['Wallet and A2A-first markets', digital, `More spending goes through wallets or direct bank transfers than through cards: ${a(digital).ecDig}% against ${a(digital).ecCards}% online, and ${a(digital).posDig}% against ${a(digital).posCards}% in store. Cards can be bypassed here even though access is not the constraint: ${a(digital).acct}% of adults have an account and there are ${per(a(digital).debitRaw)} debit cards per adult, the most of any group.`],
   ['Growing digital markets', growing, `Account ownership is rising, from ${a(growing).acct17}% of adults in 2017 to ${a(growing).acct}%, and people mix cash with digital methods: in store, cards take ${a(growing).posCards}%, wallets and transfers ${a(growing).posDig}% and cash ${a(growing).posCash}%. Wallets and transfers are forecast to gain ${a(growing).dDig} points of in-store share by 2030 while cards lose ${-a(growing).dCards}.`],
   ['Cash-heavy, low-access markets', cash, `Many adults have no bank account: ${a(cash).acct}% have one, up from ${a(cash).acct17}% in 2017, and ${a(cash).digpay}% made a digital payment in the past year. Cash takes ${a(cash).posCash}% of in-store spending, the most of any group, and card access is the thinnest: ${per(a(cash).creditRaw)} credit cards per adult and ${a(cash).atmRaw} ATMs per 100,000 adults, both the lowest. Spending is moving to wallets and bank transfers, already ${a(cash).posDig}% in store against ${a(cash).posCards}% for cards. These are also the fastest-growing markets, at ${a(cash).ecCagr}% a year online and ${a(cash).posCagr}% in store.`],
 ].map(([name, g, desc]) => ({ name, desc, avg: g.avg, members: g.members }));
