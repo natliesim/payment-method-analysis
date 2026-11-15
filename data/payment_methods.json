@@ -148,6 +148,14 @@
     "s": "paypal"
    }
   ],
+  "feat": [
+   37,
+   48,
+   0,
+   63,
+   24,
+   12
+  ],
   "cluster": 0
  },
  "China": {
@@ -289,7 +297,15 @@
     "s": "unionpay"
    }
   ],
-  "cluster": 3
+  "feat": [
+   7,
+   91,
+   1,
+   6,
+   88,
+   4
+  ],
+  "cluster": 1
  },
  "Hong Kong": {
   "name": "Hong Kong",
@@ -450,6 +466,14 @@
     "s": "wechat-pay-hk"
    }
   ],
+  "feat": [
+   34,
+   60,
+   2,
+   38,
+   54,
+   6
+  ],
   "cluster": 1
  },
  "India": {
@@ -601,7 +625,15 @@
     "s": "google-pay"
    }
   ],
-  "cluster": 3
+  "feat": [
+   20,
+   72,
+   6,
+   20,
+   65,
+   14
+  ],
+  "cluster": 1
  },
  "Indonesia": {
   "name": "Indonesia",
@@ -752,7 +784,15 @@
     "s": "ovo"
    }
   ],
-  "cluster": 2
+  "feat": [
+   5,
+   76,
+   13,
+   18,
+   45,
+   36
+  ],
+  "cluster": 3
  },
  "Japan": {
   "name": "Japan",
@@ -901,7 +941,15 @@
     "s": "jcb"
    }
   ],
-  "cluster": 1
+  "feat": [
+   58,
+   32,
+   5,
+   38,
+   24,
+   38
+  ],
+  "cluster": 2
  },
  "Malaysia": {
   "name": "Malaysia",
@@ -1057,7 +1105,15 @@
     "s": "boost"
    }
   ],
-  "cluster": 2
+  "feat": [
+   25,
+   61,
+   8,
+   29,
+   46,
+   22
+  ],
+  "cluster": 1
  },
  "New Zealand": {
   "name": "New Zealand",
@@ -1212,6 +1268,14 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
+  ],
+  "feat": [
+   45,
+   40,
+   0,
+   71,
+   17,
+   10
   ],
   "cluster": 0
  },
@@ -1374,7 +1438,15 @@
     "s": "shopeepay"
    }
   ],
-  "cluster": 2
+  "feat": [
+   18,
+   54,
+   23,
+   22,
+   36,
+   42
+  ],
+  "cluster": 3
  },
  "Singapore": {
   "name": "Singapore",
@@ -1530,7 +1602,15 @@
     "s": "apple-pay"
    }
   ],
-  "cluster": 1
+  "feat": [
+   43,
+   51,
+   0,
+   39,
+   48,
+   12
+  ],
+  "cluster": 2
  },
  "South Korea": {
   "name": "South Korea",
@@ -1671,7 +1751,15 @@
     "s": "toss"
    }
   ],
-  "cluster": 1
+  "feat": [
+   55,
+   42,
+   0,
+   67,
+   26,
+   6
+  ],
+  "cluster": 0
  },
  "Taiwan": {
   "name": "Taiwan",
@@ -1827,7 +1915,15 @@
     "s": "apple-pay"
    }
   ],
-  "cluster": 1
+  "feat": [
+   43,
+   40,
+   15,
+   35,
+   38,
+   25
+  ],
+  "cluster": 2
  },
  "Thailand": {
   "name": "Thailand",
@@ -1978,7 +2074,15 @@
     "s": "line-pay"
    }
   ],
-  "cluster": 2
+  "feat": [
+   13,
+   69,
+   15,
+   12,
+   56,
+   30
+  ],
+  "cluster": 3
  },
  "Vietnam": {
   "name": "Vietnam",
@@ -2129,7 +2233,15 @@
     "s": "shopeepay"
    }
   ],
-  "cluster": 2
+  "feat": [
+   16,
+   66,
+   16,
+   14,
+   52,
+   33
+  ],
+  "cluster": 3
  },
  "Belgium": {
   "name": "Belgium",
@@ -2279,6 +2391,14 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
+  ],
+  "feat": [
+   37,
+   48,
+   0,
+   64,
+   23,
+   12
   ],
   "cluster": 0
  },
@@ -2431,6 +2551,14 @@
     "s": "google-wallet"
    }
   ],
+  "feat": [
+   37,
+   50,
+   0,
+   66,
+   26,
+   7
+  ],
   "cluster": 0
  },
  "Finland": {
@@ -2576,6 +2704,14 @@
     "t": "Pay by bank transfer",
     "s": "trustly"
    }
+  ],
+  "feat": [
+   17,
+   62,
+   0,
+   75,
+   17,
+   7
   ],
   "cluster": 0
  },
@@ -2733,6 +2869,14 @@
     "s": "paypal"
    }
   ],
+  "feat": [
+   48,
+   44,
+   0,
+   71,
+   16,
+   12
+  ],
   "cluster": 0
  },
  "Germany": {
@@ -2884,7 +3028,15 @@
     "s": "apple-pay"
    }
   ],
-  "cluster": 0
+  "feat": [
+   11,
+   67,
+   2,
+   47,
+   19,
+   32
+  ],
+  "cluster": 1
  },
  "Ireland": {
   "name": "Ireland",
@@ -3012,6 +3164,14 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
+  ],
+  "feat": [
+   47,
+   46,
+   0,
+   59,
+   26,
+   15
   ],
   "cluster": 0
  },
@@ -3169,7 +3329,15 @@
     "s": "paypal"
    }
   ],
-  "cluster": 0
+  "feat": [
+   42,
+   50,
+   0,
+   52,
+   19,
+   24
+  ],
+  "cluster": 2
  },
  "Netherlands": {
   "name": "Netherlands",
@@ -3320,7 +3488,15 @@
     "s": "google-wallet"
    }
   ],
-  "cluster": 2
+  "feat": [
+   13,
+   76,
+   0,
+   66,
+   26,
+   7
+  ],
+  "cluster": 1
  },
  "Norway": {
   "name": "Norway",
@@ -3471,6 +3647,14 @@
     "s": "apple-pay"
    }
   ],
+  "feat": [
+   35,
+   43,
+   1,
+   66,
+   30,
+   4
+  ],
   "cluster": 0
  },
  "Poland": {
@@ -3612,7 +3796,15 @@
     "s": "google-wallet"
    }
   ],
-  "cluster": 2
+  "feat": [
+   5,
+   83,
+   4,
+   34,
+   43,
+   23
+  ],
+  "cluster": 1
  },
  "Portugal": {
   "name": "Portugal",
@@ -3763,7 +3955,15 @@
     "s": "apple-pay"
    }
   ],
-  "cluster": 0
+  "feat": [
+   35,
+   56,
+   0,
+   58,
+   14,
+   27
+  ],
+  "cluster": 2
  },
  "Spain": {
   "name": "Spain",
@@ -3909,7 +4109,15 @@
     "s": "google-wallet"
    }
   ],
-  "cluster": 0
+  "feat": [
+   39,
+   55,
+   0,
+   50,
+   16,
+   34
+  ],
+  "cluster": 2
  },
  "Sweden": {
   "name": "Sweden",
@@ -4054,6 +4262,14 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
+  ],
+  "feat": [
+   26,
+   48,
+   0,
+   65,
+   28,
+   5
   ],
   "cluster": 0
  },
@@ -4211,7 +4427,15 @@
     "s": "klarna"
    }
   ],
-  "cluster": 0
+  "feat": [
+   48,
+   39,
+   0,
+   53,
+   28,
+   19
+  ],
+  "cluster": 2
  },
  "Turkey": {
   "name": "Turkey",
@@ -4367,7 +4591,15 @@
     "s": "tosla"
    }
   ],
-  "cluster": 1
+  "feat": [
+   64,
+   27,
+   5,
+   54,
+   22,
+   20
+  ],
+  "cluster": 2
  },
  "United Kingdom": {
   "name": "United Kingdom",
@@ -4507,6 +4739,14 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
+  ],
+  "feat": [
+   45,
+   46,
+   0,
+   69,
+   20,
+   9
   ],
   "cluster": 0
  },
@@ -4664,7 +4904,15 @@
     "s": "uala"
    }
   ],
-  "cluster": 1
+  "feat": [
+   42,
+   54,
+   2,
+   38,
+   43,
+   17
+  ],
+  "cluster": 2
  },
  "Brazil": {
   "name": "Brazil",
@@ -4814,6 +5062,14 @@
     "t": "Digital bank",
     "s": "nubank"
    }
+  ],
+  "feat": [
+   44,
+   52,
+   3,
+   40,
+   46,
+   12
   ],
   "cluster": 2
  },
@@ -4966,6 +5222,14 @@
     "s": "mercado-pago"
    }
   ],
+  "feat": [
+   62,
+   35,
+   0,
+   74,
+   9,
+   16
+  ],
   "cluster": 0
  },
  "Colombia": {
@@ -5117,6 +5381,14 @@
     "s": "bre-b"
    }
   ],
+  "feat": [
+   27,
+   63,
+   7,
+   48,
+   20,
+   32
+  ],
   "cluster": 2
  },
  "Mexico": {
@@ -5256,7 +5528,15 @@
     "s": "mercado-pago"
    }
   ],
-  "cluster": 1
+  "feat": [
+   55,
+   32,
+   9,
+   52,
+   9,
+   40
+  ],
+  "cluster": 2
  },
  "Peru": {
   "name": "Peru",
@@ -5395,7 +5675,15 @@
     "s": "pagoefectivo"
    }
   ],
-  "cluster": 0
+  "feat": [
+   41,
+   50,
+   7,
+   31,
+   38,
+   30
+  ],
+  "cluster": 2
  },
  "Nigeria": {
   "name": "Nigeria",
@@ -5541,7 +5829,15 @@
     "s": "nqr"
    }
   ],
-  "cluster": 2
+  "feat": [
+   27,
+   57,
+   11,
+   15,
+   46,
+   39
+  ],
+  "cluster": 3
  },
  "Saudi Arabia": {
   "name": "Saudi Arabia",
@@ -5692,7 +5988,15 @@
     "s": "apple-pay"
    }
   ],
-  "cluster": 0
+  "feat": [
+   38,
+   49,
+   8,
+   43,
+   43,
+   14
+  ],
+  "cluster": 2
  },
  "South Africa": {
   "name": "South Africa",
@@ -5838,7 +6142,15 @@
     "s": "samsung-wallet"
    }
   ],
-  "cluster": 0
+  "feat": [
+   43,
+   45,
+   6,
+   60,
+   12,
+   26
+  ],
+  "cluster": 2
  },
  "UAE": {
   "name": "United Arab Emirates",
@@ -5994,7 +6306,15 @@
     "s": "eand-money"
    }
   ],
-  "cluster": 1
+  "feat": [
+   42,
+   45,
+   7,
+   55,
+   29,
+   15
+  ],
+  "cluster": 2
  },
  "Canada": {
   "name": "Canada",
@@ -6150,7 +6470,15 @@
     "s": "google-wallet"
    }
   ],
-  "cluster": 1
+  "feat": [
+   55,
+   37,
+   0,
+   76,
+   13,
+   10
+  ],
+  "cluster": 0
  },
  "United States": {
   "name": "United States",
@@ -6296,6 +6624,14 @@
     "s": "google-wallet"
    }
   ],
-  "cluster": 1
+  "feat": [
+   48,
+   44,
+   0,
+   71,
+   17,
+   10
+  ],
+  "cluster": 0
  }
 }

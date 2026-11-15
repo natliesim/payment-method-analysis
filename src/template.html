@@ -14,6 +14,9 @@
   --serif: "Anthropic Serif", "Tiempos Text", "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Anthropic Sans", "Styrene B", "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
+/* One hue per view: blue for online, teal for in store, violet for card schemes. */
+.page[data-view="pos"] { --s1: #cdeae3; --s2: #94d3c4; --s3: #4fb39f; --s4: #1f8a78; --s5: #0b5a4e; --bar: #1f8a78; }
+.page[data-view="schemes"] { --s1: #ddd7f3; --s2: #b9aee8; --s3: #8f7fd9; --s4: #6250c4; --s5: #3a2a8c; --bar: #6250c4; }
 body { background: var(--bg); color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.5; }
 .page { max-width: 1440px; margin: 0 auto; padding-block: 28px 40px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
@@ -70,11 +73,11 @@ h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
 .mx th, .mx td { padding: 0; border: 0; }
 .mx thead th { font-weight: 500; color: var(--ink-3); font-size: 11px; }
 .mx thead .grp { text-align: left; padding: 0 0 2px 2px; letter-spacing: .05em; text-transform: uppercase; }
-.mx thead .col { height: 46px; vertical-align: bottom; }
-.mx thead .col span { writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; }
+.mx thead .col { vertical-align: bottom; line-height: 1.15; padding-bottom: 3px; font-size: 10px; }
 .mx .gap { width: 6px; }
 .mx tbody th { text-align: left; font-weight: 400; color: var(--ink); padding-right: 8px; white-space: nowrap; height: 15px; line-height: 15px; }
-.mx tbody td { width: 25px; min-width: 25px; height: 15px; border-radius: 2px; }
+.mx tbody td { width: 44px; min-width: 44px; height: 15px; border-radius: 2px; text-align: center; font-size: 10px; line-height: 15px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.mx tbody td.dk { color: #ffffff; }
 .mx tbody td.gap { width: 6px; min-width: 6px; }
 .mx tr.ch th { font: 600 12px var(--sans); color: var(--ink); padding: 10px 0 3px; height: auto; }
 .mx tr.ch th small { font-weight: 400; color: var(--ink-3); font-size: 11px; }
@@ -105,7 +108,7 @@ td.m { font: 500 15px var(--serif); }
 }
 </style>
 
-<div class="page">
+<div class="page" id="page" data-view="ecom">
   <header>
     <h1>Payment methods across 42 countries across APAC, Europe, Latin America, Middle East and Africa, and North America</h1>
     <p class="lede">Point at a country to see how it paid in 2025 and the brands people use there. Switch the view to compare online spending, in-store spending or card scheme share.</p>
@@ -137,7 +140,7 @@ td.m { font: 500 15px var(--serif); }
       <h2>Markets grouped by k-means</h2>
       <p id="mxnote"></p>
       <div class="mxwrap"><table class="mx" id="mx"></table></div>
-      <div class="mxkey"><span>0%</span><i></i><span>70%+ of spending</span></div>
+      <div class="mxkey"><span>Darker = bigger share of spending. Blue columns are online, teal are in store.</span></div>
     </aside>
   </div>
 
@@ -184,6 +187,7 @@ function paint() {
     const on = n.classList.contains('on');
     n.setAttribute('class', 'b' + bin(metric(n.dataset.k)) + (on ? ' on' : ''));
   });
+  document.getElementById('page').dataset.view = channel;
   document.getElementById('legend-title').textContent = VIEW[channel].title;
   document.getElementById('legend-ramp').innerHTML = VIEW[channel].labels.map((l, i) => '<span><i style="background:var(--s' + (i + 1) + ')"></i>' + esc(l) + '</span>').join('');
 }
@@ -232,31 +236,25 @@ function markRow(k) { document.querySelectorAll('#mx tr[data-k]').forEach(r => r
 
 function matrix() {
   const f = CL.features, n = f.filter(x => x.ch === 'ecom').length;
-  const cell = (v, x) => '<td title="' + esc((x.ch === 'ecom' ? 'Online ' : 'In store ') + x.m + ': ' + v + '%') + '" style="background:' +
-    (v < 1 ? 'var(--track)' : 'rgba(12,63,125,' + Math.min(1, 0.08 + v / 70 * 0.92).toFixed(2) + ')') + '"></td>';
+  const cell = (v, x) => { const al = Math.min(1, 0.06 + v / 75 * 0.94);
+    return '<td' + (al > 0.5 ? ' class="dk"' : '') + ' title="' + esc((x.ch === 'ecom' ? 'Online, ' : 'In store, ') + x.short + ': ' + v + '%') + '" style="background:' +
+      (v < 1 ? 'var(--track)' : 'rgba(' + (x.ch === 'ecom' ? '12,63,125,' : '11,90,78,') + al.toFixed(2) + ')') + '">' + v + '</td>'; };
   const head = '<thead><tr><th></th><th class="grp" colspan="' + n + '">Online</th><th class="gap"></th><th class="grp" colspan="' + (f.length - n) + '">In store</th></tr><tr><th></th>' +
-    f.map((x, i) => (i === n ? '<th class="gap"></th>' : '') + '<th class="col"><span>' + esc(x.short) + '</span></th>').join('') + '</tr></thead>';
+    f.map((x, i) => (i === n ? '<th class="gap"></th>' : '') + '<th class="col">' + esc(x.short).replace(' + ', '<br>+ ') + '</th>').join('') + '</tr></thead>';
   const body = CL.clusters.map(cl => '<tr class="ch"><th colspan="' + (f.length + 2) + '">' + esc(cl.name) + ' <small>· ' + cl.members.length + ' markets</small></th></tr>' +
     cl.members.map(k => '<tr data-k="' + esc(k) + '"><th>' + esc(DATA[k].name) + '</th>' +
-      f.map((x, i) => (i === n ? '<td class="gap"></td>' : '') + cell((DATA[k][x.ch].find(r => r.m === x.m) || { a: 0 }).a, x)).join('') + '</tr>').join('')).join('');
+      f.map((x, i) => (i === n ? '<td class="gap"></td>' : '') + cell(DATA[k].feat[i], x)).join('') + '</tr>').join('')).join('');
   const mx = document.getElementById('mx'); mx.innerHTML = head + '<tbody>' + body + '</tbody>';
   const nodeFor = k => svg.querySelector('[data-k="' + k + '"]');
   mx.addEventListener('pointerover', e => { const r = e.target.closest('tr[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
   mx.addEventListener('pointerleave', hide);
   mx.addEventListener('click', e => { const r = e.target.closest('tr[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
-  document.getElementById('mxnote').textContent = 'K-means (k = ' + CL.k + ') on each market\'s 2025 payment mix: the ' + f.length +
-    ' shares shown as columns. Darker cells mean a bigger share of spending. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
+  document.getElementById('mxnote').textContent = 'K-means (k = ' + CL.k + ') on six features per market: the 2025 share of spending on cards, on wallets plus bank transfers (A2A), and on cash, ' +
+    'online and in store. Each cell is that share in %. Features are standardised before clustering. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
   document.getElementById('csum').innerHTML = CL.clusters.map(cl => {
-    const top = cl.centroid.map((v, i) => [v, f[i]]).sort((a, b) => b[0] - a[0]).slice(0, 3)
-      .map(([v, x]) => (/^[A-Z0-9]+$/.test(x.m) ? x.m : x.m.toLowerCase()) + ' ' + v + '% ' + (x.ch === 'ecom' ? 'online' : 'in store')).join(', ');
-    return '<div><b>' + esc(cl.name) + '</b><span>' + esc(cl.desc) + '</span><em>' + cl.members.length + ' markets. Group average: ' + esc(top) + '.</em></div>'; }).join('');
+    const avg = ch => f.map((x, i) => [x, cl.centroid[i]]).filter(([x]) => x.ch === ch).map(([x, v]) => x.short.toLowerCase().replace('a2a', 'A2A') + ' ' + v + '%').join(', ');
+    return '<div><b>' + esc(cl.name) + '</b><span>' + esc(cl.desc) + '</span><em>' + cl.members.length + ' markets. Average in store: ' + esc(avg('pos')) + '. Online: ' + esc(avg('ecom')) + '.</em></div>'; }).join('');
 }
-
-svg.addEventListener('pointermove', e => { const n = e.target.closest('[data-n]'); n ? show(n, e.clientX, e.clientY) : hide(); });
-svg.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hide(); });
-svg.addEventListener('click', e => { const n = e.target.closest('[data-n]'); n ? show(n, e.clientX, e.clientY) : hide(); });
-svg.addEventListener('focusin', e => { const n = e.target.closest('[data-k]'); if (n) show(n); });
-svg.addEventListener('focusout', hide);
 
 function table() {
   const sch = channel === 'schemes', n = t => '<td class="n">' + t + '</td>';

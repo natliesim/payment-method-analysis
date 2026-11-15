@@ -49,28 +49,35 @@ for (const r of raw) {
     }) };
 }
 
-// K-means on each market's 2025 payment mix (share of value by method, online and in store).
-const FEATURES = [['ecom', 'Digital wallets', 'Wallets'], ['ecom', 'Credit cards', 'Credit'], ['ecom', 'Debit cards', 'Debit'], ['ecom', 'A2A', 'A2A'], ['ecom', 'BNPL', 'BNPL'], ['ecom', 'Cash', 'Cash'],
-  ['pos', 'Digital wallets', 'Wallets'], ['pos', 'Credit cards', 'Credit'], ['pos', 'Debit cards', 'Debit'], ['pos', 'Cash', 'Cash'], ['pos', 'A2A', 'A2A']];
+// K-means on each market's 2025 payment mix, summarised as six features:
+// the share of spending on cards, on wallets plus bank transfers (A2A), and on cash, online and in store.
+// Features are standardised (z-scores) before clustering so that cash, which varies less, counts as much as the others.
+const CARDS = ['Credit cards', 'Debit cards', 'Prepaid cards'], DIGITAL = ['Digital wallets', 'A2A'], CASH = ['Cash'];
+const FEATURES = [['ecom', 'Cards', CARDS], ['ecom', 'Wallets + A2A', DIGITAL], ['ecom', 'Cash', CASH], ['pos', 'Cards', CARDS], ['pos', 'Wallets + A2A', DIGITAL], ['pos', 'Cash', CASH]];
 const K = 4;
 const keys = Object.keys(data);
-const X = keys.map(k => FEATURES.map(([c, m]) => (data[k][c].find(r => r.m === m) || { a: 0 }).a));
-const km = kmeans(X, K);
-const sil = silhouette(X, km.labels);
-const nameFor = c => {
-  const f = Object.fromEntries(FEATURES.map(([ch, m], i) => [ch + ':' + m, c[i]]));
-  if ((f['ecom:Digital wallets'] + f['pos:Digital wallets']) / 2 > 60) return ['Wallet-first', 'Digital wallets carry most spending both online and in store.'];
-  const s = { debit: f['pos:Debit cards'], credit: (f['ecom:Credit cards'] + f['pos:Credit cards']) / 2, a2a: (f['ecom:A2A'] + f['pos:Cash']) / 2 };
-  const top = Object.keys(s).sort((a, b) => s[b] - s[a])[0];
-  return { debit: ['Debit-led', 'Debit cards lead in store; wallets lead online.'], credit: ['Credit-led', 'Credit cards are strong in both channels.'],
-    a2a: ['Bank transfer and cash', 'Account-to-account transfers lead online; cash is still big in store.'] }[top];
-};
-const order = [...Array(K).keys()].sort((a, b) => km.labels.filter(l => l === b).length - km.labels.filter(l => l === a).length);
-const clusters = order.map(ci => { const [name, desc] = nameFor(km.centroids[ci]);
-  return { name, desc, centroid: km.centroids[ci].map(v => Math.round(v)), members: keys.filter((_, j) => km.labels[j] === ci) }; });
-if (new Set(clusters.map(c => c.name)).size !== K) throw new Error('Cluster names collide');
+const X = keys.map(k => FEATURES.map(([ch, , ms]) => data[k][ch].filter(r => ms.includes(r.m)).reduce((t, r) => t + r.a, 0)));
+keys.forEach((k, j) => { data[k].feat = X[j]; });
+const col = f => X.map(x => x[f]), mean = v => v.reduce((a, b) => a + b, 0) / v.length;
+const mu = FEATURES.map((_, f) => mean(col(f))), sd = FEATURES.map((_, f) => Math.sqrt(mean(col(f).map(v => (v - mu[f]) ** 2))));
+const Z = X.map(x => x.map((v, f) => (v - mu[f]) / sd[f]));
+const km = kmeans(Z, K);
+const sil = silhouette(Z, km.labels);
+const groups = [...Array(K).keys()].map(ci => { const m = X.filter((_, j) => km.labels[j] === ci);
+  return { ci, centroid: FEATURES.map((_, f) => Math.round(mean(m.map(x => x[f])))), members: keys.filter((_, j) => km.labels[j] === ci) }; });
+// Name each group from its averages: most cash in store, most cards in store, most wallets and transfers; the one left is in between.
+const NAMES = [['Mature card markets', 'Cards carry most in-store spending and cash is small.'],
+  ['Wallet and A2A driven', 'Digital wallets and bank transfers lead, most of all online.'],
+  ['Going digital', 'A mix of cards, wallets and cash, with no single method dominant yet.'],
+  ['Cash-heavy', 'Cash still takes a large share in store, and some of it online.']];
+const pick = (left, score) => left.sort((a, b) => score(b) - score(a))[0];
+let left = [...groups];
+const cash = pick(left, g => g.centroid[5]); left = left.filter(g => g !== cash);
+const card = pick(left, g => g.centroid[3]); left = left.filter(g => g !== card);
+const digital = pick(left, g => g.centroid[1] + g.centroid[4]); left = left.filter(g => g !== digital);
+const clusters = [card, digital, left[0], cash].map((g, i) => ({ name: NAMES[i][0], desc: NAMES[i][1], centroid: g.centroid, members: g.members }));
 clusters.forEach((c, i) => c.members.forEach(k => { data[k].cluster = i; }));
-const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([ch, m, short]) => ({ ch, m, short })), clusters };
+const clusterInfo = { k: K, silhouette: +sil.toFixed(2), features: FEATURES.map(([ch, short]) => ({ ch, short })), clusters };
 
 const W = 960, H = 470;
 const fc = feature(world, world.objects.countries);
@@ -92,7 +99,7 @@ fs.writeFileSync('data/payment_methods.csv', csv.join('\n') + '\n');
 const scsv = ['market,region,scheme,share_2024_pct,report_page'];
 for (const c of Object.values(data)) for (const r of c.schemes) scsv.push([c.name, c.region, r.m, r.as.replace('%', ''), c.page].map(v => `"${v}"`).join(','));
 fs.writeFileSync('data/card_scheme_share.csv', scsv.join('\n') + '\n');
-const ccsv = ['market,region,cluster,' + FEATURES.map(([ch, m]) => `${ch}_${m.toLowerCase().replace(/ /g, '_')}`).join(',')];
+const ccsv = ['market,region,cluster,' + FEATURES.map(([ch, m]) => `${ch}_${m.toLowerCase().replace(/[^a-z0-9]+/g, '_')}_pct`).join(',')];
 keys.forEach((k, j) => ccsv.push([`"${data[k].name}"`, `"${data[k].region}"`, `"${clusters[data[k].cluster].name}"`, ...X[j]].join(',')));
 fs.writeFileSync('data/clusters.csv', ccsv.join('\n') + '\n');
 const bcsv = ['market,region,brand,what_it_is,report_page'];
