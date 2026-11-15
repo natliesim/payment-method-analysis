@@ -7,8 +7,8 @@
   color-scheme: light;
   --bg: #faf9f5; --surface: #ffffff; --ink: #141413; --ink-2: #4f4e49; --ink-3: #83817a;
   --line: #e3e0d6; --land: #e9e6dd; --land-edge: #faf9f5;
-  --s1: #cfe0f3; --s2: #9cc0e8; --s3: #5f97d6; --s4: #2a6bb8; --s5: #0c3f7d;
-  --bar: #2a6bb8; --track: #efede6; --focus: #141413;
+  --s1: #fbdcc9; --s2: #f4b08a; --s3: #e5804b; --s4: #c0521d; --s5: #82300b;
+  --bar: #c0521d; --track: #efede6; --focus: #141413;
   --shadow: 0 10px 30px rgba(20, 20, 19, .16);
   /* Claude's own typefaces are not publicly hosted; they are used if installed, else the closest open match. */
   --serif: "Anthropic Serif", "Tiempos Text", "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -16,8 +16,8 @@
   --g0: #2a78d6; --g1: #e87ba4; --g2: #008300; --g3: #eda100;
   --sans: "Anthropic Sans", "Styrene B", "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
-/* One hue per view: blue for online, teal for in store, violet for card schemes. */
-.page[data-view="pos"] { --s1: #cdeae3; --s2: #94d3c4; --s3: #4fb39f; --s4: #1f8a78; --s5: #0b5a4e; --bar: #1f8a78; }
+/* One hue per view, none shared with the cluster plot: orange for online, brown for in store, violet for card schemes. */
+.page[data-view="pos"] { --s1: #ebdcc6; --s2: #d3b68a; --s3: #ad8950; --s4: #7f5e28; --s5: #4f350e; --bar: #7f5e28; }
 .page[data-view="schemes"] { --s1: #ddd7f3; --s2: #b9aee8; --s3: #8f7fd9; --s4: #6250c4; --s5: #3a2a8c; --bar: #6250c4; }
 body { background: var(--bg); color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.5; }
 .page { max-width: 1440px; margin: 0 auto; padding-block: 28px 40px;
@@ -43,9 +43,11 @@ h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 
 .mapwrap .b1 { fill: var(--s1); } .mapwrap .b2 { fill: var(--s2); } .mapwrap .b3 { fill: var(--s3); }
 .mapwrap .b4 { fill: var(--s4); } .mapwrap .b5 { fill: var(--s5); }
 .mapwrap circle { stroke: var(--bg); stroke-width: 2; }
-.mapwrap .on { stroke: var(--ink); stroke-width: 1.8; }
+.mapwrap circle.on { stroke: var(--ink); stroke-width: 2; }
+.mapwrap #hl { fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linejoin: round; pointer-events: none; }
+.mapwrap .hit { fill: transparent; stroke: none; }
 .hint { font: 13px var(--sans); color: var(--ink-3); margin: 0; }
-.card { position: absolute; z-index: 5; width: 340px; max-width: calc(100% - 8px); background: var(--surface); border: 1px solid var(--line);
+.card { position: absolute; z-index: 5; width: 590px; max-width: calc(100vw - 16px); box-sizing: border-box; background: var(--surface); border: 1px solid var(--line);
   border-radius: 10px; box-shadow: var(--shadow); padding: 14px 16px; pointer-events: none; font-family: var(--sans); }
 .card h2 { font: 500 21px/1.2 var(--serif); margin: 0; }
 .card .sub { font-size: 11px; color: var(--ink-3); margin: 3px 0 10px; letter-spacing: .05em; text-transform: uppercase; }
@@ -94,10 +96,14 @@ th.grp2 { border-bottom: 0; padding-bottom: 0; color: var(--ink-2); font-weight:
 .grp .ev { font: 13px/1.5 var(--sans); color: var(--ink-3); margin-top: 10px; }
 .grp .ev b { font-weight: 600; color: var(--ink-2); }
 .caveat { font: 13px/1.5 var(--sans); color: var(--ink-2); margin: 0; max-width: 95ch; }
-.facts { display: grid; grid-template-columns: 1fr auto; gap: 3px 12px; font-size: 12px; color: var(--ink-2); }
+.facts { display: grid; grid-template-columns: 1fr auto 1fr auto; gap: 4px 12px; align-items: baseline; font-size: 12px; color: var(--ink-2); }
 .facts b { font-weight: 600; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .facts b small { font-weight: 400; color: var(--ink-3); font-size: 11px; }
 .facts b.na { font-weight: 400; color: var(--ink-3); }
+.card.narrow { width: 340px; }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.cols .c2 h3 { margin-top: 0; padding-top: 0; border-top: 0; }
+.cols + h3 { margin-top: 14px; }
 .card .note { font-size: 12px; color: var(--ink-2); margin: 8px 0 0; }
 @media (max-width: 1040px) { .main { grid-template-columns: minmax(0, 1fr); } }
 .tablewrap { overflow-x: auto; }
@@ -112,6 +118,10 @@ td.m { font: 500 15px var(--serif); }
 .source { font: 12px/1.5 var(--sans); color: var(--ink-3); margin: 0; max-width: 95ch; }
 .source a { color: inherit; }
 @media (max-width: 640px) {
+  .cols { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .cols .c2 h3 { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .facts { grid-template-columns: 1fr auto; }
+  .card, .card.narrow { width: auto; }
   .card { position: static; width: auto; max-width: none; box-shadow: none; margin-top: 10px; }
 }
 </style>
@@ -195,7 +205,13 @@ MAP.forEach(f => {
   if (f.k) { p.setAttribute('data-k', f.k); p.setAttribute('tabindex', '0'); p.setAttribute('aria-label', DATA[f.k].name); }
   svg.appendChild(p);
 });
+const hl = el('path', { id: 'hl' });
+svg.appendChild(hl);
+// Small countries get an invisible, larger target so they are easier to point at.
+svg.querySelectorAll('path[data-k]').forEach(p => { const b = p.getBBox();
+  if (Math.max(b.width, b.height) < 16) { const c = el('circle', { class: 'hit', cx: b.x + b.width / 2, cy: b.y + b.height / 2, r: 6 }); c.dataset.for = p.dataset.k; svg.appendChild(c); } });
 DOTS.forEach(d => svg.appendChild(el('circle', { cx: d.x, cy: d.y, r: 5.5, 'data-k': d.k, 'data-n': d.k, tabindex: '0', 'aria-label': d.k })));
+const target = e => { const h = e.target.closest('.hit'); return h ? svg.querySelector('path[data-k="' + h.dataset.for + '"]') : e.target.closest('[data-n]'); };
 
 function paint() {
   svg.querySelectorAll('[data-k]').forEach(n => {
@@ -231,33 +247,35 @@ function cardHtml(node) {
   const rows = '<span></span><span></span><span class="hd">Share</span><span class="hd">' + (sch ? '' : 'Value') + '</span>' + rowsFor(c).map(r =>
     '<span>' + esc(r.m) + '</span><span class="track"><b style="width:' + (r.a / max * 100).toFixed(1) + '%"></b></span>' +
     '<span class="v">' + esc(r.as) + '</span><span class="usd">' + (sch ? '' : usd(rowValue(c, r))) + '</span>').join('');
-  const head = '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + '</p><div class="rows">' + rows + '</div>';
-  if (sch) return head + (c.schemeNote ? '<p class="note">' + esc(c.schemeNote) + '</p>' : '') +
+  const head = '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + '</p>';
+  if (sch) return head + '<div class="rows">' + rows + '</div>' + (c.schemeNote ? '<p class="note">' + esc(c.schemeNote) + '</p>' : '') +
     '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + '</p>';
   const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
-  return head + '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
+  return head + '<div class="cols"><div class="c1"><div class="rows">' + rows + '</div></div><div class="c2"><h3>Popular brands</h3><div class="brands">' + brands + '</div></div></div>' +
     '<h3>Access and infrastructure</h3><div class="facts">' + facts(c) + '</div>' +
     '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
 }
 
+// The hovered country is outlined with a separate overlay shape, so the shape under the pointer is never moved.
 function show(node, px, py) {
   if (current !== node) {
     if (current) current.classList.remove('on');
     current = node; node.classList.add('on'); markRow(node.dataset.k);
-    if (node.tagName === 'path') svg.insertBefore(node, svg.querySelector('circle'));
-    card.innerHTML = cardHtml(node); card.hidden = false;
+    const shapeNode = node.tagName === 'path' ? node : null;
+    hl.setAttribute('d', shapeNode ? shapeNode.getAttribute('d') : '');
+    card.innerHTML = cardHtml(node);
+    card.classList.toggle('narrow', !node.dataset.k || channel === 'schemes'); card.hidden = false;
   }
   if (getComputedStyle(card).position !== 'absolute') { card.style.left = card.style.top = ''; return; }
-  const w = wrap.getBoundingClientRect();
+  const w = wrap.getBoundingClientRect(), cw = card.offsetWidth, ch = card.offsetHeight, vw = document.documentElement.clientWidth, vh = window.innerHeight;
   if (px == null) { const b = node.getBoundingClientRect(); px = b.left + b.width / 2; py = b.top + b.height / 2; }
-  let x = px - w.left + 18, y = py - w.top + 18;
-  if (x + card.offsetWidth > w.width - 4) x = px - w.left - card.offsetWidth - 18;
-  x = Math.max(4, Math.min(x, w.width - card.offsetWidth - 4));
-  const vTop = -w.top + 8, vBottom = window.innerHeight - w.top - card.offsetHeight - 8;
-  y = Math.max(Math.min(y, vBottom), vTop);
-  card.style.left = x + 'px'; card.style.top = y + 'px';
+  // Beside the pointer, on whichever side has room, and always fully inside the window.
+  let x = px + 20; if (x + cw > vw - 8) x = px - cw - 20;
+  x = Math.max(8, Math.min(x, vw - cw - 8));
+  const y = Math.max(8, Math.min(py - ch / 3, vh - ch - 8));
+  card.style.left = (x - w.left) + 'px'; card.style.top = (y - w.top) + 'px';
 }
-function hide() { if (current) current.classList.remove('on'); current = null; card.hidden = true; markRow(null); }
+function hide() { if (current) current.classList.remove('on'); current = null; hl.setAttribute('d', ''); card.hidden = true; markRow(null); }
 function markRow(k) { document.querySelectorAll('#plot [data-k]').forEach(r => r.classList.toggle('on', r.dataset.k === k)); }
 
 const ISO = { Australia: 'AU', China: 'CN', 'Hong Kong': 'HK', India: 'IN', Indonesia: 'ID', Japan: 'JP', Malaysia: 'MY', 'New Zealand': 'NZ', Philippines: 'PH', Singapore: 'SG',
@@ -294,16 +312,16 @@ function matrix() {
   keys.forEach(k => { const [x, y] = pos[k], w = 15, opts = [[x + 8, y - 5, 'start'], [x - 8 - w, y - 5, 'start'], [x - w / 2, y - 18, 'start'], [x - w / 2, y + 8, 'start']];
     const o = opts.find(([lx, ly]) => lx > 0 && lx + w < W && !boxes.some(b => hit([lx, ly, lx + w, ly + 10], b))) || opts[0];
     boxes.push([o[0], o[1], o[0] + w, o[1] + 10]); labels += '<text class="lab" x="' + o[0].toFixed(1) + '" y="' + (o[1] + 9).toFixed(1) + '">' + ISO[k] + '</text>'; });
-  out += labels + keys.map(k => shape(DATA[k].cluster, +pos[k][0].toFixed(1), +pos[k][1].toFixed(1), 5.5, ' data-k="' + esc(k) + '" tabindex="0" aria-label="' + esc(DATA[k].name + ', ' + CL.clusters[DATA[k].cluster].name) + '"')).join('');
+  out += labels + keys.map(k => '<circle data-k="' + esc(k) + '" cx="' + pos[k][0].toFixed(1) + '" cy="' + pos[k][1].toFixed(1) + '" r="10" fill="transparent"/>').join('') + keys.map(k => shape(DATA[k].cluster, +pos[k][0].toFixed(1), +pos[k][1].toFixed(1), 5.5, ' data-k="' + esc(k) + '" tabindex="0" aria-label="' + esc(DATA[k].name + ', ' + CL.clusters[DATA[k].cluster].name) + '"')).join('');
   out += '<text class="cap" x="' + m.l + '" y="' + (H - 8) + '">← more wallets, transfers and cash</text><text class="cap" text-anchor="end" x="' + (W - m.r) + '" y="' + (H - 8) + '">more cards →</text>' +
     '<text class="cap" transform="translate(12 ' + (H - m.b) + ') rotate(-90)">← more wallets and transfers</text><text class="cap" text-anchor="end" transform="translate(12 ' + m.t + ') rotate(-90)">more cash →</text>';
   const plot = document.getElementById('plot'); plot.innerHTML = out;
   const nodeFor = k => svg.querySelector('[data-k="' + k + '"]');
-  plot.addEventListener('pointerover', e => { const r = e.target.closest('[data-k]'); r ? show(nodeFor(r.dataset.k)) : hide(); });
+  plot.addEventListener('pointermove', e => { const r = e.target.closest('[data-k]'); r ? show(nodeFor(r.dataset.k), e.clientX, e.clientY) : hide(); });
   plot.addEventListener('pointerleave', hide);
-  plot.addEventListener('focusin', e => { const r = e.target.closest('[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
+  plot.addEventListener('focusin', e => { const r = e.target.closest('[data-k]'); if (r) { const b = r.getBoundingClientRect(); show(nodeFor(r.dataset.k), b.left, b.top + b.height / 2); } });
   plot.addEventListener('focusout', hide);
-  plot.addEventListener('click', e => { const r = e.target.closest('[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
+  plot.addEventListener('click', e => { const r = e.target.closest('[data-k]'); if (r) { show(nodeFor(r.dataset.k), e.clientX, e.clientY); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
   document.getElementById('mxnote').textContent = 'Each mark is a market, placed by ' + CL.features.length + ' features: its 2025 payment mix (cards, wallets plus bank transfers, cash; online and in store), ' +
     'the report\'s 2030 forecast (change in card and cash share, market growth), World Bank Findex access data (adults with an account, adults who made a digital payment) ' +
     'and IMF figures per adult (ATMs, bank branches, credit cards, debit cards, mobile and internet banking transactions). The six payment-mix features count three times as much as each of the others. Where a market has no IMF figure, that feature is skipped for it. ' +
@@ -315,6 +333,12 @@ function matrix() {
       esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>Mastercard today:</b> ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share on average (2024' +
       (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
 }
+
+svg.addEventListener('pointermove', e => { const n = target(e); n ? show(n, e.clientX, e.clientY) : hide(); });
+svg.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hide(); });
+svg.addEventListener('click', e => { const n = target(e); n ? show(n, e.clientX, e.clientY) : hide(); });
+svg.addEventListener('focusin', e => { const n = e.target.closest('[data-k]'); if (n) show(n); });
+svg.addEventListener('focusout', hide);
 
 function table() {
   const sch = channel === 'schemes', n = t => '<td class="n">' + t + '</td>';
