@@ -166,9 +166,9 @@ td.m { font: 500 15px var(--serif); }
     </aside>
   </div>
 
-  <h2 class="sec">The four groups, from a Mastercard view</h2>
+  <h2 class="sec">The four groups</h2>
   <div class="groups" id="groups"></div>
-  <p class="caveat">Each group is described the same way so they can be compared line by line. Every figure is a group average from the Worldpay report (payment mix, 2030 forecast), the World Bank Global Findex (accounts, debit card ownership, digital payments) or the IMF Financial Access Survey (cards and ATMs per adult, averaged over the markets that report them). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
+  <p class="caveat">Each group is described the same way so they can be compared line by line. Every figure is a group average from the Worldpay report (payment mix), the World Bank Global Findex (accounts, debit card ownership, digital payments) or the IMF Financial Access Survey (cards and ATMs per adult, averaged over the markets that report them). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
@@ -333,10 +333,8 @@ function matrix() {
     'The two axes keep ' + (CL.pcaShare[0] + CL.pcaShare[1]) + '% of the variation. Shaded areas outline the ' + CL.k + ' k-means groups; silhouette score ' + CL.silhouette + ', so groups touch at the edges.';
   document.getElementById('pkey').innerHTML = CL.clusters.map((cl, g) => '<span>' + icon(g) + esc(cl.name) + ' (' + cl.members.length + ')</span>').join('');
   document.getElementById('groups').innerHTML = CL.clusters.map((cl, g) => {
-    const mc = cl.members.map(k => DATA[k].schemes.find(r => r.m === 'Mastercard')).filter(Boolean);
-    return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.lead) + '</p><dl>' + cl.points.map(([t, d]) => '<dt>' + esc(t) + '</dt><dd>' + esc(d) + '</dd>').join('') + '</dl><p class="ev"><b>' + cl.members.length + ' markets:</b> ' +
-      esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>Mastercard today:</b> ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share on average (2024' +
-      (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
+    return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.lead) + '</p><dl>' + cl.points.map(([t, d]) => '<dt>' + esc(t) + '</dt><dd>' + esc(d) + '</dd>').join('') +
+      '</dl><p class="ev"><b>' + cl.members.length + ' markets:</b> ' + esc(cl.members.map(k => DATA[k].name).join(', ')) + '.</p></div>'; }).join('');
 }
 
 svg.addEventListener('pointermove', e => { const n = target(e); n ? show(n, e.clientX, e.clientY) : hide(); });
