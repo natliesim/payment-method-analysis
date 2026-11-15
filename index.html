@@ -21,7 +21,7 @@ body { background: var(--bg); color: var(--ink); font-family: var(--serif); font
 .page { max-width: 1440px; margin: 0 auto; padding-block: 28px 40px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
   display: flex; flex-direction: column; gap: 18px; }
-h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(22px, 2.6vw, 32px); line-height: 1.2; max-width: 34em; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.2; max-width: 34em; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
 .lede { margin: 6px 0 0; color: var(--ink-2); max-width: 66ch; }
 .bar-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; font-family: var(--sans); }
 .seg { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
@@ -110,7 +110,7 @@ td.m { font: 500 15px var(--serif); }
 
 <div class="page" id="page" data-view="ecom">
   <header>
-    <h1>Payment methods across 42 countries across APAC, Europe, Latin America, Middle East and Africa, and North America</h1>
+    <h1>Payment methods across the world</h1>
     <p class="lede">Point at a country to see how it paid in 2025 and the brands people use there. Switch the view to compare online spending, in-store spending or card scheme share.</p>
   </header>
 
@@ -238,7 +238,7 @@ function matrix() {
   const f = CL.features, n = f.filter(x => x.ch === 'ecom').length;
   const cell = (v, x) => { const al = Math.min(1, 0.06 + v / 75 * 0.94);
     return '<td' + (al > 0.5 ? ' class="dk"' : '') + ' title="' + esc((x.ch === 'ecom' ? 'Online, ' : 'In store, ') + x.short + ': ' + v + '%') + '" style="background:' +
-      (v < 1 ? 'var(--track)' : 'rgba(' + (x.ch === 'ecom' ? '12,63,125,' : '11,90,78,') + al.toFixed(2) + ')') + '">' + v + '</td>'; };
+      (v < 1 ? 'var(--track)' : 'rgba(' + (x.ch === 'ecom' ? '12,63,125,' : '11,90,78,') + al.toFixed(2) + ')') + '"></td>'; };
   const head = '<thead><tr><th></th><th class="grp" colspan="' + n + '">Online</th><th class="gap"></th><th class="grp" colspan="' + (f.length - n) + '">In store</th></tr><tr><th></th>' +
     f.map((x, i) => (i === n ? '<th class="gap"></th>' : '') + '<th class="col">' + esc(x.short).replace(' + ', '<br>+ ') + '</th>').join('') + '</tr></thead>';
   const body = CL.clusters.map(cl => '<tr class="ch"><th colspan="' + (f.length + 2) + '">' + esc(cl.name) + ' <small>· ' + cl.members.length + ' markets</small></th></tr>' +
@@ -250,7 +250,7 @@ function matrix() {
   mx.addEventListener('pointerleave', hide);
   mx.addEventListener('click', e => { const r = e.target.closest('tr[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
   document.getElementById('mxnote').textContent = 'K-means (k = ' + CL.k + ') on six features per market: the 2025 share of spending on cards, on wallets plus bank transfers (A2A), and on cash, ' +
-    'online and in store. Each cell is that share in %. Features are standardised before clustering. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
+    'online and in store. Darker cells mean a bigger share. Features are standardised before clustering. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
   document.getElementById('csum').innerHTML = CL.clusters.map(cl => {
     const avg = ch => f.map((x, i) => [x, cl.centroid[i]]).filter(([x]) => x.ch === ch).map(([x, v]) => x.short.toLowerCase().replace('a2a', 'A2A') + ' ' + v + '%').join(', ');
     return '<div><b>' + esc(cl.name) + '</b><span>' + esc(cl.desc) + '</span><em>' + cl.members.length + ' markets. Average in store: ' + esc(avg('pos')) + '. Online: ' + esc(avg('ecom')) + '.</em></div>'; }).join('');
