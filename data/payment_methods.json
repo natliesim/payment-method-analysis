@@ -1,0 +1,5278 @@
+{
+ "Australia": {
+  "name": "Australia",
+  "region": "Asia Pacific",
+  "page": 24,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 43,
+    "b": 50,
+    "as": "43%",
+    "bs": "50%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 19,
+    "b": 16,
+    "as": "19%",
+    "bs": "16%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 18,
+    "b": 13,
+    "as": "18%",
+    "bs": "13%"
+   },
+   {
+    "m": "BNPL",
+    "a": 13,
+    "b": 14,
+    "as": "13%",
+    "bs": "14%"
+   },
+   {
+    "m": "A2A",
+    "a": 5,
+    "b": 6,
+    "as": "5%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 37,
+    "b": 31,
+    "as": "37%",
+    "bs": "31%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 26,
+    "b": 22,
+    "as": "26%",
+    "bs": "22%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 21,
+    "b": 32,
+    "as": "21%",
+    "bs": "32%"
+   },
+   {
+    "m": "Cash",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$89b",
+    "$127b",
+    "7%"
+   ],
+   "pos": [
+    "$438b",
+    "$526b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Afterpay",
+    "t": "Buy now, pay later",
+    "s": "afterpay"
+   },
+   {
+    "n": "eftpos",
+    "t": "Domestic debit card network",
+    "s": "eftpos"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   }
+  ]
+ },
+ "China": {
+  "name": "China",
+  "region": "Asia Pacific",
+  "page": 25,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 89,
+    "b": 95,
+    "as": "89%",
+    "bs": "95%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 4,
+    "b": 1,
+    "as": "4%",
+    "bs": "1%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 1,
+    "as": "3%",
+    "bs": "1%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Cash",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 87,
+    "b": 93,
+    "as": "87%",
+    "bs": "93%"
+   },
+   {
+    "m": "Cash",
+    "a": 4,
+    "b": 3,
+    "as": "4%",
+    "bs": "3%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 1,
+    "as": "3%",
+    "bs": "1%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 3,
+    "b": 1,
+    "as": "3%",
+    "bs": "1%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$2.6t",
+    "$4t",
+    "8%"
+   ],
+   "pos": [
+    "$5.2t",
+    "$6t",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "WeChat Pay",
+    "t": "QR-code wallet in a super-app",
+    "s": "wechat-pay"
+   },
+   {
+    "n": "Alipay",
+    "t": "QR-code digital wallet",
+    "s": "alipay"
+   },
+   {
+    "n": "UnionPay",
+    "t": "Domestic card network",
+    "s": "unionpay"
+   }
+  ]
+ },
+ "Hong Kong": {
+  "name": "Hong Kong",
+  "region": "Asia Pacific",
+  "page": 26,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 41,
+    "b": 51,
+    "as": "41%",
+    "bs": "51%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 31,
+    "b": 19,
+    "as": "31%",
+    "bs": "19%"
+   },
+   {
+    "m": "A2A",
+    "a": 19,
+    "b": 23,
+    "as": "19%",
+    "bs": "23%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Cash",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 45,
+    "b": 52,
+    "as": "45%",
+    "bs": "52%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 33,
+    "b": 24,
+    "as": "33%",
+    "bs": "24%"
+   },
+   {
+    "m": "A2A",
+    "a": 9,
+    "b": 13,
+    "as": "9%",
+    "bs": "13%"
+   },
+   {
+    "m": "Cash",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$7.5b",
+    "$9.3b",
+    "4%"
+   ],
+   "pos": [
+    "$82b",
+    "$92b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "FPS",
+    "t": "Instant bank transfer (Faster Payment System)",
+    "s": "fps"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "AlipayHK",
+    "t": "QR-code digital wallet",
+    "s": "alipayhk"
+   },
+   {
+    "n": "WeChat Pay HK",
+    "t": "QR-code digital wallet",
+    "s": "wechat-pay-hk"
+   }
+  ]
+ },
+ "India": {
+  "name": "India",
+  "region": "Asia Pacific",
+  "page": 27,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 68,
+    "b": 78,
+    "as": "68%",
+    "bs": "78%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 15,
+    "b": 11,
+    "as": "15%",
+    "bs": "11%"
+   },
+   {
+    "m": "Cash",
+    "a": 6,
+    "b": 3,
+    "as": "6%",
+    "bs": "3%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 5,
+    "b": 3,
+    "as": "5%",
+    "bs": "3%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 2,
+    "as": "4%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 61,
+    "b": 71,
+    "as": "61%",
+    "bs": "71%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 16,
+    "b": 12,
+    "as": "16%",
+    "bs": "12%"
+   },
+   {
+    "m": "Cash",
+    "a": 14,
+    "b": 9,
+    "as": "14%",
+    "bs": "9%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 4,
+    "b": 3,
+    "as": "4%",
+    "bs": "3%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$165b",
+    "$328b",
+    "15%"
+   ],
+   "pos": [
+    "$1.6t",
+    "$2.3t",
+    "8%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "UPI",
+    "t": "Instant bank transfer by QR or ID",
+    "s": "upi"
+   },
+   {
+    "n": "PhonePe",
+    "t": "UPI payment app",
+    "s": "phonepe"
+   },
+   {
+    "n": "Paytm",
+    "t": "UPI payment app and wallet",
+    "s": "paytm"
+   },
+   {
+    "n": "Google Pay",
+    "t": "UPI payment app",
+    "s": "google-pay"
+   }
+  ]
+ },
+ "Indonesia": {
+  "name": "Indonesia",
+  "region": "Asia Pacific",
+  "page": 28,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 42,
+    "b": 43,
+    "as": "42%",
+    "bs": "43%"
+   },
+   {
+    "m": "A2A",
+    "a": 34,
+    "b": 38,
+    "as": "34%",
+    "bs": "38%"
+   },
+   {
+    "m": "Cash",
+    "a": 13,
+    "b": 10,
+    "as": "13%",
+    "bs": "10%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "BNPL",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 36,
+    "b": 24,
+    "as": "36%",
+    "bs": "24%"
+   },
+   {
+    "m": "A2A",
+    "a": 23,
+    "b": 32,
+    "as": "23%",
+    "bs": "32%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 22,
+    "b": 26,
+    "as": "22%",
+    "bs": "26%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 11,
+    "b": 10,
+    "as": "11%",
+    "bs": "10%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 7,
+    "b": 6,
+    "as": "7%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$84b",
+    "$136b",
+    "10%"
+   ],
+   "pos": [
+    "$270b",
+    "$337b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "BI-FAST",
+    "t": "Instant bank transfer",
+    "s": "bi-fast"
+   },
+   {
+    "n": "GoPay",
+    "t": "E-wallet (Gojek)",
+    "s": "gopay"
+   },
+   {
+    "n": "DANA",
+    "t": "E-wallet",
+    "s": "dana"
+   },
+   {
+    "n": "OVO",
+    "t": "E-wallet",
+    "s": "ovo"
+   }
+  ]
+ },
+ "Japan": {
+  "name": "Japan",
+  "region": "Asia Pacific",
+  "page": 29,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 58,
+    "b": 51,
+    "as": "58%",
+    "bs": "51%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 29,
+    "b": 39,
+    "as": "29%",
+    "bs": "39%"
+   },
+   {
+    "m": "Cash",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "A2A",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "BNPL",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 38,
+    "b": 31,
+    "as": "38%",
+    "bs": "31%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 35,
+    "b": 33,
+    "as": "35%",
+    "bs": "33%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 24,
+    "b": 33,
+    "as": "24%",
+    "bs": "33%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$193b",
+    "$229b",
+    "4%"
+   ],
+   "pos": [
+    "$1.1t",
+    "$1.2t",
+    "1%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "PayPay",
+    "t": "QR-code wallet",
+    "s": "paypay"
+   },
+   {
+    "n": "Rakuten Pay",
+    "t": "QR-code wallet",
+    "s": "rakuten-pay"
+   },
+   {
+    "n": "au PAY",
+    "t": "QR-code wallet",
+    "s": "au-pay"
+   },
+   {
+    "n": "JCB",
+    "t": "Domestic card network",
+    "s": "jcb"
+   }
+  ]
+ },
+ "Malaysia": {
+  "name": "Malaysia",
+  "region": "Asia Pacific",
+  "page": 30,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 35,
+    "b": 40,
+    "as": "35%",
+    "bs": "40%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 26,
+    "b": 30,
+    "as": "26%",
+    "bs": "30%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 16,
+    "b": 13,
+    "as": "16%",
+    "bs": "13%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 9,
+    "b": 6,
+    "as": "9%",
+    "bs": "6%"
+   },
+   {
+    "m": "Cash",
+    "a": 8,
+    "b": 6,
+    "as": "8%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 5,
+    "as": "5%",
+    "bs": "5%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 32,
+    "b": 40,
+    "as": "32%",
+    "bs": "40%"
+   },
+   {
+    "m": "Cash",
+    "a": 22,
+    "b": 17,
+    "as": "22%",
+    "bs": "17%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 15,
+    "b": 13,
+    "as": "15%",
+    "bs": "13%"
+   },
+   {
+    "m": "A2A",
+    "a": 14,
+    "b": 16,
+    "as": "14%",
+    "bs": "16%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 14,
+    "b": 12,
+    "as": "14%",
+    "bs": "12%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$15b",
+    "$23b",
+    "9%"
+   ],
+   "pos": [
+    "$145b",
+    "$181b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "DuitNow",
+    "t": "Instant bank transfer and national QR",
+    "s": "duitnow"
+   },
+   {
+    "n": "FPX",
+    "t": "Online banking transfer",
+    "s": "fpx"
+   },
+   {
+    "n": "Touch 'n Go",
+    "t": "E-wallet",
+    "s": "touch-n-go"
+   },
+   {
+    "n": "Boost",
+    "t": "E-wallet",
+    "s": "boost"
+   }
+  ]
+ },
+ "New Zealand": {
+  "name": "New Zealand",
+  "region": "Asia Pacific",
+  "page": 31,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 29,
+    "b": 37,
+    "as": "29%",
+    "bs": "37%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 25,
+    "b": 19,
+    "as": "25%",
+    "bs": "19%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 20,
+    "b": 16,
+    "as": "20%",
+    "bs": "16%"
+   },
+   {
+    "m": "BNPL",
+    "a": 13,
+    "b": 14,
+    "as": "13%",
+    "bs": "14%"
+   },
+   {
+    "m": "A2A",
+    "a": 11,
+    "b": 12,
+    "as": "11%",
+    "bs": "12%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 41,
+    "b": 39,
+    "as": "41%",
+    "bs": "39%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 30,
+    "b": 27,
+    "as": "30%",
+    "bs": "27%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 15,
+    "b": 22,
+    "as": "15%",
+    "bs": "22%"
+   },
+   {
+    "m": "Cash",
+    "a": 10,
+    "b": 8,
+    "as": "10%",
+    "bs": "8%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$8.7b",
+    "$12b",
+    "7%"
+   ],
+   "pos": [
+    "$73b",
+    "$84b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Eftpos NZ",
+    "t": "Domestic debit card network",
+    "s": "eftpos-nz"
+   },
+   {
+    "n": "Afterpay",
+    "t": "Buy now, pay later",
+    "s": "afterpay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "Philippines": {
+  "name": "Philippines",
+  "region": "Asia Pacific",
+  "page": 32,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 41,
+    "b": 44,
+    "as": "41%",
+    "bs": "44%"
+   },
+   {
+    "m": "Cash",
+    "a": 23,
+    "b": 18,
+    "as": "23%",
+    "bs": "18%"
+   },
+   {
+    "m": "A2A",
+    "a": 13,
+    "b": 22,
+    "as": "13%",
+    "bs": "22%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 8,
+    "as": "11%",
+    "bs": "8%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 7,
+    "b": 4,
+    "as": "7%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 5,
+    "as": "5%",
+    "bs": "5%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 42,
+    "b": 34,
+    "as": "42%",
+    "bs": "34%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 29,
+    "b": 40,
+    "as": "29%",
+    "bs": "40%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 10,
+    "b": 7,
+    "as": "10%",
+    "bs": "7%"
+   },
+   {
+    "m": "A2A",
+    "a": 7,
+    "b": 10,
+    "as": "7%",
+    "bs": "10%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$24b",
+    "$45b",
+    "14%"
+   ],
+   "pos": [
+    "$177b",
+    "$240b",
+    "6%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "GCash",
+    "t": "E-wallet",
+    "s": "gcash"
+   },
+   {
+    "n": "InstaPay",
+    "t": "Instant bank transfer",
+    "s": "instapay"
+   },
+   {
+    "n": "Maya",
+    "t": "E-wallet",
+    "s": "maya"
+   },
+   {
+    "n": "ShopeePay",
+    "t": "E-wallet (Shopee)",
+    "s": "shopeepay"
+   }
+  ]
+ },
+ "Singapore": {
+  "name": "Singapore",
+  "region": "Asia Pacific",
+  "page": 33,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 40,
+    "b": 45,
+    "as": "40%",
+    "bs": "45%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 34,
+    "b": 30,
+    "as": "34%",
+    "bs": "30%"
+   },
+   {
+    "m": "A2A",
+    "a": 11,
+    "b": 13,
+    "as": "11%",
+    "bs": "13%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "BNPL",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 36,
+    "b": 44,
+    "as": "36%",
+    "bs": "44%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 27,
+    "b": 22,
+    "as": "27%",
+    "bs": "22%"
+   },
+   {
+    "m": "Cash",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 12,
+    "b": 15,
+    "as": "12%",
+    "bs": "15%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$25b",
+    "$38b",
+    "9%"
+   ],
+   "pos": [
+    "$136b",
+    "$163b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "GrabPay",
+    "t": "E-wallet (Grab)",
+    "s": "grabpay"
+   },
+   {
+    "n": "ShopeePay",
+    "t": "E-wallet (Shopee)",
+    "s": "shopeepay"
+   },
+   {
+    "n": "PayNow",
+    "t": "Instant bank transfer and QR",
+    "s": "paynow"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "South Korea": {
+  "name": "South Korea",
+  "region": "Asia Pacific",
+  "page": 34,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 49,
+    "b": 40,
+    "as": "49%",
+    "bs": "40%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 35,
+    "b": 46,
+    "as": "35%",
+    "bs": "46%"
+   },
+   {
+    "m": "A2A",
+    "a": 7,
+    "b": 7,
+    "as": "7%",
+    "bs": "7%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Credit cards",
+    "a": 53,
+    "b": 48,
+    "as": "53%",
+    "bs": "48%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 24,
+    "b": 31,
+    "as": "24%",
+    "bs": "31%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 14,
+    "b": 12,
+    "as": "14%",
+    "bs": "12%"
+   },
+   {
+    "m": "Cash",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$180b",
+    "$236b",
+    "6%"
+   ],
+   "pos": [
+    "$313b",
+    "$344b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "KakaoPay",
+    "t": "Digital wallet (Kakao)",
+    "s": "kakaopay"
+   },
+   {
+    "n": "Naver Pay",
+    "t": "Digital wallet (Naver)",
+    "s": "naver-pay"
+   },
+   {
+    "n": "Samsung Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "samsung-wallet"
+   },
+   {
+    "n": "Toss",
+    "t": "Digital wallet and finance app",
+    "s": "toss"
+   }
+  ]
+ },
+ "Taiwan": {
+  "name": "Taiwan",
+  "region": "Asia Pacific",
+  "page": 35,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 39,
+    "b": 35,
+    "as": "39%",
+    "bs": "35%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 34,
+    "b": 40,
+    "as": "34%",
+    "bs": "40%"
+   },
+   {
+    "m": "Cash",
+    "a": 15,
+    "b": 11,
+    "as": "15%",
+    "bs": "11%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 8,
+    "as": "6%",
+    "bs": "8%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 36,
+    "b": 44,
+    "as": "36%",
+    "bs": "44%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 32,
+    "b": 26,
+    "as": "32%",
+    "bs": "26%"
+   },
+   {
+    "m": "Cash",
+    "a": 25,
+    "b": 22,
+    "as": "25%",
+    "bs": "22%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 4,
+    "as": "2%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$23b",
+    "$30b",
+    "6%"
+   ],
+   "pos": [
+    "$162b",
+    "$182b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Taiwan Pay",
+    "t": "Bank-backed QR mobile payment",
+    "s": "taiwan-pay"
+   },
+   {
+    "n": "LINE Pay",
+    "t": "Digital wallet (LINE)",
+    "s": "line-pay"
+   },
+   {
+    "n": "JKOPAY",
+    "t": "Digital wallet",
+    "s": "jkopay"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "Thailand": {
+  "name": "Thailand",
+  "region": "Asia Pacific",
+  "page": 36,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 44,
+    "b": 49,
+    "as": "44%",
+    "bs": "49%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 25,
+    "b": 27,
+    "as": "25%",
+    "bs": "27%"
+   },
+   {
+    "m": "Cash",
+    "a": 15,
+    "b": 11,
+    "as": "15%",
+    "bs": "11%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 10,
+    "b": 9,
+    "as": "10%",
+    "bs": "9%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "A2A",
+    "a": 43,
+    "b": 51,
+    "as": "43%",
+    "bs": "51%"
+   },
+   {
+    "m": "Cash",
+    "a": 30,
+    "b": 25,
+    "as": "30%",
+    "bs": "25%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 14,
+    "as": "13%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$35b",
+    "$60b",
+    "12%"
+   ],
+   "pos": [
+    "$209b",
+    "$262b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "PromptPay",
+    "t": "Instant bank transfer and QR",
+    "s": "promptpay"
+   },
+   {
+    "n": "TrueMoney",
+    "t": "E-wallet",
+    "s": "truemoney"
+   },
+   {
+    "n": "ShopeePay",
+    "t": "E-wallet (Shopee)",
+    "s": "shopeepay"
+   },
+   {
+    "n": "LINE Pay",
+    "t": "Digital wallet (LINE)",
+    "s": "line-pay"
+   }
+  ]
+ },
+ "Vietnam": {
+  "name": "Vietnam",
+  "region": "Asia Pacific",
+  "page": 37,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 38,
+    "b": 38,
+    "as": "38%",
+    "bs": "38%"
+   },
+   {
+    "m": "A2A",
+    "a": 28,
+    "b": 35,
+    "as": "28%",
+    "bs": "35%"
+   },
+   {
+    "m": "Cash",
+    "a": 16,
+    "b": 12,
+    "as": "16%",
+    "bs": "12%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 12,
+    "b": 10,
+    "as": "12%",
+    "bs": "10%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 33,
+    "b": 26,
+    "as": "33%",
+    "bs": "26%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 30,
+    "b": 33,
+    "as": "30%",
+    "bs": "33%"
+   },
+   {
+    "m": "A2A",
+    "a": 22,
+    "b": 28,
+    "as": "22%",
+    "bs": "28%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 10,
+    "b": 8,
+    "as": "10%",
+    "bs": "8%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 4,
+    "b": 3,
+    "as": "4%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$28b",
+    "$50b",
+    "12%"
+   ],
+   "pos": [
+    "$199b",
+    "$262b",
+    "6%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "MoMo",
+    "t": "E-wallet",
+    "s": "momo"
+   },
+   {
+    "n": "VietQR",
+    "t": "QR-code bank transfer",
+    "s": "vietqr"
+   },
+   {
+    "n": "ZaloPay",
+    "t": "E-wallet (Zalo)",
+    "s": "zalopay"
+   },
+   {
+    "n": "ShopeePay",
+    "t": "E-wallet (Shopee)",
+    "s": "shopeepay"
+   }
+  ]
+ },
+ "Belgium": {
+  "name": "Belgium",
+  "region": "Europe",
+  "page": 41,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 42,
+    "b": 50,
+    "as": "42%",
+    "bs": "50%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 26,
+    "b": 22,
+    "as": "26%",
+    "bs": "22%"
+   },
+   {
+    "m": "BNPL",
+    "a": 12,
+    "b": 13,
+    "as": "12%",
+    "bs": "13%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 8,
+    "as": "11%",
+    "bs": "8%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 6,
+    "as": "6%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 48,
+    "b": 42,
+    "as": "48%",
+    "bs": "42%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 22,
+    "b": 33,
+    "as": "22%",
+    "bs": "33%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 16,
+    "b": 14,
+    "as": "16%",
+    "bs": "14%"
+   },
+   {
+    "m": "Cash",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$21b",
+    "$29b",
+    "7%"
+   ],
+   "pos": [
+    "$199b",
+    "$222b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Payconiq",
+    "t": "Bank-linked QR payment app",
+    "s": "payconiq"
+   },
+   {
+    "n": "Bancontact",
+    "t": "Domestic debit card network",
+    "s": "bancontact"
+   },
+   {
+    "n": "Wero",
+    "t": "European instant-transfer wallet",
+    "s": "wero"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   }
+  ]
+ },
+ "Denmark": {
+  "name": "Denmark",
+  "region": "Europe",
+  "page": 42,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 44,
+    "b": 51,
+    "as": "44%",
+    "bs": "51%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 20,
+    "b": 17,
+    "as": "20%",
+    "bs": "17%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 17,
+    "b": 14,
+    "as": "17%",
+    "bs": "14%"
+   },
+   {
+    "m": "BNPL",
+    "a": 11,
+    "b": 11,
+    "as": "11%",
+    "bs": "11%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 56,
+    "b": 50,
+    "as": "56%",
+    "bs": "50%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 25,
+    "b": 33,
+    "as": "25%",
+    "bs": "33%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 10,
+    "b": 9,
+    "as": "10%",
+    "bs": "9%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 6,
+    "as": "7%",
+    "bs": "6%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$25b",
+    "$32b",
+    "5%"
+   ],
+   "pos": [
+    "$82b",
+    "$94b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "MobilePay",
+    "t": "Mobile wallet",
+    "s": "mobilepay"
+   },
+   {
+    "n": "Dankort",
+    "t": "Domestic debit card",
+    "s": "dankort"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Finland": {
+  "name": "Finland",
+  "region": "Europe",
+  "page": 43,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 35,
+    "b": 41,
+    "as": "35%",
+    "bs": "41%"
+   },
+   {
+    "m": "A2A",
+    "a": 27,
+    "b": 24,
+    "as": "27%",
+    "bs": "24%"
+   },
+   {
+    "m": "BNPL",
+    "a": 19,
+    "b": 20,
+    "as": "19%",
+    "bs": "20%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 66,
+    "b": 62,
+    "as": "66%",
+    "bs": "62%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 16,
+    "b": 23,
+    "as": "16%",
+    "bs": "23%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 6,
+    "as": "7%",
+    "bs": "6%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$13b",
+    "$17b",
+    "5%"
+   ],
+   "pos": [
+    "$62b",
+    "$72b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "MobilePay",
+    "t": "Mobile wallet",
+    "s": "mobilepay"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Klarna",
+    "t": "Buy now, pay later",
+    "s": "klarna"
+   },
+   {
+    "n": "Trustly",
+    "t": "Pay by bank transfer",
+    "s": "trustly"
+   }
+  ]
+ },
+ "France": {
+  "name": "France",
+  "region": "Europe",
+  "page": 44,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 36,
+    "b": 45,
+    "as": "36%",
+    "bs": "45%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 28,
+    "b": 24,
+    "as": "28%",
+    "bs": "24%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 20,
+    "b": 16,
+    "as": "20%",
+    "bs": "16%"
+   },
+   {
+    "m": "A2A",
+    "a": 8,
+    "b": 7,
+    "as": "8%",
+    "bs": "7%"
+   },
+   {
+    "m": "BNPL",
+    "a": 5,
+    "b": 6,
+    "as": "5%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 50,
+    "b": 47,
+    "as": "50%",
+    "bs": "47%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 21,
+    "b": 19,
+    "as": "21%",
+    "bs": "19%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 15,
+    "b": 22,
+    "as": "15%",
+    "bs": "22%"
+   },
+   {
+    "m": "Cash",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$199b",
+    "$263b",
+    "6%"
+   ],
+   "pos": [
+    "$1t",
+    "$1.2t",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Cartes Bancaires (CB)",
+    "t": "Domestic card network",
+    "s": "cartes-bancaires-cb"
+   },
+   {
+    "n": "Wero",
+    "t": "European instant-transfer wallet",
+    "s": "wero"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   }
+  ]
+ },
+ "Germany": {
+  "name": "Germany",
+  "region": "Europe",
+  "page": 45,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 52,
+    "b": 55,
+    "as": "52%",
+    "bs": "55%"
+   },
+   {
+    "m": "BNPL",
+    "a": 18,
+    "b": 19,
+    "as": "18%",
+    "bs": "19%"
+   },
+   {
+    "m": "A2A",
+    "a": 15,
+    "b": 14,
+    "as": "15%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Cash",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 38,
+    "b": 35,
+    "as": "38%",
+    "bs": "35%"
+   },
+   {
+    "m": "Cash",
+    "a": 32,
+    "b": 26,
+    "as": "32%",
+    "bs": "26%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 17,
+    "b": 28,
+    "as": "17%",
+    "bs": "28%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$192b",
+    "$259b",
+    "6%"
+   ],
+   "pos": [
+    "$1.2t",
+    "$1.4t",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "girocard",
+    "t": "Domestic debit card network",
+    "s": "girocard"
+   },
+   {
+    "n": "Wero",
+    "t": "European instant-transfer wallet",
+    "s": "wero"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "Ireland": {
+  "name": "Ireland",
+  "region": "Europe",
+  "page": 46,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 42,
+    "b": 52,
+    "as": "42%",
+    "bs": "52%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 31,
+    "b": 24,
+    "as": "31%",
+    "bs": "24%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 16,
+    "b": 13,
+    "as": "16%",
+    "bs": "13%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "BNPL",
+    "a": 3,
+    "b": 4,
+    "as": "3%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 3,
+    "as": "5%",
+    "bs": "3%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 45,
+    "b": 40,
+    "as": "45%",
+    "bs": "40%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 26,
+    "b": 36,
+    "as": "26%",
+    "bs": "36%"
+   },
+   {
+    "m": "Cash",
+    "a": 15,
+    "b": 12,
+    "as": "15%",
+    "bs": "12%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 13,
+    "b": 11,
+    "as": "13%",
+    "bs": "11%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$16b",
+    "$22b",
+    "7%"
+   ],
+   "pos": [
+    "$74b",
+    "$92b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Italy": {
+  "name": "Italy",
+  "region": "Europe",
+  "page": 47,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 43,
+    "b": 48,
+    "as": "43%",
+    "bs": "48%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 18,
+    "b": 16,
+    "as": "18%",
+    "bs": "16%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 15,
+    "b": 14,
+    "as": "15%",
+    "bs": "14%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "A2A",
+    "a": 7,
+    "b": 7,
+    "as": "7%",
+    "bs": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 8,
+    "b": 9,
+    "as": "8%",
+    "bs": "9%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 30,
+    "b": 27,
+    "as": "30%",
+    "bs": "27%"
+   },
+   {
+    "m": "Cash",
+    "a": 24,
+    "b": 20,
+    "as": "24%",
+    "bs": "20%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 19,
+    "b": 27,
+    "as": "19%",
+    "bs": "27%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 11,
+    "b": 10,
+    "as": "11%",
+    "bs": "10%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 7,
+    "as": "5%",
+    "bs": "7%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$97b",
+    "$132b",
+    "6%"
+   ],
+   "pos": [
+    "$697b",
+    "$830b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Bancomat",
+    "t": "Domestic debit card network",
+    "s": "bancomat"
+   },
+   {
+    "n": "Satispay",
+    "t": "Mobile wallet",
+    "s": "satispay"
+   },
+   {
+    "n": "Postepay",
+    "t": "Prepaid card",
+    "s": "postepay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   }
+  ]
+ },
+ "Netherlands": {
+  "name": "Netherlands",
+  "region": "Europe",
+  "page": 48,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 64,
+    "b": 63,
+    "as": "64%",
+    "bs": "63%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 12,
+    "b": 14,
+    "as": "12%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 10,
+    "b": 8,
+    "as": "10%",
+    "bs": "8%"
+   },
+   {
+    "m": "BNPL",
+    "a": 10,
+    "b": 11,
+    "as": "10%",
+    "bs": "11%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 60,
+    "b": 55,
+    "as": "60%",
+    "bs": "55%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 24,
+    "b": 31,
+    "as": "24%",
+    "bs": "31%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 6,
+    "as": "7%",
+    "bs": "6%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$42b",
+    "$57b",
+    "6%"
+   ],
+   "pos": [
+    "$187b",
+    "$219b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "iDEAL | Wero",
+    "t": "Online bank transfer",
+    "s": "ideal-wero"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Norway": {
+  "name": "Norway",
+  "region": "Europe",
+  "page": 49,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 43,
+    "b": 51,
+    "as": "43%",
+    "bs": "51%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 22,
+    "b": 16,
+    "as": "22%",
+    "bs": "16%"
+   },
+   {
+    "m": "BNPL",
+    "a": 19,
+    "b": 20,
+    "as": "19%",
+    "bs": "20%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 13,
+    "b": 10,
+    "as": "13%",
+    "bs": "10%"
+   },
+   {
+    "m": "Cash",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 54,
+    "b": 48,
+    "as": "54%",
+    "bs": "48%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 30,
+    "b": 38,
+    "as": "30%",
+    "bs": "38%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Cash",
+    "a": 4,
+    "b": 3,
+    "as": "4%",
+    "bs": "3%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$22b",
+    "$29b",
+    "6%"
+   ],
+   "pos": [
+    "$67b",
+    "$76b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "BankAxept",
+    "t": "Domestic debit card network",
+    "s": "bankaxept"
+   },
+   {
+    "n": "Vipps",
+    "t": "Mobile wallet",
+    "s": "vipps"
+   },
+   {
+    "n": "Klarna",
+    "t": "Buy now, pay later",
+    "s": "klarna"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "Poland": {
+  "name": "Poland",
+  "region": "Europe",
+  "page": 50,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 72,
+    "b": 74,
+    "as": "72%",
+    "bs": "74%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 11,
+    "b": 13,
+    "as": "11%",
+    "bs": "13%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "Cash",
+    "a": 4,
+    "b": 2,
+    "as": "4%",
+    "bs": "2%"
+   },
+   {
+    "m": "BNPL",
+    "a": 3,
+    "b": 4,
+    "as": "3%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "b": 3,
+    "as": "4%",
+    "bs": "3%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "A2A",
+    "a": 30,
+    "b": 39,
+    "as": "30%",
+    "bs": "39%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 28,
+    "b": 22,
+    "as": "28%",
+    "bs": "22%"
+   },
+   {
+    "m": "Cash",
+    "a": 23,
+    "b": 18,
+    "as": "23%",
+    "bs": "18%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 15,
+    "as": "13%",
+    "bs": "15%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 6,
+    "b": 4,
+    "as": "6%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$40b",
+    "$58b",
+    "8%"
+   ],
+   "pos": [
+    "$312b",
+    "$397b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "BLIK",
+    "t": "Mobile bank payment by code",
+    "s": "blik"
+   },
+   {
+    "n": "Przelewy24",
+    "t": "Online bank transfer gateway",
+    "s": "przelewy24"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Portugal": {
+  "name": "Portugal",
+  "region": "Europe",
+  "page": 51,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 40,
+    "b": 50,
+    "as": "40%",
+    "bs": "50%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 18,
+    "b": 14,
+    "as": "18%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 17,
+    "b": 13,
+    "as": "17%",
+    "bs": "13%"
+   },
+   {
+    "m": "A2A",
+    "a": 16,
+    "b": 17,
+    "as": "16%",
+    "bs": "17%"
+   },
+   {
+    "m": "BNPL",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 49,
+    "b": 44,
+    "as": "49%",
+    "bs": "44%"
+   },
+   {
+    "m": "Cash",
+    "a": 27,
+    "b": 23,
+    "as": "27%",
+    "bs": "23%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 22,
+    "as": "13%",
+    "bs": "22%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 9,
+    "b": 8,
+    "as": "9%",
+    "bs": "8%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$9.8b",
+    "$14b",
+    "7%"
+   ],
+   "pos": [
+    "$89b",
+    "$111b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Multibanco",
+    "t": "Bank payment by reference",
+    "s": "multibanco"
+   },
+   {
+    "n": "MB WAY",
+    "t": "Mobile wallet",
+    "s": "mb-way"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "Spain": {
+  "name": "Spain",
+  "region": "Europe",
+  "page": 52,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 34,
+    "b": 39,
+    "as": "34%",
+    "bs": "39%"
+   },
+   {
+    "m": "A2A",
+    "a": 21,
+    "b": 27,
+    "as": "21%",
+    "bs": "27%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 19,
+    "b": 14,
+    "as": "19%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 17,
+    "b": 12,
+    "as": "17%",
+    "bs": "12%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "b": 6,
+    "as": "6%",
+    "bs": "6%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 34,
+    "b": 28,
+    "as": "34%",
+    "bs": "28%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 28,
+    "b": 24,
+    "as": "28%",
+    "bs": "24%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 22,
+    "b": 19,
+    "as": "22%",
+    "bs": "19%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 14,
+    "b": 23,
+    "as": "14%",
+    "bs": "23%"
+   },
+   {
+    "m": "A2A",
+    "a": 2,
+    "b": 4,
+    "as": "2%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$114b",
+    "$162b",
+    "7%"
+   ],
+   "pos": [
+    "$832b",
+    "$987b",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Bizum",
+    "t": "Instant mobile bank transfer",
+    "s": "bizum"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Sweden": {
+  "name": "Sweden",
+  "region": "Europe",
+  "page": 53,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 44,
+    "b": 50,
+    "as": "44%",
+    "bs": "50%"
+   },
+   {
+    "m": "BNPL",
+    "a": 25,
+    "b": 26,
+    "as": "25%",
+    "bs": "26%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 14,
+    "b": 10,
+    "as": "14%",
+    "bs": "10%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 49,
+    "b": 43,
+    "as": "49%",
+    "bs": "43%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 28,
+    "b": 36,
+    "as": "28%",
+    "bs": "36%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 16,
+    "b": 14,
+    "as": "16%",
+    "bs": "14%"
+   },
+   {
+    "m": "Cash",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   },
+   {
+    "m": "BNPL",
+    "a": 1,
+    "b": 2,
+    "as": "1%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$30b",
+    "$38b",
+    "5%"
+   ],
+   "pos": [
+    "$123b",
+    "$139b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Klarna",
+    "t": "Buy now, pay later",
+    "s": "klarna"
+   },
+   {
+    "n": "Swish",
+    "t": "Instant mobile bank transfer",
+    "s": "swish"
+   },
+   {
+    "n": "Trustly",
+    "t": "Pay by bank transfer",
+    "s": "trustly"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   }
+  ]
+ },
+ "Switzerland": {
+  "name": "Switzerland",
+  "region": "Europe",
+  "page": 54,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 34,
+    "b": 42,
+    "as": "34%",
+    "bs": "42%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 27,
+    "b": 22,
+    "as": "27%",
+    "bs": "22%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 21,
+    "b": 18,
+    "as": "21%",
+    "bs": "18%"
+   },
+   {
+    "m": "BNPL",
+    "a": 8,
+    "b": 9,
+    "as": "8%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 5,
+    "b": 5,
+    "as": "5%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 32,
+    "b": 31,
+    "as": "32%",
+    "bs": "31%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 27,
+    "b": 32,
+    "as": "27%",
+    "bs": "32%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 20,
+    "b": 17,
+    "as": "20%",
+    "bs": "17%"
+   },
+   {
+    "m": "Cash",
+    "a": 19,
+    "b": 18,
+    "as": "19%",
+    "bs": "18%"
+   },
+   {
+    "m": "A2A",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$20b",
+    "$26b",
+    "5%"
+   ],
+   "pos": [
+    "$144b",
+    "$157b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "TWINT",
+    "t": "Mobile wallet with QR",
+    "s": "twint"
+   },
+   {
+    "n": "PostFinance",
+    "t": "Bank card and e-finance",
+    "s": "postfinance"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Klarna",
+    "t": "Buy now, pay later",
+    "s": "klarna"
+   }
+  ]
+ },
+ "Turkey": {
+  "name": "Turkey",
+  "region": "Europe",
+  "page": 55,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 52,
+    "b": 47,
+    "as": "52%",
+    "bs": "47%"
+   },
+   {
+    "m": "A2A",
+    "a": 14,
+    "b": 21,
+    "as": "14%",
+    "bs": "21%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 18,
+    "as": "13%",
+    "bs": "18%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 12,
+    "b": 8,
+    "as": "12%",
+    "bs": "8%"
+   },
+   {
+    "m": "Cash",
+    "a": 5,
+    "b": 3,
+    "as": "5%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 4,
+    "as": "5%",
+    "bs": "4%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Credit cards",
+    "a": 48,
+    "b": 43,
+    "as": "48%",
+    "bs": "43%"
+   },
+   {
+    "m": "Cash",
+    "a": 20,
+    "b": 16,
+    "as": "20%",
+    "bs": "16%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 15,
+    "b": 22,
+    "as": "15%",
+    "bs": "22%"
+   },
+   {
+    "m": "A2A",
+    "a": 7,
+    "b": 11,
+    "as": "7%",
+    "bs": "11%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$39b",
+    "$50b",
+    "5%"
+   ],
+   "pos": [
+    "$377b",
+    "$449b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Troy",
+    "t": "Domestic card network",
+    "s": "troy"
+   },
+   {
+    "n": "BKM Express",
+    "t": "Digital wallet",
+    "s": "bkm-express"
+   },
+   {
+    "n": "Papara",
+    "t": "E-wallet",
+    "s": "papara"
+   },
+   {
+    "n": "Tosla",
+    "t": "E-wallet",
+    "s": "tosla"
+   }
+  ]
+ },
+ "United Kingdom": {
+  "name": "United Kingdom",
+  "region": "Europe",
+  "page": 56,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 40,
+    "b": 50,
+    "as": "40%",
+    "bs": "50%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 23,
+    "b": 18,
+    "as": "23%",
+    "bs": "18%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 22,
+    "b": 17,
+    "as": "22%",
+    "bs": "17%"
+   },
+   {
+    "m": "BNPL",
+    "a": 8,
+    "b": 9,
+    "as": "8%",
+    "bs": "9%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 43,
+    "b": 37,
+    "as": "43%",
+    "bs": "37%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 24,
+    "b": 21,
+    "as": "24%",
+    "bs": "21%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 20,
+    "b": 31,
+    "as": "20%",
+    "bs": "31%"
+   },
+   {
+    "m": "Cash",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$371b",
+    "$478b",
+    "5%"
+   ],
+   "pos": [
+    "$1t",
+    "$1.2t",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "Argentina": {
+  "name": "Argentina",
+  "region": "Latin America",
+  "page": 60,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 39,
+    "b": 48,
+    "as": "39%",
+    "bs": "48%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 28,
+    "b": 19,
+    "as": "28%",
+    "bs": "19%"
+   },
+   {
+    "m": "A2A",
+    "a": 15,
+    "b": 21,
+    "as": "15%",
+    "bs": "21%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 14,
+    "b": 10,
+    "as": "14%",
+    "bs": "10%"
+   },
+   {
+    "m": "Cash",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 33,
+    "b": 41,
+    "as": "33%",
+    "bs": "41%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 22,
+    "b": 19,
+    "as": "22%",
+    "bs": "19%"
+   },
+   {
+    "m": "Cash",
+    "a": 17,
+    "b": 9,
+    "as": "17%",
+    "bs": "9%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 16,
+    "b": 13,
+    "as": "16%",
+    "bs": "13%"
+   },
+   {
+    "m": "A2A",
+    "a": 10,
+    "b": 16,
+    "as": "10%",
+    "bs": "16%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$29b",
+    "$47b",
+    "10%"
+   ],
+   "pos": [
+    "$158b",
+    "$200b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "MODO",
+    "t": "Bank-backed QR wallet",
+    "s": "modo"
+   },
+   {
+    "n": "Mercado Pago",
+    "t": "Digital wallet with QR",
+    "s": "mercado-pago"
+   },
+   {
+    "n": "Naranja X",
+    "t": "Fintech card and wallet",
+    "s": "naranja-x"
+   },
+   {
+    "n": "Ualá",
+    "t": "Wallet with prepaid card",
+    "s": "uala"
+   }
+  ]
+ },
+ "Brazil": {
+  "name": "Brazil",
+  "region": "Latin America",
+  "page": 61,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 42,
+    "b": 44,
+    "as": "42%",
+    "bs": "44%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 40,
+    "b": 34,
+    "as": "40%",
+    "bs": "34%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 10,
+    "b": 15,
+    "as": "10%",
+    "bs": "15%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 4,
+    "b": 2,
+    "as": "4%",
+    "bs": "2%"
+   },
+   {
+    "m": "Cash",
+    "a": 3,
+    "b": 1,
+    "as": "3%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "A2A",
+    "a": 34,
+    "b": 46,
+    "as": "34%",
+    "bs": "46%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 31,
+    "b": 24,
+    "as": "31%",
+    "bs": "24%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 12,
+    "b": 16,
+    "as": "12%",
+    "bs": "16%"
+   },
+   {
+    "m": "Cash",
+    "a": 12,
+    "b": 9,
+    "as": "12%",
+    "bs": "9%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 9,
+    "b": 5,
+    "as": "9%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$76b",
+    "$114b",
+    "8%"
+   ],
+   "pos": [
+    "$597b",
+    "$729b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Pix",
+    "t": "Instant bank transfer by QR or key",
+    "s": "pix"
+   },
+   {
+    "n": "PicPay",
+    "t": "Digital wallet",
+    "s": "picpay"
+   },
+   {
+    "n": "Mercado Pago",
+    "t": "Digital wallet with QR",
+    "s": "mercado-pago"
+   },
+   {
+    "n": "Nubank",
+    "t": "Digital bank",
+    "s": "nubank"
+   }
+  ]
+ },
+ "Chile": {
+  "name": "Chile",
+  "region": "Latin America",
+  "page": 62,
+  "ecom": [
+   {
+    "m": "Debit cards",
+    "a": 42,
+    "b": 37,
+    "as": "42%",
+    "bs": "37%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 23,
+    "b": 34,
+    "as": "23%",
+    "bs": "34%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 18,
+    "b": 14,
+    "as": "18%",
+    "bs": "14%"
+   },
+   {
+    "m": "A2A",
+    "a": 12,
+    "b": 12,
+    "as": "12%",
+    "bs": "12%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 51,
+    "b": 49,
+    "as": "51%",
+    "bs": "49%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 21,
+    "b": 19,
+    "as": "21%",
+    "bs": "19%"
+   },
+   {
+    "m": "Cash",
+    "a": 16,
+    "b": 12,
+    "as": "16%",
+    "bs": "12%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 9,
+    "b": 16,
+    "as": "9%",
+    "bs": "16%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$16b",
+    "$24b",
+    "8%"
+   ],
+   "pos": [
+    "$151b",
+    "$191b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Redcompra",
+    "t": "Domestic debit card network",
+    "s": "redcompra"
+   },
+   {
+    "n": "MACH",
+    "t": "Wallet with prepaid card",
+    "s": "mach"
+   },
+   {
+    "n": "Onepay",
+    "t": "Digital wallet (Transbank)",
+    "s": "onepay"
+   },
+   {
+    "n": "Mercado Pago",
+    "t": "Digital wallet with QR",
+    "s": "mercado-pago"
+   }
+  ]
+ },
+ "Colombia": {
+  "name": "Colombia",
+  "region": "Latin America",
+  "page": 63,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 34,
+    "b": 41,
+    "as": "34%",
+    "bs": "41%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 29,
+    "b": 34,
+    "as": "29%",
+    "bs": "34%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 17,
+    "b": 11,
+    "as": "17%",
+    "bs": "11%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 10,
+    "b": 8,
+    "as": "10%",
+    "bs": "8%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 3,
+    "as": "7%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 4,
+    "as": "3%",
+    "bs": "4%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 32,
+    "b": 23,
+    "as": "32%",
+    "bs": "23%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 26,
+    "b": 22,
+    "as": "26%",
+    "bs": "22%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 20,
+    "b": 16,
+    "as": "20%",
+    "bs": "16%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 20,
+    "b": 32,
+    "as": "20%",
+    "bs": "32%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 0,
+    "b": 6,
+    "as": "<1%",
+    "bs": "6%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$18b",
+    "$29b",
+    "11%"
+   ],
+   "pos": [
+    "$155b",
+    "$205b",
+    "6%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "PSE",
+    "t": "Online bank transfer",
+    "s": "pse"
+   },
+   {
+    "n": "Nequi",
+    "t": "E-wallet",
+    "s": "nequi"
+   },
+   {
+    "n": "Daviplata",
+    "t": "E-wallet",
+    "s": "daviplata"
+   },
+   {
+    "n": "Bre-B",
+    "t": "Instant payment system",
+    "s": "bre-b"
+   }
+  ]
+ },
+ "Mexico": {
+  "name": "Mexico",
+  "region": "Latin America",
+  "page": 64,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 32,
+    "b": 30,
+    "as": "32%",
+    "bs": "30%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 26,
+    "b": 30,
+    "as": "26%",
+    "bs": "30%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 23,
+    "b": 21,
+    "as": "23%",
+    "bs": "21%"
+   },
+   {
+    "m": "Cash",
+    "a": 9,
+    "b": 7,
+    "as": "9%",
+    "bs": "7%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 7,
+    "as": "6%",
+    "bs": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "b": 5,
+    "as": "4%",
+    "bs": "5%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 40,
+    "b": 35,
+    "as": "40%",
+    "bs": "35%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 26,
+    "b": 25,
+    "as": "26%",
+    "bs": "25%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 24,
+    "b": 24,
+    "as": "24%",
+    "bs": "24%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 9,
+    "b": 14,
+    "as": "9%",
+    "bs": "14%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$66b",
+    "$102b",
+    "9%"
+   ],
+   "pos": [
+    "$390b",
+    "$440b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "OXXO",
+    "t": "Cash voucher paid in store",
+    "s": "oxxo"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Mercado Pago",
+    "t": "Digital wallet with QR",
+    "s": "mercado-pago"
+   }
+  ]
+ },
+ "Peru": {
+  "name": "Peru",
+  "region": "Latin America",
+  "page": 65,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 44,
+    "b": 57,
+    "as": "44%",
+    "bs": "57%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 23,
+    "b": 17,
+    "as": "23%",
+    "bs": "17%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 18,
+    "b": 14,
+    "as": "18%",
+    "bs": "14%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 5,
+    "as": "7%",
+    "bs": "5%"
+   },
+   {
+    "m": "A2A",
+    "a": 6,
+    "b": 5,
+    "as": "6%",
+    "bs": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 38,
+    "b": 50,
+    "as": "38%",
+    "bs": "50%"
+   },
+   {
+    "m": "Cash",
+    "a": 30,
+    "b": 25,
+    "as": "30%",
+    "bs": "25%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 19,
+    "b": 14,
+    "as": "19%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$13b",
+    "$19b",
+    "8%"
+   ],
+   "pos": [
+    "$125b",
+    "$141b",
+    "2%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Yape",
+    "t": "Mobile wallet with QR",
+    "s": "yape"
+   },
+   {
+    "n": "Plin",
+    "t": "Bank-to-bank mobile transfer",
+    "s": "plin"
+   },
+   {
+    "n": "PagoEfectivo",
+    "t": "Cash and bank voucher",
+    "s": "pagoefectivo"
+   }
+  ]
+ },
+ "Nigeria": {
+  "name": "Nigeria",
+  "region": "Middle East and Africa",
+  "page": 69,
+  "ecom": [
+   {
+    "m": "A2A",
+    "a": 44,
+    "b": 50,
+    "as": "44%",
+    "bs": "50%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 24,
+    "b": 20,
+    "as": "24%",
+    "bs": "20%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 14,
+    "as": "13%",
+    "bs": "14%"
+   },
+   {
+    "m": "Cash",
+    "a": 11,
+    "b": 8,
+    "as": "11%",
+    "bs": "8%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "b": 6,
+    "as": "5%",
+    "bs": "6%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Cash",
+    "a": 39,
+    "b": 33,
+    "as": "39%",
+    "bs": "33%"
+   },
+   {
+    "m": "A2A",
+    "a": 31,
+    "b": 36,
+    "as": "31%",
+    "bs": "36%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 15,
+    "b": 17,
+    "as": "15%",
+    "bs": "17%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 14,
+    "b": 12,
+    "as": "14%",
+    "bs": "12%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 1,
+    "as": "1%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$5.9b",
+    "$13b",
+    "17%"
+   ],
+   "pos": [
+    "$105b",
+    "$139b",
+    "6%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Verve",
+    "t": "Domestic card network",
+    "s": "verve"
+   },
+   {
+    "n": "JumiaPay",
+    "t": "Digital wallet (Jumia)",
+    "s": "jumiapay"
+   },
+   {
+    "n": "KongaPay",
+    "t": "Digital wallet (Konga)",
+    "s": "kongapay"
+   },
+   {
+    "n": "NQR",
+    "t": "National QR-code payment",
+    "s": "nqr"
+   }
+  ]
+ },
+ "Saudi Arabia": {
+  "name": "Saudi Arabia",
+  "region": "Middle East and Africa",
+  "page": 70,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 40,
+    "b": 51,
+    "as": "40%",
+    "bs": "51%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 19,
+    "b": 14,
+    "as": "19%",
+    "bs": "14%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 12,
+    "b": 7,
+    "as": "12%",
+    "bs": "7%"
+   },
+   {
+    "m": "A2A",
+    "a": 9,
+    "b": 11,
+    "as": "9%",
+    "bs": "11%"
+   },
+   {
+    "m": "Cash",
+    "a": 8,
+    "b": 5,
+    "as": "8%",
+    "bs": "5%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 7,
+    "b": 7,
+    "as": "7%",
+    "bs": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "b": 5,
+    "as": "4%",
+    "bs": "5%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 43,
+    "b": 53,
+    "as": "43%",
+    "bs": "53%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 28,
+    "b": 24,
+    "as": "28%",
+    "bs": "24%"
+   },
+   {
+    "m": "Cash",
+    "a": 14,
+    "b": 9,
+    "as": "14%",
+    "bs": "9%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 8,
+    "b": 7,
+    "as": "8%",
+    "bs": "7%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 7,
+    "b": 7,
+    "as": "7%",
+    "bs": "7%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$24b",
+    "$36b",
+    "9%"
+   ],
+   "pos": [
+    "$217b",
+    "$282b",
+    "5%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "stc pay",
+    "t": "Digital wallet",
+    "s": "stc-pay"
+   },
+   {
+    "n": "Tabby",
+    "t": "Buy now, pay later",
+    "s": "tabby"
+   },
+   {
+    "n": "Tamara",
+    "t": "Buy now, pay later",
+    "s": "tamara"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   }
+  ]
+ },
+ "South Africa": {
+  "name": "South Africa",
+  "region": "Middle East and Africa",
+  "page": 71,
+  "ecom": [
+   {
+    "m": "Debit cards",
+    "a": 32,
+    "b": 29,
+    "as": "32%",
+    "bs": "29%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 25,
+    "b": 31,
+    "as": "25%",
+    "bs": "31%"
+   },
+   {
+    "m": "A2A",
+    "a": 20,
+    "b": 22,
+    "as": "20%",
+    "bs": "22%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 11,
+    "b": 9,
+    "as": "11%",
+    "bs": "9%"
+   },
+   {
+    "m": "Cash",
+    "a": 6,
+    "b": 3,
+    "as": "6%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "b": 6,
+    "as": "6%",
+    "bs": "6%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Debit cards",
+    "a": 54,
+    "b": 54,
+    "as": "54%",
+    "bs": "54%"
+   },
+   {
+    "m": "Cash",
+    "a": 26,
+    "b": 22,
+    "as": "26%",
+    "bs": "22%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 8,
+    "b": 11,
+    "as": "8%",
+    "bs": "11%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 6,
+    "b": 4,
+    "as": "6%",
+    "bs": "4%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 7,
+    "as": "4%",
+    "bs": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$7.3b",
+    "$14b",
+    "14%"
+   ],
+   "pos": [
+    "$138b",
+    "$186b",
+    "6%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "PayShap",
+    "t": "Instant bank transfer",
+    "s": "payshap"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Samsung Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "samsung-wallet"
+   }
+  ]
+ },
+ "UAE": {
+  "name": "United Arab Emirates",
+  "region": "Middle East and Africa",
+  "page": 72,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 35,
+    "b": 40,
+    "as": "35%",
+    "bs": "40%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 27,
+    "b": 23,
+    "as": "27%",
+    "bs": "23%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 15,
+    "b": 13,
+    "as": "15%",
+    "bs": "13%"
+   },
+   {
+    "m": "A2A",
+    "a": 10,
+    "b": 13,
+    "as": "10%",
+    "bs": "13%"
+   },
+   {
+    "m": "Cash",
+    "a": 7,
+    "b": 4,
+    "as": "7%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "b": 7,
+    "as": "6%",
+    "bs": "7%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Digital wallets",
+    "a": 29,
+    "b": 43,
+    "as": "29%",
+    "bs": "43%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 28,
+    "b": 23,
+    "as": "28%",
+    "bs": "23%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 24,
+    "b": 20,
+    "as": "24%",
+    "bs": "20%"
+   },
+   {
+    "m": "Cash",
+    "a": 15,
+    "b": 9,
+    "as": "15%",
+    "bs": "9%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 3,
+    "as": "2%",
+    "bs": "3%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$36b",
+    "$60b",
+    "11%"
+   ],
+   "pos": [
+    "$163b",
+    "$202b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Tabby",
+    "t": "Buy now, pay later",
+    "s": "tabby"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   },
+   {
+    "n": "e& money",
+    "t": "Digital wallet",
+    "s": "eand-money"
+   }
+  ]
+ },
+ "Canada": {
+  "name": "Canada",
+  "region": "North America",
+  "page": 75,
+  "ecom": [
+   {
+    "m": "Credit cards",
+    "a": 46,
+    "b": 42,
+    "as": "46%",
+    "bs": "42%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 32,
+    "b": 37,
+    "as": "32%",
+    "bs": "37%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 9,
+    "b": 6,
+    "as": "9%",
+    "bs": "6%"
+   },
+   {
+    "m": "BNPL",
+    "a": 5,
+    "b": 6,
+    "as": "5%",
+    "bs": "6%"
+   },
+   {
+    "m": "A2A",
+    "a": 5,
+    "b": 6,
+    "as": "5%",
+    "bs": "6%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "b": 2,
+    "as": "3%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Credit cards",
+    "a": 51,
+    "b": 49,
+    "as": "51%",
+    "bs": "49%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 23,
+    "b": 20,
+    "as": "23%",
+    "bs": "20%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 13,
+    "b": 21,
+    "as": "13%",
+    "bs": "21%"
+   },
+   {
+    "m": "Cash",
+    "a": 10,
+    "b": 8,
+    "as": "10%",
+    "bs": "8%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "b": 2,
+    "as": "1%",
+    "bs": "2%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$124b",
+    "$168b",
+    "6%"
+   ],
+   "pos": [
+    "$725b",
+    "$892b",
+    "4%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Interac",
+    "t": "Domestic debit and e-transfer",
+    "s": "interac"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ },
+ "United States": {
+  "name": "United States",
+  "region": "North America",
+  "page": 76,
+  "ecom": [
+   {
+    "m": "Digital wallets",
+    "a": 40,
+    "b": 44,
+    "as": "40%",
+    "bs": "44%"
+   },
+   {
+    "m": "Credit cards",
+    "a": 32,
+    "b": 29,
+    "as": "32%",
+    "bs": "29%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 16,
+    "b": 13,
+    "as": "16%",
+    "bs": "13%"
+   },
+   {
+    "m": "BNPL",
+    "a": 6,
+    "b": 8,
+    "as": "6%",
+    "bs": "8%"
+   },
+   {
+    "m": "A2A",
+    "a": 4,
+    "b": 4,
+    "as": "4%",
+    "bs": "4%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 2,
+    "as": "2%",
+    "bs": "2%"
+   }
+  ],
+  "pos": [
+   {
+    "m": "Credit cards",
+    "a": 40,
+    "b": 36,
+    "as": "40%",
+    "bs": "36%"
+   },
+   {
+    "m": "Debit cards",
+    "a": 28,
+    "b": 25,
+    "as": "28%",
+    "bs": "25%"
+   },
+   {
+    "m": "Digital wallets",
+    "a": 17,
+    "b": 26,
+    "as": "17%",
+    "bs": "26%"
+   },
+   {
+    "m": "Cash",
+    "a": 10,
+    "b": 9,
+    "as": "10%",
+    "bs": "9%"
+   },
+   {
+    "m": "Prepaid cards",
+    "a": 3,
+    "b": 3,
+    "as": "3%",
+    "bs": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "b": 1,
+    "as": "2%",
+    "bs": "1%"
+   }
+  ],
+  "size": {
+   "ecom": [
+    "$2.5t",
+    "$3.4t",
+    "7%"
+   ],
+   "pos": [
+    "$9t",
+    "$10.2t",
+    "3%"
+   ]
+  },
+  "brands": [
+   {
+    "n": "Apple Pay",
+    "t": "Card-based mobile wallet",
+    "s": "apple-pay"
+   },
+   {
+    "n": "PayPal",
+    "t": "Online digital wallet",
+    "s": "paypal"
+   },
+   {
+    "n": "Google Wallet",
+    "t": "Card-based mobile wallet",
+    "s": "google-wallet"
+   }
+  ]
+ }
+}

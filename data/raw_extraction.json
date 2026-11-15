@@ -1,0 +1,4966 @@
+[
+ {
+  "page": 20,
+  "title": "Payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "56%",
+     "63%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "20%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "7%",
+     "7%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "4%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "33%",
+     "42%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "24%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "22%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "14%",
+     "12%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$7.6t",
+   "$11t",
+   "$28.5t",
+   "$33.7t"
+  ],
+  "cagr": [
+   "7.5%",
+   "3.4%"
+  ]
+ },
+ {
+  "page": 22,
+  "title": "APAC payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "77%",
+     "84%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "7%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "5%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "62%",
+     "70%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "13%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "13%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "6%",
+     "4%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$3.5t",
+   "$5.3t",
+   "$10.1t",
+   "$12.2t"
+  ],
+  "cagr": [
+   "8.5%",
+   "4%"
+  ]
+ },
+ {
+  "page": 24,
+  "title": "Australia payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "43%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "19%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "18%",
+     "13%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "13%",
+     "14%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "5%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "37%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "26%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "21%",
+     "32%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$89b",
+   "$127b",
+   "$438b",
+   "$526b"
+  ],
+  "cagr": [
+   "7%",
+   "4%"
+  ]
+ },
+ {
+  "page": 25,
+  "title": "China payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "89%",
+     "95%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "4%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "1%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "87%",
+     "93%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "4%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "3%",
+     "1%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$2.6t",
+   "$4t",
+   "$5.2t",
+   "$6t"
+  ],
+  "cagr": [
+   "8%",
+   "3%"
+  ]
+ },
+ {
+  "page": 26,
+  "title": "Hong Kong payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "41%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "31%",
+     "19%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "19%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "45%",
+     "52%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "33%",
+     "24%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "9%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$7.5b",
+   "$9.3b",
+   "$82b",
+   "$92b"
+  ],
+  "cagr": [
+   "4%",
+   "2%"
+  ]
+ },
+ {
+  "page": 27,
+  "title": "India payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "68%",
+     "78%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "15%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "6%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "5%",
+     "3%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "61%",
+     "71%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "16%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "14%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "3%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$165b",
+   "$328b",
+   "$1.6t",
+   "$2.3t"
+  ],
+  "cagr": [
+   "15%",
+   "8%"
+  ]
+ },
+ {
+  "page": 28,
+  "title": "Indonesia payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "42%",
+     "43%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "34%",
+     "38%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "13%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "36%",
+     "24%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "23%",
+     "32%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "22%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "11%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "7%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$84b",
+   "$136b",
+   "$270b",
+   "$337b"
+  ],
+  "cagr": [
+   "10%",
+   "5%"
+  ]
+ },
+ {
+  "page": 29,
+  "title": "Japan payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "58%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "29%",
+     "39%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "38%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "35%",
+     "33%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "24%",
+     "33%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$193b",
+   "$229b",
+   "$1.1t",
+   "$1.2t"
+  ],
+  "cagr": [
+   "4%",
+   "1%"
+  ]
+ },
+ {
+  "page": 30,
+  "title": "Malaysia payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "35%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "26%",
+     "30%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "16%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "9%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "8%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "5%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "32%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "22%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "15%",
+     "13%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "14%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "14%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$15b",
+   "$23b",
+   "$145b",
+   "$181b"
+  ],
+  "cagr": [
+   "9%",
+   "5%"
+  ]
+ },
+ {
+  "page": 31,
+  "title": "New Zealand payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "29%",
+     "37%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "25%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "20%",
+     "16%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "13%",
+     "14%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "11%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "41%",
+     "39%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "30%",
+     "27%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "15%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$8.7b",
+   "$12b",
+   "$73b",
+   "$84b"
+  ],
+  "cagr": [
+   "7%",
+   "3%"
+  ]
+ },
+ {
+  "page": 32,
+  "title": "Philippines payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "41%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "23%",
+     "18%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "13%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "7%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "5%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "42%",
+     "34%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "29%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "10%",
+     "7%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "7%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$24b",
+   "$45b",
+   "$177b",
+   "$240b"
+  ],
+  "cagr": [
+   "14%",
+   "6%"
+  ]
+ },
+ {
+  "page": 33,
+  "title": "Singapore payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "40%",
+     "45%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "34%",
+     "30%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "11%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "36%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "27%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "12%",
+     "15%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$25b",
+   "$38b",
+   "$136b",
+   "$163b"
+  ],
+  "cagr": [
+   "9%",
+   "4%"
+  ]
+ },
+ {
+  "page": 34,
+  "title": "South Korea payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "49%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "35%",
+     "46%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "7%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "53%",
+     "48%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "24%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "14%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$180b",
+   "$236b",
+   "$313b",
+   "$344b"
+  ],
+  "cagr": [
+   "6%",
+   "2%"
+  ]
+ },
+ {
+  "page": 35,
+  "title": "Taiwan payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "39%",
+     "35%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "34%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "15%",
+     "11%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "36%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "32%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "25%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$23b",
+   "$30b",
+   "$162b",
+   "$182b"
+  ],
+  "cagr": [
+   "6%",
+   "2%"
+  ]
+ },
+ {
+  "page": 36,
+  "title": "Thailand payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "44%",
+     "49%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "25%",
+     "27%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "15%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "10%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "A2A",
+    "vals": [
+     "43%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "30%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$35b",
+   "$60b",
+   "$209b",
+   "$262b"
+  ],
+  "cagr": [
+   "12%",
+   "5%"
+  ]
+ },
+ {
+  "page": 37,
+  "title": "Vietnam payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "38%",
+     "38%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "28%",
+     "35%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "16%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "12%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "33%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "30%",
+     "33%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "22%",
+     "28%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$28b",
+   "$50b",
+   "$199b",
+   "$262b"
+  ],
+  "cagr": [
+   "12%",
+   "6%"
+  ]
+ },
+ {
+  "page": 39,
+  "title": "Europe payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "38%",
+     "45%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "19%",
+     "15%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "17%",
+     "13%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "14%",
+     "14%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "9%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "38%",
+     "34%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "20%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "18%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "18%",
+     "26%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "3%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$1.2t",
+   "$1.7t",
+   "$6.5t",
+   "$7.6t"
+  ],
+  "cagr": [
+   "6%",
+   "3%"
+  ]
+ },
+ {
+  "page": 41,
+  "title": "Belgium payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "42%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "26%",
+     "22%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "12%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "48%",
+     "42%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "22%",
+     "33%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "16%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$21b",
+   "$29b",
+   "$199b",
+   "$222b"
+  ],
+  "cagr": [
+   "7%",
+   "2%"
+  ]
+ },
+ {
+  "page": 42,
+  "title": "Denmark payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "44%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "20%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "17%",
+     "14%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "11%",
+     "11%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "56%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "25%",
+     "33%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "10%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "6%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$25b",
+   "$32b",
+   "$82b",
+   "$94b"
+  ],
+  "cagr": [
+   "5%",
+   "3%"
+  ]
+ },
+ {
+  "page": 43,
+  "title": "Finland payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "35%",
+     "41%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "27%",
+     "24%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "19%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "66%",
+     "62%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "16%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "6%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$13b",
+   "$17b",
+   "$62b",
+   "$72b"
+  ],
+  "cagr": [
+   "5%",
+   "3%"
+  ]
+ },
+ {
+  "page": 44,
+  "title": "France payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "36%",
+     "45%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "28%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "20%",
+     "16%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "8%",
+     "7%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "5%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "50%",
+     "47%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "21%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "15%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$199b",
+   "$263b",
+   "$1t",
+   "$1.2t"
+  ],
+  "cagr": [
+   "6%",
+   "3%"
+  ]
+ },
+ {
+  "page": 45,
+  "title": "Germany payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "52%",
+     "55%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "18%",
+     "19%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "15%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "38%",
+     "35%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "32%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "17%",
+     "28%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$192b",
+   "$259b",
+   "$1.2t",
+   "$1.4t"
+  ],
+  "cagr": [
+   "6%",
+   "3%"
+  ]
+ },
+ {
+  "page": 46,
+  "title": "Ireland payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "42%",
+     "52%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "31%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "16%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "3%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "3%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "45%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "26%",
+     "36%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "15%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "13%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$16b",
+   "$22b",
+   "$74b",
+   "$92b"
+  ],
+  "cagr": [
+   "7%",
+   "4%"
+  ]
+ },
+ {
+  "page": 47,
+  "title": "Italy payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "43%",
+     "48%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "18%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "15%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "8%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "7%",
+     "7%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "30%",
+     "27%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "24%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "19%",
+     "27%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "11%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "7%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$97b",
+   "$132b",
+   "$697b",
+   "$830b"
+  ],
+  "cagr": [
+   "6%",
+   "4%"
+  ]
+ },
+ {
+  "page": 48,
+  "title": "Netherlands payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "64%",
+     "63%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "12%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "10%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "60%",
+     "55%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "24%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$42b",
+   "$57b",
+   "$187b",
+   "$219b"
+  ],
+  "cagr": [
+   "6%",
+   "3%"
+  ]
+ },
+ {
+  "page": 49,
+  "title": "Norway payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "43%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "22%",
+     "16%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "19%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "13%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "54%",
+     "48%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "30%",
+     "38%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "4%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$22b",
+   "$29b",
+   "$67b",
+   "$76b"
+  ],
+  "cagr": [
+   "6%",
+   "3%"
+  ]
+ },
+ {
+  "page": 50,
+  "title": "Poland payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "72%",
+     "74%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "11%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "4%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "3%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "3%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "A2A",
+    "vals": [
+     "30%",
+     "39%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "28%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "23%",
+     "18%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "15%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "6%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$40b",
+   "$58b",
+   "$312b",
+   "$397b"
+  ],
+  "cagr": [
+   "8%",
+   "5%"
+  ]
+ },
+ {
+  "page": 51,
+  "title": "Portugal payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "40%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "18%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "17%",
+     "13%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "16%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "49%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "27%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "9%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$9.8b",
+   "$14b",
+   "$89b",
+   "$111b"
+  ],
+  "cagr": [
+   "7%",
+   "4%"
+  ]
+ },
+ {
+  "page": 52,
+  "title": "Spain payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "34%",
+     "39%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "21%",
+     "27%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "19%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "17%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "6%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "34%",
+     "28%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "28%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "22%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "14%",
+     "23%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "2%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$114b",
+   "$162b",
+   "$832b",
+   "$987b"
+  ],
+  "cagr": [
+   "7%",
+   "3%"
+  ]
+ },
+ {
+  "page": 53,
+  "title": "Sweden payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "44%",
+     "50%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "25%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "14%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "49%",
+     "43%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "28%",
+     "36%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "16%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "1%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$30b",
+   "$38b",
+   "$123b",
+   "$139b"
+  ],
+  "cagr": [
+   "5%",
+   "2%"
+  ]
+ },
+ {
+  "page": 54,
+  "title": "Switzerland payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "34%",
+     "42%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "27%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "21%",
+     "18%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "8%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "5%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "32%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "27%",
+     "32%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "20%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "19%",
+     "18%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$20b",
+   "$26b",
+   "$144b",
+   "$157b"
+  ],
+  "cagr": [
+   "5%",
+   "2%"
+  ]
+ },
+ {
+  "page": 55,
+  "title": "Turkey payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "52%",
+     "47%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "14%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "18%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "12%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "5%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "48%",
+     "43%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "20%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "15%",
+     "22%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "7%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$39b",
+   "$50b",
+   "$377b",
+   "$449b"
+  ],
+  "cagr": [
+   "5%",
+   "4%"
+  ]
+ },
+ {
+  "page": 56,
+  "title": "United Kingdom payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "40%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "23%",
+     "18%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "22%",
+     "17%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "8%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "43%",
+     "37%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "24%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "20%",
+     "31%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$371b",
+   "$478b",
+   "$1t",
+   "$1.2t"
+  ],
+  "cagr": [
+   "5%",
+   "3%"
+  ]
+ },
+ {
+  "page": 58,
+  "title": "LATAM payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "31%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "23%",
+     "30%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "23%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "15%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "5%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "25%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "23%",
+     "18%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "20%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "16%",
+     "22%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "14%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$218b",
+   "$335b",
+   "$1.6t",
+   "$1.9t"
+  ],
+  "cagr": [
+   "9%",
+   "4%"
+  ]
+ },
+ {
+  "page": 60,
+  "title": "Argentina payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "39%",
+     "48%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "28%",
+     "19%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "15%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "14%",
+     "10%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "33%",
+     "41%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "22%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "17%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "16%",
+     "13%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "10%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$29b",
+   "$47b",
+   "$158b",
+   "$200b"
+  ],
+  "cagr": [
+   "10%",
+   "5%"
+  ]
+ },
+ {
+  "page": 61,
+  "title": "Brazil payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "42%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "40%",
+     "34%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "10%",
+     "15%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "4%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "3%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "A2A",
+    "vals": [
+     "34%",
+     "46%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "31%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "12%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "12%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "9%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$76b",
+   "$114b",
+   "$597b",
+   "$729b"
+  ],
+  "cagr": [
+   "8%",
+   "4%"
+  ]
+ },
+ {
+  "page": 62,
+  "title": "Chile payment methods",
+  "ecom": [
+   {
+    "method": "Debit Card",
+    "vals": [
+     "42%",
+     "37%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "23%",
+     "34%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "18%",
+     "14%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "12%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "51%",
+     "49%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "21%",
+     "19%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "16%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "9%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$16b",
+   "$24b",
+   "$151b",
+   "$191b"
+  ],
+  "cagr": [
+   "8%",
+   "5%"
+  ]
+ },
+ {
+  "page": 63,
+  "title": "Colombia payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "34%",
+     "41%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "29%",
+     "34%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "17%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "4%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "32%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "26%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "20%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "20%",
+     "32%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "<1%",
+     "6%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$18b",
+   "$29b",
+   "$155b",
+   "$205b"
+  ],
+  "cagr": [
+   "11%",
+   "6%"
+  ]
+ },
+ {
+  "page": 64,
+  "title": "Mexico payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "32%",
+     "30%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "26%",
+     "30%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "23%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "9%",
+     "7%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "5%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "40%",
+     "35%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "26%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "24%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "9%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$66b",
+   "$102b",
+   "$390b",
+   "$440b"
+  ],
+  "cagr": [
+   "9%",
+   "2%"
+  ]
+ },
+ {
+  "page": 65,
+  "title": "Peru payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "44%",
+     "57%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "23%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "18%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "5%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "38%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "30%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "19%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$13b",
+   "$19b",
+   "$125b",
+   "$141b"
+  ],
+  "cagr": [
+   "8%",
+   "2%"
+  ]
+ },
+ {
+  "page": 67,
+  "title": "MEA payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "34%",
+     "39%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "19%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "18%",
+     "15%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "13%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "8%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "8%",
+     "8%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "30%",
+     "28%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "27%",
+     "35%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "21%",
+     "16%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "6%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$74b",
+   "$124b",
+   "$623b",
+   "$809b"
+  ],
+  "cagr": [
+   "11%",
+   "5%"
+  ]
+ },
+ {
+  "page": 69,
+  "title": "Nigeria payment methods",
+  "ecom": [
+   {
+    "method": "A2A",
+    "vals": [
+     "44%",
+     "50%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "24%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "11%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "5%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Cash",
+    "vals": [
+     "39%",
+     "33%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "31%",
+     "36%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "15%",
+     "17%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "14%",
+     "12%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$5.9b",
+   "$13b",
+   "$105b",
+   "$139b"
+  ],
+  "cagr": [
+   "17%",
+   "6%"
+  ]
+ },
+ {
+  "page": 70,
+  "title": "Saudi Arabia payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "40%",
+     "51%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "19%",
+     "14%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "12%",
+     "7%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "9%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "8%",
+     "5%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "7%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "4%",
+     "5%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "43%",
+     "53%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "28%",
+     "24%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "14%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "8%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "7%",
+     "7%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$24b",
+   "$36b",
+   "$217b",
+   "$282b"
+  ],
+  "cagr": [
+   "9%",
+   "5%"
+  ]
+ },
+ {
+  "page": 71,
+  "title": "South Africa payment methods",
+  "ecom": [
+   {
+    "method": "Debit Card",
+    "vals": [
+     "32%",
+     "29%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "25%",
+     "31%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "20%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "11%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "6%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "6%",
+     "6%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Debit cards",
+    "vals": [
+     "54%",
+     "54%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "26%",
+     "22%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "8%",
+     "11%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "6%",
+     "4%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "7%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$7.3b",
+   "$14b",
+   "$138b",
+   "$186b"
+  ],
+  "cagr": [
+   "14%",
+   "6%"
+  ]
+ },
+ {
+  "page": 72,
+  "title": "UAE payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "35%",
+     "40%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "27%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "15%",
+     "13%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "10%",
+     "13%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "7%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "6%",
+     "7%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "29%",
+     "43%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "28%",
+     "23%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "24%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "15%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "3%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$36b",
+   "$60b",
+   "$163b",
+   "$202b"
+  ],
+  "cagr": [
+   "11%",
+   "4%"
+  ]
+ },
+ {
+  "page": 74,
+  "title": "North America payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "39%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "33%",
+     "30%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "15%",
+     "13%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "6%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "41%",
+     "37%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "27%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "17%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "10%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$2.6t",
+   "$3.6t",
+   "$9.7t",
+   "$11.1t"
+  ],
+  "cagr": [
+   "7%",
+   "3%"
+  ]
+ },
+ {
+  "page": 75,
+  "title": "Canada payment methods",
+  "ecom": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "46%",
+     "42%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "32%",
+     "37%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "9%",
+     "6%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "5%",
+     "6%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "5%",
+     "6%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "3%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "51%",
+     "49%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "23%",
+     "20%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "13%",
+     "21%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "10%",
+     "8%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "1%",
+     "2%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$124b",
+   "$168b",
+   "$725b",
+   "$892b"
+  ],
+  "cagr": [
+   "6%",
+   "4%"
+  ]
+ },
+ {
+  "page": 76,
+  "title": "United States payment methods",
+  "ecom": [
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "40%",
+     "44%"
+    ]
+   },
+   {
+    "method": "Credit cards",
+    "vals": [
+     "32%",
+     "29%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "16%",
+     "13%"
+    ]
+   },
+   {
+    "method": "BNPL",
+    "vals": [
+     "6%",
+     "8%"
+    ]
+   },
+   {
+    "method": "A2A",
+    "vals": [
+     "4%",
+     "4%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "2%"
+    ]
+   }
+  ],
+  "ecom_unused": [],
+  "pos": [
+   {
+    "method": "Credit cards",
+    "vals": [
+     "40%",
+     "36%"
+    ]
+   },
+   {
+    "method": "Debit cards",
+    "vals": [
+     "28%",
+     "25%"
+    ]
+   },
+   {
+    "method": "Digital wallets",
+    "vals": [
+     "17%",
+     "26%"
+    ]
+   },
+   {
+    "method": "Cash",
+    "vals": [
+     "10%",
+     "9%"
+    ]
+   },
+   {
+    "method": "Prepaid cards",
+    "vals": [
+     "3%",
+     "3%"
+    ]
+   },
+   {
+    "method": "Others",
+    "vals": [
+     "2%",
+     "1%"
+    ]
+   }
+  ],
+  "pos_unused": [],
+  "market": [
+   "$2.5t",
+   "$3.4t",
+   "$9t",
+   "$10.2t"
+  ],
+  "cagr": [
+   "7%",
+   "3%"
+  ]
+ }
+]

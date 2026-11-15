@@ -1,0 +1,199 @@
+<title>World Payment Methods Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a short header, one wide map, a floating card on hover, then the full table. Light theme only, by request. */
+:root {
+  color-scheme: light;
+  --bg: #faf9f5; --surface: #ffffff; --ink: #141413; --ink-2: #4f4e49; --ink-3: #83817a;
+  --line: #e3e0d6; --land: #e9e6dd; --land-edge: #faf9f5;
+  --s1: #cfe0f3; --s2: #9cc0e8; --s3: #5f97d6; --s4: #2a6bb8; --s5: #0c3f7d;
+  --bar: #2a6bb8; --track: #efede6; --focus: #141413;
+  --shadow: 0 10px 30px rgba(20, 20, 19, .16);
+  /* Claude's own typefaces are not publicly hosted; they are used if installed, else the closest open match. */
+  --serif: "Anthropic Serif", "Tiempos Text", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Anthropic Sans", "Styrene B", "DM Sans", "Segoe UI", system-ui, sans-serif;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.5; }
+.page { max-width: 1180px; margin: 0 auto; padding-block: 28px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 18px; }
+h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.lede { margin: 6px 0 0; color: var(--ink-2); max-width: 66ch; }
+.bar-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; font-family: var(--sans); }
+.seg { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.seg button { font: 500 14px var(--sans); color: var(--ink-2); background: none; border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.seg button:focus-visible, .mapwrap path:focus-visible, .mapwrap circle:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 13px; color: var(--ink-2); }
+.legend .ramp { display: inline-flex; gap: 2px; }
+.legend .ramp span { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.legend i { display: block; width: 44px; height: 10px; border-radius: 2px; }
+.legend .nodata { display: inline-flex; align-items: center; gap: 6px; }
+.legend .nodata i { width: 14px; background: var(--land); border: 1px solid var(--line); }
+.mapwrap { position: relative; }
+.mapwrap svg { display: block; width: 100%; height: auto; }
+.mapwrap path { fill: var(--land); stroke: var(--land-edge); stroke-width: .6; }
+.mapwrap [data-k] { cursor: pointer; }
+.mapwrap .b1 { fill: var(--s1); } .mapwrap .b2 { fill: var(--s2); } .mapwrap .b3 { fill: var(--s3); }
+.mapwrap .b4 { fill: var(--s4); } .mapwrap .b5 { fill: var(--s5); }
+.mapwrap circle { stroke: var(--bg); stroke-width: 2; }
+.mapwrap .on { stroke: var(--ink); stroke-width: 1.8; }
+.hint { font: 13px var(--sans); color: var(--ink-3); margin: 0; }
+.card { position: absolute; z-index: 5; width: 340px; max-width: calc(100% - 8px); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: var(--shadow); padding: 14px 16px; pointer-events: none; font-family: var(--sans); }
+.card h2 { font: 500 21px/1.2 var(--serif); margin: 0; }
+.card .sub { font-size: 11px; color: var(--ink-3); margin: 3px 0 10px; letter-spacing: .05em; text-transform: uppercase; }
+.card .none { color: var(--ink-2); font-size: 13px; margin: 6px 0 2px; }
+.card h3 { font: 500 11px var(--sans); color: var(--ink-3); letter-spacing: .05em; text-transform: uppercase; margin: 12px 0 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+.rows { display: grid; grid-template-columns: auto 1fr auto; gap: 6px 10px; align-items: center; font-size: 13px; }
+.rows .track { height: 8px; background: var(--track); border-radius: 0 4px 4px 0; min-width: 40px; }
+.rows .track b { display: block; height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; }
+.rows .v { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.brands { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
+.brand { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.brand .logo { height: 34px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.brand .logo img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.brand b { font-size: 13px; font-weight: 600; line-height: 1.2; }
+.brand span { font-size: 12px; color: var(--ink-2); line-height: 1.25; }
+.card .size { margin: 12px 0 0; font-size: 12px; color: var(--ink-3); }
+h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font: 13px var(--sans); font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: middle; }
+th { font-weight: 500; color: var(--ink-3); font-size: 12px; }
+td.n, th.n { text-align: right; }
+td.m { font: 500 15px var(--serif); }
+.tlogos { display: flex; gap: 6px; }
+.tlogos span { height: 26px; width: 74px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid var(--line); border-radius: 5px; padding: 3px 6px; box-sizing: border-box; }
+.tlogos img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.source { font: 12px/1.5 var(--sans); color: var(--ink-3); margin: 0; max-width: 95ch; }
+.source a { color: inherit; }
+@media (max-width: 640px) {
+  .card { position: static; width: auto; max-width: none; box-shadow: none; margin-top: 10px; }
+}
+</style>
+
+<div class="page">
+  <header>
+    <h1>How the world pays, 2025</h1>
+    <p class="lede">Point at a country to see its top payment methods in 2025 and the brands people actually use there, from Alipay's QR codes to Brazil's Pix. Covers the 42 markets in Worldpay's Global Payments Report 2026.</p>
+  </header>
+
+  <div class="bar-row">
+    <div class="seg" role="group" aria-label="Payment channel">
+      <button type="button" id="ch-ecom" data-ch="ecom" aria-pressed="true">Online (e-com)</button>
+      <button type="button" id="ch-pos" data-ch="pos" aria-pressed="false">In store (POS)</button>
+    </div>
+    <div class="legend" aria-label="Map colour key">
+      <span id="legend-title">Digital wallet share of online spend, 2025</span>
+      <span class="ramp">
+        <span><i style="background:var(--s1)"></i>&lt;20%</span>
+        <span><i style="background:var(--s2)"></i>20–34</span>
+        <span><i style="background:var(--s3)"></i>35–49</span>
+        <span><i style="background:var(--s4)"></i>50–64</span>
+        <span><i style="background:var(--s5)"></i>65%+</span>
+      </span>
+      <span class="nodata"><i></i>Not in the report</span>
+    </div>
+  </div>
+
+  <div class="mapwrap" id="mapwrap">
+    <svg id="map" viewBox="0 0 960 470" role="img" aria-label="World map of digital wallet share by country"></svg>
+    <div class="card" id="card" hidden></div>
+  </div>
+  <p class="hint">On a touch screen, tap a country. Hong Kong and Singapore are shown as dots.</p>
+
+  <h2 class="sec">All 42 markets</h2>
+  <div class="tablewrap"><table id="table"></table></div>
+
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Shares are % of 2025 transaction value, read from the report's charts by script; totals may not equal 100% because of rounding. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const MAP = /*MAP*/null;
+const DOTS = /*DOTS*/null;
+const LOGOS = /*LOGOS*/null;
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('map'), card = document.getElementById('card'), wrap = document.getElementById('mapwrap');
+let channel = 'ecom', current = null;
+const LABEL = { ecom: 'Online (e-com)', pos: 'In store (POS)' };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const wallet = k => (DATA[k][channel].find(r => r.m === 'Digital wallets') || { a: 0 }).a;
+const bin = v => v < 20 ? 1 : v < 35 ? 2 : v < 50 ? 3 : v < 65 ? 4 : 5;
+const logo = b => '<img src="' + LOGOS[b.s] + '" alt="' + esc(b.n) + ' logo">';
+
+function el(tag, attrs) { const e = document.createElementNS(NS, tag); for (const a in attrs) e.setAttribute(a, attrs[a]); return e; }
+MAP.forEach(f => {
+  const p = el('path', { d: f.d, 'data-n': f.n });
+  if (f.k) { p.setAttribute('data-k', f.k); p.setAttribute('tabindex', '0'); p.setAttribute('aria-label', DATA[f.k].name); }
+  svg.appendChild(p);
+});
+DOTS.forEach(d => svg.appendChild(el('circle', { cx: d.x, cy: d.y, r: 5.5, 'data-k': d.k, 'data-n': d.k, tabindex: '0', 'aria-label': d.k })));
+
+function paint() {
+  svg.querySelectorAll('[data-k]').forEach(n => {
+    const on = n.classList.contains('on');
+    n.setAttribute('class', 'b' + bin(wallet(n.dataset.k)) + (on ? ' on' : ''));
+  });
+  document.getElementById('legend-title').textContent =
+    'Digital wallet share of ' + (channel === 'ecom' ? 'online' : 'in-store') + ' spend, 2025';
+}
+
+function cardHtml(node) {
+  const k = node.dataset.k;
+  if (!k) return '<h2>' + esc(node.dataset.n) + '</h2><p class="none">Not covered in the report.</p>';
+  const c = DATA[k], max = Math.max(...c[channel].map(r => Math.max(r.a, 1)));
+  const rows = c[channel].map(r =>
+    '<span>' + esc(r.m) + '</span><span class="track"><b style="width:' + (r.a / max * 100).toFixed(1) + '%"></b></span>' +
+    '<span class="v">' + esc(r.as) + '</span>').join('');
+  const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
+  return '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + ' · 2025 share</p>' +
+    '<div class="rows">' + rows + '</div>' +
+    '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
+    '<p class="size">' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
+}
+
+function show(node, px, py) {
+  if (current !== node) {
+    if (current) current.classList.remove('on');
+    current = node; node.classList.add('on');
+    if (node.tagName === 'path') svg.insertBefore(node, svg.querySelector('circle'));
+    card.innerHTML = cardHtml(node); card.hidden = false;
+  }
+  if (getComputedStyle(card).position !== 'absolute') { card.style.left = card.style.top = ''; return; }
+  const w = wrap.getBoundingClientRect();
+  if (px == null) { const b = node.getBoundingClientRect(); px = b.left + b.width / 2; py = b.top + b.height / 2; }
+  let x = px - w.left + 18, y = py - w.top + 18;
+  if (x + card.offsetWidth > w.width - 4) x = px - w.left - card.offsetWidth - 18;
+  x = Math.max(4, Math.min(x, w.width - card.offsetWidth - 4));
+  const vTop = -w.top + 8, vBottom = window.innerHeight - w.top - card.offsetHeight - 8;
+  y = Math.max(Math.min(y, vBottom), vTop);
+  card.style.left = x + 'px'; card.style.top = y + 'px';
+}
+function hide() { if (current) current.classList.remove('on'); current = null; card.hidden = true; }
+
+svg.addEventListener('pointermove', e => { const n = e.target.closest('[data-n]'); n ? show(n, e.clientX, e.clientY) : hide(); });
+svg.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hide(); });
+svg.addEventListener('click', e => { const n = e.target.closest('[data-n]'); n ? show(n, e.clientX, e.clientY) : hide(); });
+svg.addEventListener('focusin', e => { const n = e.target.closest('[data-k]'); if (n) show(n); });
+svg.addEventListener('focusout', hide);
+
+function table() {
+  const head = '<thead><tr><th>Market</th><th>Region</th><th>Top method</th><th class="n">Share</th><th>Second</th><th class="n">Share</th><th>Popular brands</th></tr></thead>';
+  const body = Object.values(DATA).map(c => { const r = c[channel][0], r2 = c[channel][1];
+    return '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(c.region) + '</td><td>' + esc(r.m) + '</td><td class="n">' + esc(r.as) +
+      '</td><td>' + esc(r2.m) + '</td><td class="n">' + esc(r2.as) + '</td><td><div class="tlogos">' +
+      c.brands.map(b => '<span title="' + esc(b.n + ': ' + b.t) + '">' + logo(b) + '</span>').join('') + '</div></td></tr>'; }).join('');
+  document.getElementById('table').innerHTML = head + '<tbody>' + body + '</tbody>';
+}
+
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+  channel = b.dataset.ch;
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  paint(); table();
+  if (current) { const n = current; current = null; show(n); }
+}));
+paint(); table();
+</script>

@@ -1,0 +1,501 @@
+market,region,channel,method,share_2025_pct,share_2030_forecast_pct,change_pts,report_page
+"Australia","Asia Pacific",ecom,Digital wallets,43,50,7,24
+"Australia","Asia Pacific",ecom,Credit cards,19,16,-3,24
+"Australia","Asia Pacific",ecom,Debit cards,18,13,-5,24
+"Australia","Asia Pacific",ecom,BNPL,13,14,1,24
+"Australia","Asia Pacific",ecom,A2A,5,6,1,24
+"Australia","Asia Pacific",ecom,Others,3,2,-1,24
+"Australia","Asia Pacific",pos,Debit cards,37,31,-6,24
+"Australia","Asia Pacific",pos,Credit cards,26,22,-4,24
+"Australia","Asia Pacific",pos,Digital wallets,21,32,11,24
+"Australia","Asia Pacific",pos,Cash,12,9,-3,24
+"Australia","Asia Pacific",pos,A2A,3,3,0,24
+"Australia","Asia Pacific",pos,Others,2,2,0,24
+"China","Asia Pacific",ecom,Digital wallets,89,95,6,25
+"China","Asia Pacific",ecom,Credit cards,4,1,-3,25
+"China","Asia Pacific",ecom,Debit cards,3,1,-2,25
+"China","Asia Pacific",ecom,A2A,2,2,0,25
+"China","Asia Pacific",ecom,Cash,1,1,0,25
+"China","Asia Pacific",ecom,Others,1,1,0,25
+"China","Asia Pacific",pos,Digital wallets,87,93,6,25
+"China","Asia Pacific",pos,Cash,4,3,-1,25
+"China","Asia Pacific",pos,Debit cards,3,1,-2,25
+"China","Asia Pacific",pos,Credit cards,3,1,-2,25
+"China","Asia Pacific",pos,A2A,1,1,0,25
+"China","Asia Pacific",pos,Others,1,1,0,25
+"Hong Kong","Asia Pacific",ecom,Digital wallets,41,51,10,26
+"Hong Kong","Asia Pacific",ecom,Credit cards,31,19,-12,26
+"Hong Kong","Asia Pacific",ecom,A2A,19,23,4,26
+"Hong Kong","Asia Pacific",ecom,Prepaid cards,3,2,-1,26
+"Hong Kong","Asia Pacific",ecom,Cash,2,1,-1,26
+"Hong Kong","Asia Pacific",ecom,Others,4,4,0,26
+"Hong Kong","Asia Pacific",pos,Digital wallets,45,52,7,26
+"Hong Kong","Asia Pacific",pos,Credit cards,33,24,-9,26
+"Hong Kong","Asia Pacific",pos,A2A,9,13,4,26
+"Hong Kong","Asia Pacific",pos,Cash,6,5,-1,26
+"Hong Kong","Asia Pacific",pos,Prepaid cards,5,4,-1,26
+"Hong Kong","Asia Pacific",pos,Others,3,2,-1,26
+"India","Asia Pacific",ecom,Digital wallets,68,78,10,27
+"India","Asia Pacific",ecom,Credit cards,15,11,-4,27
+"India","Asia Pacific",ecom,Cash,6,3,-3,27
+"India","Asia Pacific",ecom,Debit cards,5,3,-2,27
+"India","Asia Pacific",ecom,A2A,4,2,-2,27
+"India","Asia Pacific",ecom,Others,3,3,0,27
+"India","Asia Pacific",pos,Digital wallets,61,71,10,27
+"India","Asia Pacific",pos,Credit cards,16,12,-4,27
+"India","Asia Pacific",pos,Cash,14,9,-5,27
+"India","Asia Pacific",pos,Debit cards,4,3,-1,27
+"India","Asia Pacific",pos,A2A,4,4,0,27
+"India","Asia Pacific",pos,Others,1,1,0,27
+"Indonesia","Asia Pacific",ecom,Digital wallets,42,43,1,28
+"Indonesia","Asia Pacific",ecom,A2A,34,38,4,28
+"Indonesia","Asia Pacific",ecom,Cash,13,10,-3,28
+"Indonesia","Asia Pacific",ecom,Credit cards,5,4,-1,28
+"Indonesia","Asia Pacific",ecom,BNPL,3,3,0,28
+"Indonesia","Asia Pacific",ecom,Others,3,2,-1,28
+"Indonesia","Asia Pacific",pos,Cash,36,24,-12,28
+"Indonesia","Asia Pacific",pos,A2A,23,32,9,28
+"Indonesia","Asia Pacific",pos,Digital wallets,22,26,4,28
+"Indonesia","Asia Pacific",pos,Debit cards,11,10,-1,28
+"Indonesia","Asia Pacific",pos,Credit cards,7,6,-1,28
+"Indonesia","Asia Pacific",pos,Others,2,2,0,28
+"Japan","Asia Pacific",ecom,Credit cards,58,51,-7,29
+"Japan","Asia Pacific",ecom,Digital wallets,29,39,10,29
+"Japan","Asia Pacific",ecom,Cash,5,4,-1,29
+"Japan","Asia Pacific",ecom,A2A,3,3,0,29
+"Japan","Asia Pacific",ecom,BNPL,2,2,0,29
+"Japan","Asia Pacific",ecom,Others,2,2,0,29
+"Japan","Asia Pacific",pos,Cash,38,31,-7,29
+"Japan","Asia Pacific",pos,Credit cards,35,33,-2,29
+"Japan","Asia Pacific",pos,Digital wallets,24,33,9,29
+"Japan","Asia Pacific",pos,Prepaid cards,2,2,0,29
+"Japan","Asia Pacific",pos,Debit cards,1,1,0,29
+"Malaysia","Asia Pacific",ecom,A2A,35,40,5,30
+"Malaysia","Asia Pacific",ecom,Digital wallets,26,30,4,30
+"Malaysia","Asia Pacific",ecom,Credit cards,16,13,-3,30
+"Malaysia","Asia Pacific",ecom,Debit cards,9,6,-3,30
+"Malaysia","Asia Pacific",ecom,Cash,8,6,-2,30
+"Malaysia","Asia Pacific",ecom,Others,5,5,0,30
+"Malaysia","Asia Pacific",pos,Digital wallets,32,40,8,30
+"Malaysia","Asia Pacific",pos,Cash,22,17,-5,30
+"Malaysia","Asia Pacific",pos,Credit cards,15,13,-2,30
+"Malaysia","Asia Pacific",pos,A2A,14,16,2,30
+"Malaysia","Asia Pacific",pos,Debit cards,14,12,-2,30
+"Malaysia","Asia Pacific",pos,Others,3,2,-1,30
+"New Zealand","Asia Pacific",ecom,Digital wallets,29,37,8,31
+"New Zealand","Asia Pacific",ecom,Credit cards,25,19,-6,31
+"New Zealand","Asia Pacific",ecom,Debit cards,20,16,-4,31
+"New Zealand","Asia Pacific",ecom,BNPL,13,14,1,31
+"New Zealand","Asia Pacific",ecom,A2A,11,12,1,31
+"New Zealand","Asia Pacific",ecom,Others,2,2,0,31
+"New Zealand","Asia Pacific",pos,Debit cards,41,39,-2,31
+"New Zealand","Asia Pacific",pos,Credit cards,30,27,-3,31
+"New Zealand","Asia Pacific",pos,Digital wallets,15,22,7,31
+"New Zealand","Asia Pacific",pos,Cash,10,8,-2,31
+"New Zealand","Asia Pacific",pos,A2A,2,2,0,31
+"New Zealand","Asia Pacific",pos,Others,2,2,0,31
+"Philippines","Asia Pacific",ecom,Digital wallets,41,44,3,32
+"Philippines","Asia Pacific",ecom,Cash,23,18,-5,32
+"Philippines","Asia Pacific",ecom,A2A,13,22,9,32
+"Philippines","Asia Pacific",ecom,Credit cards,11,8,-3,32
+"Philippines","Asia Pacific",ecom,Debit cards,7,4,-3,32
+"Philippines","Asia Pacific",ecom,Others,5,5,0,32
+"Philippines","Asia Pacific",pos,Cash,42,34,-8,32
+"Philippines","Asia Pacific",pos,Digital wallets,29,40,11,32
+"Philippines","Asia Pacific",pos,Credit cards,12,9,-3,32
+"Philippines","Asia Pacific",pos,Debit cards,10,7,-3,32
+"Philippines","Asia Pacific",pos,A2A,7,10,3,32
+"Philippines","Asia Pacific",pos,Others,1,1,0,32
+"Singapore","Asia Pacific",ecom,Digital wallets,40,45,5,33
+"Singapore","Asia Pacific",ecom,Credit cards,34,30,-4,33
+"Singapore","Asia Pacific",ecom,A2A,11,13,2,33
+"Singapore","Asia Pacific",ecom,Debit cards,9,7,-2,33
+"Singapore","Asia Pacific",ecom,BNPL,3,3,0,33
+"Singapore","Asia Pacific",ecom,Others,3,3,0,33
+"Singapore","Asia Pacific",pos,Digital wallets,36,44,8,33
+"Singapore","Asia Pacific",pos,Credit cards,27,22,-5,33
+"Singapore","Asia Pacific",pos,Cash,12,9,-3,33
+"Singapore","Asia Pacific",pos,A2A,12,15,3,33
+"Singapore","Asia Pacific",pos,Debit cards,12,9,-3,33
+"Singapore","Asia Pacific",pos,Others,2,2,0,33
+"South Korea","Asia Pacific",ecom,Credit cards,49,40,-9,34
+"South Korea","Asia Pacific",ecom,Digital wallets,35,46,11,34
+"South Korea","Asia Pacific",ecom,A2A,7,7,0,34
+"South Korea","Asia Pacific",ecom,Debit cards,5,4,-1,34
+"South Korea","Asia Pacific",ecom,Prepaid cards,1,1,0,34
+"South Korea","Asia Pacific",ecom,Others,2,2,0,34
+"South Korea","Asia Pacific",pos,Credit cards,53,48,-5,34
+"South Korea","Asia Pacific",pos,Digital wallets,24,31,7,34
+"South Korea","Asia Pacific",pos,Debit cards,14,12,-2,34
+"South Korea","Asia Pacific",pos,Cash,6,5,-1,34
+"South Korea","Asia Pacific",pos,A2A,2,2,0,34
+"South Korea","Asia Pacific",pos,Others,2,2,0,34
+"Taiwan","Asia Pacific",ecom,Credit cards,39,35,-4,35
+"Taiwan","Asia Pacific",ecom,Digital wallets,34,40,6,35
+"Taiwan","Asia Pacific",ecom,Cash,15,11,-4,35
+"Taiwan","Asia Pacific",ecom,A2A,6,8,2,35
+"Taiwan","Asia Pacific",ecom,Debit cards,4,4,0,35
+"Taiwan","Asia Pacific",ecom,Others,2,2,0,35
+"Taiwan","Asia Pacific",pos,Digital wallets,36,44,8,35
+"Taiwan","Asia Pacific",pos,Credit cards,32,26,-6,35
+"Taiwan","Asia Pacific",pos,Cash,25,22,-3,35
+"Taiwan","Asia Pacific",pos,Debit cards,3,2,-1,35
+"Taiwan","Asia Pacific",pos,A2A,2,4,2,35
+"Taiwan","Asia Pacific",pos,Others,2,2,0,35
+"Thailand","Asia Pacific",ecom,A2A,44,49,5,36
+"Thailand","Asia Pacific",ecom,Digital wallets,25,27,2,36
+"Thailand","Asia Pacific",ecom,Cash,15,11,-4,36
+"Thailand","Asia Pacific",ecom,Credit cards,10,9,-1,36
+"Thailand","Asia Pacific",ecom,Debit cards,3,2,-1,36
+"Thailand","Asia Pacific",ecom,Others,2,2,0,36
+"Thailand","Asia Pacific",pos,A2A,43,51,8,36
+"Thailand","Asia Pacific",pos,Cash,30,25,-5,36
+"Thailand","Asia Pacific",pos,Digital wallets,13,14,1,36
+"Thailand","Asia Pacific",pos,Credit cards,9,7,-2,36
+"Thailand","Asia Pacific",pos,Debit cards,3,2,-1,36
+"Thailand","Asia Pacific",pos,Others,1,1,0,36
+"Vietnam","Asia Pacific",ecom,Digital wallets,38,38,0,37
+"Vietnam","Asia Pacific",ecom,A2A,28,35,7,37
+"Vietnam","Asia Pacific",ecom,Cash,16,12,-4,37
+"Vietnam","Asia Pacific",ecom,Credit cards,12,10,-2,37
+"Vietnam","Asia Pacific",ecom,Debit cards,4,4,0,37
+"Vietnam","Asia Pacific",ecom,Others,2,2,0,37
+"Vietnam","Asia Pacific",pos,Cash,33,26,-7,37
+"Vietnam","Asia Pacific",pos,Digital wallets,30,33,3,37
+"Vietnam","Asia Pacific",pos,A2A,22,28,6,37
+"Vietnam","Asia Pacific",pos,Credit cards,10,8,-2,37
+"Vietnam","Asia Pacific",pos,Debit cards,4,3,-1,37
+"Vietnam","Asia Pacific",pos,Others,1,1,0,37
+"Belgium","Europe",ecom,Digital wallets,42,50,8,41
+"Belgium","Europe",ecom,Debit cards,26,22,-4,41
+"Belgium","Europe",ecom,BNPL,12,13,1,41
+"Belgium","Europe",ecom,Credit cards,11,8,-3,41
+"Belgium","Europe",ecom,A2A,6,6,0,41
+"Belgium","Europe",ecom,Others,2,2,0,41
+"Belgium","Europe",pos,Debit cards,48,42,-6,41
+"Belgium","Europe",pos,Digital wallets,22,33,11,41
+"Belgium","Europe",pos,Credit cards,16,14,-2,41
+"Belgium","Europe",pos,Cash,12,9,-3,41
+"Belgium","Europe",pos,A2A,1,1,0,41
+"Belgium","Europe",pos,Others,1,1,0,41
+"Denmark","Europe",ecom,Digital wallets,44,51,7,42
+"Denmark","Europe",ecom,Debit cards,20,17,-3,42
+"Denmark","Europe",ecom,Credit cards,17,14,-3,42
+"Denmark","Europe",ecom,BNPL,11,11,0,42
+"Denmark","Europe",ecom,A2A,6,5,-1,42
+"Denmark","Europe",ecom,Others,2,2,0,42
+"Denmark","Europe",pos,Debit cards,56,50,-6,42
+"Denmark","Europe",pos,Digital wallets,25,33,8,42
+"Denmark","Europe",pos,Credit cards,10,9,-1,42
+"Denmark","Europe",pos,Cash,7,6,-1,42
+"Denmark","Europe",pos,A2A,1,1,0,42
+"Denmark","Europe",pos,Others,1,1,0,42
+"Finland","Europe",ecom,Digital wallets,35,41,6,43
+"Finland","Europe",ecom,A2A,27,24,-3,43
+"Finland","Europe",ecom,BNPL,19,20,1,43
+"Finland","Europe",ecom,Debit cards,11,9,-2,43
+"Finland","Europe",ecom,Credit cards,6,5,-1,43
+"Finland","Europe",ecom,Others,3,2,-1,43
+"Finland","Europe",pos,Debit cards,66,62,-4,43
+"Finland","Europe",pos,Digital wallets,16,23,7,43
+"Finland","Europe",pos,Credit cards,9,7,-2,43
+"Finland","Europe",pos,Cash,7,6,-1,43
+"Finland","Europe",pos,A2A,1,1,0,43
+"Finland","Europe",pos,Others,1,1,0,43
+"France","Europe",ecom,Digital wallets,36,45,9,44
+"France","Europe",ecom,Debit cards,28,24,-4,44
+"France","Europe",ecom,Credit cards,20,16,-4,44
+"France","Europe",ecom,A2A,8,7,-1,44
+"France","Europe",ecom,BNPL,5,6,1,44
+"France","Europe",ecom,Others,3,2,-1,44
+"France","Europe",pos,Debit cards,50,47,-3,44
+"France","Europe",pos,Credit cards,21,19,-2,44
+"France","Europe",pos,Digital wallets,15,22,7,44
+"France","Europe",pos,Cash,12,9,-3,44
+"France","Europe",pos,A2A,1,1,0,44
+"France","Europe",pos,Others,1,1,0,44
+"Germany","Europe",ecom,Digital wallets,52,55,3,45
+"Germany","Europe",ecom,BNPL,18,19,1,45
+"Germany","Europe",ecom,A2A,15,14,-1,45
+"Germany","Europe",ecom,Credit cards,11,9,-2,45
+"Germany","Europe",ecom,Cash,2,2,0,45
+"Germany","Europe",ecom,Others,2,1,-1,45
+"Germany","Europe",pos,Debit cards,38,35,-3,45
+"Germany","Europe",pos,Cash,32,26,-6,45
+"Germany","Europe",pos,Digital wallets,17,28,11,45
+"Germany","Europe",pos,Credit cards,9,7,-2,45
+"Germany","Europe",pos,A2A,2,2,0,45
+"Germany","Europe",pos,Others,2,2,0,45
+"Ireland","Europe",ecom,Digital wallets,42,52,10,46
+"Ireland","Europe",ecom,Debit cards,31,24,-7,46
+"Ireland","Europe",ecom,Credit cards,16,13,-3,46
+"Ireland","Europe",ecom,A2A,4,4,0,46
+"Ireland","Europe",ecom,BNPL,3,4,1,46
+"Ireland","Europe",ecom,Others,5,3,-2,46
+"Ireland","Europe",pos,Debit cards,45,40,-5,46
+"Ireland","Europe",pos,Digital wallets,26,36,10,46
+"Ireland","Europe",pos,Cash,15,12,-3,46
+"Ireland","Europe",pos,Credit cards,13,11,-2,46
+"Ireland","Europe",pos,Prepaid cards,1,1,0,46
+"Italy","Europe",ecom,Digital wallets,43,48,5,47
+"Italy","Europe",ecom,Credit cards,18,16,-2,47
+"Italy","Europe",ecom,Prepaid cards,15,14,-1,47
+"Italy","Europe",ecom,Debit cards,9,7,-2,47
+"Italy","Europe",ecom,A2A,7,7,0,47
+"Italy","Europe",ecom,Others,8,9,1,47
+"Italy","Europe",pos,Debit cards,30,27,-3,47
+"Italy","Europe",pos,Cash,24,20,-4,47
+"Italy","Europe",pos,Digital wallets,19,27,8,47
+"Italy","Europe",pos,Prepaid cards,11,10,-1,47
+"Italy","Europe",pos,Credit cards,11,9,-2,47
+"Italy","Europe",pos,Others,5,7,2,47
+"Netherlands","Europe",ecom,A2A,64,63,-1,48
+"Netherlands","Europe",ecom,Digital wallets,12,14,2,48
+"Netherlands","Europe",ecom,Credit cards,10,8,-2,48
+"Netherlands","Europe",ecom,BNPL,10,11,1,48
+"Netherlands","Europe",ecom,Debit cards,3,3,0,48
+"Netherlands","Europe",ecom,Others,1,1,0,48
+"Netherlands","Europe",pos,Debit cards,60,55,-5,48
+"Netherlands","Europe",pos,Digital wallets,24,31,7,48
+"Netherlands","Europe",pos,Cash,7,6,-1,48
+"Netherlands","Europe",pos,Credit cards,6,5,-1,48
+"Netherlands","Europe",pos,A2A,2,1,-1,48
+"Netherlands","Europe",pos,Others,1,1,0,48
+"Norway","Europe",ecom,Digital wallets,43,51,8,49
+"Norway","Europe",ecom,Credit cards,22,16,-6,49
+"Norway","Europe",ecom,BNPL,19,20,1,49
+"Norway","Europe",ecom,Debit cards,13,10,-3,49
+"Norway","Europe",ecom,Cash,1,1,0,49
+"Norway","Europe",ecom,Others,2,2,0,49
+"Norway","Europe",pos,Debit cards,54,48,-6,49
+"Norway","Europe",pos,Digital wallets,30,38,8,49
+"Norway","Europe",pos,Credit cards,11,9,-2,49
+"Norway","Europe",pos,Cash,4,3,-1,49
+"Norway","Europe",pos,Prepaid cards,1,1,0,49
+"Norway","Europe",pos,Others,1,1,0,49
+"Poland","Europe",ecom,A2A,72,74,2,50
+"Poland","Europe",ecom,Digital wallets,11,13,2,50
+"Poland","Europe",ecom,Debit cards,5,4,-1,50
+"Poland","Europe",ecom,Cash,4,2,-2,50
+"Poland","Europe",ecom,BNPL,3,4,1,50
+"Poland","Europe",ecom,Others,4,3,-1,50
+"Poland","Europe",pos,A2A,30,39,9,50
+"Poland","Europe",pos,Debit cards,28,22,-6,50
+"Poland","Europe",pos,Cash,23,18,-5,50
+"Poland","Europe",pos,Digital wallets,13,15,2,50
+"Poland","Europe",pos,Credit cards,6,4,-2,50
+"Poland","Europe",pos,Others,1,1,0,50
+"Portugal","Europe",ecom,Digital wallets,40,50,10,51
+"Portugal","Europe",ecom,Debit cards,18,14,-4,51
+"Portugal","Europe",ecom,Credit cards,17,13,-4,51
+"Portugal","Europe",ecom,A2A,16,17,1,51
+"Portugal","Europe",ecom,BNPL,3,3,0,51
+"Portugal","Europe",ecom,Others,5,4,-1,51
+"Portugal","Europe",pos,Debit cards,49,44,-5,51
+"Portugal","Europe",pos,Cash,27,23,-4,51
+"Portugal","Europe",pos,Digital wallets,13,22,9,51
+"Portugal","Europe",pos,Credit cards,9,8,-1,51
+"Portugal","Europe",pos,A2A,1,1,0,51
+"Portugal","Europe",pos,Others,1,1,0,51
+"Spain","Europe",ecom,Digital wallets,34,39,5,52
+"Spain","Europe",ecom,A2A,21,27,6,52
+"Spain","Europe",ecom,Debit cards,19,14,-5,52
+"Spain","Europe",ecom,Credit cards,17,12,-5,52
+"Spain","Europe",ecom,Prepaid cards,3,2,-1,52
+"Spain","Europe",ecom,Others,6,6,0,52
+"Spain","Europe",pos,Cash,34,28,-6,52
+"Spain","Europe",pos,Debit cards,28,24,-4,52
+"Spain","Europe",pos,Credit cards,22,19,-3,52
+"Spain","Europe",pos,Digital wallets,14,23,9,52
+"Spain","Europe",pos,A2A,2,4,2,52
+"Spain","Europe",pos,Others,1,1,0,52
+"Sweden","Europe",ecom,Digital wallets,44,50,6,53
+"Sweden","Europe",ecom,BNPL,25,26,1,53
+"Sweden","Europe",ecom,Debit cards,14,10,-4,53
+"Sweden","Europe",ecom,Credit cards,12,9,-3,53
+"Sweden","Europe",ecom,A2A,4,4,0,53
+"Sweden","Europe",ecom,Others,2,1,-1,53
+"Sweden","Europe",pos,Debit cards,49,43,-6,53
+"Sweden","Europe",pos,Digital wallets,28,36,8,53
+"Sweden","Europe",pos,Credit cards,16,14,-2,53
+"Sweden","Europe",pos,Cash,5,4,-1,53
+"Sweden","Europe",pos,BNPL,1,2,1,53
+"Sweden","Europe",pos,Others,1,1,0,53
+"Switzerland","Europe",ecom,Digital wallets,34,42,8,54
+"Switzerland","Europe",ecom,Credit cards,27,22,-5,54
+"Switzerland","Europe",ecom,Debit cards,21,18,-3,54
+"Switzerland","Europe",ecom,BNPL,8,9,1,54
+"Switzerland","Europe",ecom,A2A,5,5,0,54
+"Switzerland","Europe",ecom,Others,5,4,-1,54
+"Switzerland","Europe",pos,Debit cards,32,31,-1,54
+"Switzerland","Europe",pos,Digital wallets,27,32,5,54
+"Switzerland","Europe",pos,Credit cards,20,17,-3,54
+"Switzerland","Europe",pos,Cash,19,18,-1,54
+"Switzerland","Europe",pos,A2A,1,1,0,54
+"Switzerland","Europe",pos,Prepaid cards,1,1,0,54
+"Turkey","Europe",ecom,Credit cards,52,47,-5,55
+"Turkey","Europe",ecom,A2A,14,21,7,55
+"Turkey","Europe",ecom,Digital wallets,13,18,5,55
+"Turkey","Europe",ecom,Debit cards,12,8,-4,55
+"Turkey","Europe",ecom,Cash,5,3,-2,55
+"Turkey","Europe",ecom,Others,5,4,-1,55
+"Turkey","Europe",pos,Credit cards,48,43,-5,55
+"Turkey","Europe",pos,Cash,20,16,-4,55
+"Turkey","Europe",pos,Digital wallets,15,22,7,55
+"Turkey","Europe",pos,A2A,7,11,4,55
+"Turkey","Europe",pos,Debit cards,6,5,-1,55
+"Turkey","Europe",pos,Others,3,2,-1,55
+"United Kingdom","Europe",ecom,Digital wallets,40,50,10,56
+"United Kingdom","Europe",ecom,Credit cards,23,18,-5,56
+"United Kingdom","Europe",ecom,Debit cards,22,17,-5,56
+"United Kingdom","Europe",ecom,BNPL,8,9,1,56
+"United Kingdom","Europe",ecom,A2A,6,5,-1,56
+"United Kingdom","Europe",ecom,Others,2,2,0,56
+"United Kingdom","Europe",pos,Debit cards,43,37,-6,56
+"United Kingdom","Europe",pos,Credit cards,24,21,-3,56
+"United Kingdom","Europe",pos,Digital wallets,20,31,11,56
+"United Kingdom","Europe",pos,Cash,9,7,-2,56
+"United Kingdom","Europe",pos,Prepaid cards,2,2,0,56
+"United Kingdom","Europe",pos,Others,1,1,0,56
+"Argentina","Latin America",ecom,Digital wallets,39,48,9,60
+"Argentina","Latin America",ecom,Credit cards,28,19,-9,60
+"Argentina","Latin America",ecom,A2A,15,21,6,60
+"Argentina","Latin America",ecom,Debit cards,14,10,-4,60
+"Argentina","Latin America",ecom,Cash,2,1,-1,60
+"Argentina","Latin America",ecom,Others,2,2,0,60
+"Argentina","Latin America",pos,Digital wallets,33,41,8,60
+"Argentina","Latin America",pos,Credit cards,22,19,-3,60
+"Argentina","Latin America",pos,Cash,17,9,-8,60
+"Argentina","Latin America",pos,Debit cards,16,13,-3,60
+"Argentina","Latin America",pos,A2A,10,16,6,60
+"Argentina","Latin America",pos,Others,2,1,-1,60
+"Brazil","Latin America",ecom,A2A,42,44,2,61
+"Brazil","Latin America",ecom,Credit cards,40,34,-6,61
+"Brazil","Latin America",ecom,Digital wallets,10,15,5,61
+"Brazil","Latin America",ecom,Debit cards,4,2,-2,61
+"Brazil","Latin America",ecom,Cash,3,1,-2,61
+"Brazil","Latin America",ecom,Others,2,2,0,61
+"Brazil","Latin America",pos,A2A,34,46,12,61
+"Brazil","Latin America",pos,Credit cards,31,24,-7,61
+"Brazil","Latin America",pos,Digital wallets,12,16,4,61
+"Brazil","Latin America",pos,Cash,12,9,-3,61
+"Brazil","Latin America",pos,Debit cards,9,5,-4,61
+"Brazil","Latin America",pos,Others,2,2,0,61
+"Chile","Latin America",ecom,Debit cards,42,37,-5,62
+"Chile","Latin America",ecom,Digital wallets,23,34,11,62
+"Chile","Latin America",ecom,Credit cards,18,14,-4,62
+"Chile","Latin America",ecom,A2A,12,12,0,62
+"Chile","Latin America",ecom,Prepaid cards,2,1,-1,62
+"Chile","Latin America",ecom,Others,2,2,0,62
+"Chile","Latin America",pos,Debit cards,51,49,-2,62
+"Chile","Latin America",pos,Credit cards,21,19,-2,62
+"Chile","Latin America",pos,Cash,16,12,-4,62
+"Chile","Latin America",pos,Digital wallets,9,16,7,62
+"Chile","Latin America",pos,Prepaid cards,2,2,0,62
+"Chile","Latin America",pos,Others,1,1,0,62
+"Colombia","Latin America",ecom,A2A,34,41,7,63
+"Colombia","Latin America",ecom,Digital wallets,29,34,5,63
+"Colombia","Latin America",ecom,Credit cards,17,11,-6,63
+"Colombia","Latin America",ecom,Debit cards,10,8,-2,63
+"Colombia","Latin America",ecom,Cash,7,3,-4,63
+"Colombia","Latin America",ecom,Others,3,4,1,63
+"Colombia","Latin America",pos,Cash,32,23,-9,63
+"Colombia","Latin America",pos,Debit cards,26,22,-4,63
+"Colombia","Latin America",pos,Credit cards,20,16,-4,63
+"Colombia","Latin America",pos,Digital wallets,20,32,12,63
+"Colombia","Latin America",pos,Prepaid cards,2,1,-1,63
+"Colombia","Latin America",pos,Others,<1,6,6,63
+"Mexico","Latin America",ecom,Credit cards,32,30,-2,64
+"Mexico","Latin America",ecom,Digital wallets,26,30,4,64
+"Mexico","Latin America",ecom,Debit cards,23,21,-2,64
+"Mexico","Latin America",ecom,Cash,9,7,-2,64
+"Mexico","Latin America",ecom,A2A,6,7,1,64
+"Mexico","Latin America",ecom,Others,4,5,1,64
+"Mexico","Latin America",pos,Cash,40,35,-5,64
+"Mexico","Latin America",pos,Debit cards,26,25,-1,64
+"Mexico","Latin America",pos,Credit cards,24,24,0,64
+"Mexico","Latin America",pos,Digital wallets,9,14,5,64
+"Mexico","Latin America",pos,Prepaid cards,2,2,0,64
+"Peru","Latin America",ecom,Digital wallets,44,57,13,65
+"Peru","Latin America",ecom,Debit cards,23,17,-6,65
+"Peru","Latin America",ecom,Credit cards,18,14,-4,65
+"Peru","Latin America",ecom,Cash,7,5,-2,65
+"Peru","Latin America",ecom,A2A,6,5,-1,65
+"Peru","Latin America",ecom,Others,2,2,0,65
+"Peru","Latin America",pos,Digital wallets,38,50,12,65
+"Peru","Latin America",pos,Cash,30,25,-5,65
+"Peru","Latin America",pos,Debit cards,19,14,-5,65
+"Peru","Latin America",pos,Credit cards,11,9,-2,65
+"Peru","Latin America",pos,Prepaid cards,1,1,0,65
+"Nigeria","Middle East and Africa",ecom,A2A,44,50,6,69
+"Nigeria","Middle East and Africa",ecom,Debit cards,24,20,-4,69
+"Nigeria","Middle East and Africa",ecom,Digital wallets,13,14,1,69
+"Nigeria","Middle East and Africa",ecom,Cash,11,8,-3,69
+"Nigeria","Middle East and Africa",ecom,Credit cards,3,2,-1,69
+"Nigeria","Middle East and Africa",ecom,Others,5,6,1,69
+"Nigeria","Middle East and Africa",pos,Cash,39,33,-6,69
+"Nigeria","Middle East and Africa",pos,A2A,31,36,5,69
+"Nigeria","Middle East and Africa",pos,Digital wallets,15,17,2,69
+"Nigeria","Middle East and Africa",pos,Debit cards,14,12,-2,69
+"Nigeria","Middle East and Africa",pos,Prepaid cards,1,1,0,69
+"Nigeria","Middle East and Africa",pos,Others,1,1,0,69
+"Saudi Arabia","Middle East and Africa",ecom,Digital wallets,40,51,11,70
+"Saudi Arabia","Middle East and Africa",ecom,Debit cards,19,14,-5,70
+"Saudi Arabia","Middle East and Africa",ecom,Credit cards,12,7,-5,70
+"Saudi Arabia","Middle East and Africa",ecom,A2A,9,11,2,70
+"Saudi Arabia","Middle East and Africa",ecom,Cash,8,5,-3,70
+"Saudi Arabia","Middle East and Africa",ecom,Prepaid cards,7,7,0,70
+"Saudi Arabia","Middle East and Africa",ecom,Others,4,5,1,70
+"Saudi Arabia","Middle East and Africa",pos,Digital wallets,43,53,10,70
+"Saudi Arabia","Middle East and Africa",pos,Debit cards,28,24,-4,70
+"Saudi Arabia","Middle East and Africa",pos,Cash,14,9,-5,70
+"Saudi Arabia","Middle East and Africa",pos,Credit cards,8,7,-1,70
+"Saudi Arabia","Middle East and Africa",pos,Prepaid cards,7,7,0,70
+"South Africa","Middle East and Africa",ecom,Debit cards,32,29,-3,71
+"South Africa","Middle East and Africa",ecom,Digital wallets,25,31,6,71
+"South Africa","Middle East and Africa",ecom,A2A,20,22,2,71
+"South Africa","Middle East and Africa",ecom,Credit cards,11,9,-2,71
+"South Africa","Middle East and Africa",ecom,Cash,6,3,-3,71
+"South Africa","Middle East and Africa",ecom,Others,6,6,0,71
+"South Africa","Middle East and Africa",pos,Debit cards,54,54,0,71
+"South Africa","Middle East and Africa",pos,Cash,26,22,-4,71
+"South Africa","Middle East and Africa",pos,Digital wallets,8,11,3,71
+"South Africa","Middle East and Africa",pos,Credit cards,6,4,-2,71
+"South Africa","Middle East and Africa",pos,A2A,4,7,3,71
+"South Africa","Middle East and Africa",pos,Others,2,1,-1,71
+"United Arab Emirates","Middle East and Africa",ecom,Digital wallets,35,40,5,72
+"United Arab Emirates","Middle East and Africa",ecom,Credit cards,27,23,-4,72
+"United Arab Emirates","Middle East and Africa",ecom,Debit cards,15,13,-2,72
+"United Arab Emirates","Middle East and Africa",ecom,A2A,10,13,3,72
+"United Arab Emirates","Middle East and Africa",ecom,Cash,7,4,-3,72
+"United Arab Emirates","Middle East and Africa",ecom,Others,6,7,1,72
+"United Arab Emirates","Middle East and Africa",pos,Digital wallets,29,43,14,72
+"United Arab Emirates","Middle East and Africa",pos,Credit cards,28,23,-5,72
+"United Arab Emirates","Middle East and Africa",pos,Debit cards,24,20,-4,72
+"United Arab Emirates","Middle East and Africa",pos,Cash,15,9,-6,72
+"United Arab Emirates","Middle East and Africa",pos,Prepaid cards,3,2,-1,72
+"United Arab Emirates","Middle East and Africa",pos,Others,2,3,1,72
+"Canada","North America",ecom,Credit cards,46,42,-4,75
+"Canada","North America",ecom,Digital wallets,32,37,5,75
+"Canada","North America",ecom,Debit cards,9,6,-3,75
+"Canada","North America",ecom,BNPL,5,6,1,75
+"Canada","North America",ecom,A2A,5,6,1,75
+"Canada","North America",ecom,Others,3,2,-1,75
+"Canada","North America",pos,Credit cards,51,49,-2,75
+"Canada","North America",pos,Debit cards,23,20,-3,75
+"Canada","North America",pos,Digital wallets,13,21,8,75
+"Canada","North America",pos,Cash,10,8,-2,75
+"Canada","North America",pos,Prepaid cards,2,1,-1,75
+"Canada","North America",pos,Others,1,2,1,75
+"United States","North America",ecom,Digital wallets,40,44,4,76
+"United States","North America",ecom,Credit cards,32,29,-3,76
+"United States","North America",ecom,Debit cards,16,13,-3,76
+"United States","North America",ecom,BNPL,6,8,2,76
+"United States","North America",ecom,A2A,4,4,0,76
+"United States","North America",ecom,Others,2,2,0,76
+"United States","North America",pos,Credit cards,40,36,-4,76
+"United States","North America",pos,Debit cards,28,25,-3,76
+"United States","North America",pos,Digital wallets,17,26,9,76
+"United States","North America",pos,Cash,10,9,-1,76
+"United States","North America",pos,Prepaid cards,3,3,0,76
+"United States","North America",pos,Others,2,1,-1,76
