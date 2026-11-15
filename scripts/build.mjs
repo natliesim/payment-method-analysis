@@ -111,12 +111,13 @@ const a = g => g.avg, per = v => (v / 1000).toFixed(v < 995 ? 2 : 1);
 const pay = g => `In store: cards ${a(g).posCards}%, wallets and bank transfers ${a(g).posDig}%, cash ${a(g).posCash}%. Online: cards ${a(g).ecCards}%, wallets and bank transfers ${a(g).ecDig}%, cash ${a(g).ecCash}%.`;
 const outlook = g => `Spending grows ${a(g).posCagr}% a year in store and ${a(g).ecCagr}% online. In store, cards lose ${-a(g).dCards} points of share, cash loses ${-a(g).dCash} and wallets and bank transfers gain ${a(g).dDig}.`;
 must(groups.every(g => g.avg.dCards < 0 && g.avg.dCash < 0 && g.avg.dDig > 0), 'cards and cash lose share and wallets gain in every group');
+must(growing.avg.posCards > growing.avg.posDig && growing.avg.posCards > growing.avg.posCash && growing.avg.ecCards > growing.avg.ecDig && growing.avg.posCards < card.avg.posCards, 'cards lead in the diversifying group but less than in mature card markets');
 const clusters = [
   ['Mature card markets', card, 'Cards are the everyday way to pay, almost everyone has a bank account, and spending is growing slowly.',
     `${a(card).acct}% of adults have an account, the most of any group, and ${a(card).debit}% own a debit card.`],
   ['Wallet and A2A-first markets', digital, 'Most people have bank accounts and cards, yet more money moves through wallets and bank transfers than through cards.',
     `${a(digital).acct}% of adults have an account. There are ${per(a(digital).debitRaw)} debit cards per adult, the most of any group, so cards are available but used less.`],
-  ['Mixed-payment markets', growing, 'Spending is spread across cards, wallets and cash with no single method in charge, and more people are opening bank accounts each year.',
+  ['Card-led, diversifying markets', growing, 'Cards lead both in store and online but do not dominate: wallets, bank transfers and cash all carry a real share, and more people are opening bank accounts each year.',
     `${a(growing).acct}% of adults have an account, up from ${a(growing).acct17}% in 2017. ${a(growing).digpay}% made a digital payment in the past year.`],
   ['Cash-heavy, low-access markets', cash, 'Cash is used more here than in any other group, many adults have no bank account, and online spending is growing fastest.',
     `${a(cash).acct}% of adults have an account, the fewest of any group, up from ${a(cash).acct17}% in 2017. Cards and cash machines are scarce: ${per(a(cash).creditRaw)} credit cards per adult and ${a(cash).atmRaw} ATMs per 100,000 adults, both the lowest.`],

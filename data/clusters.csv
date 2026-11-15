@@ -4,13 +4,13 @@ market,region,cluster,"Online: card share 2025 (%)","Online: wallet + A2A share 
 "Hong Kong","Asia Pacific","Mature card markets",34,60,2,38,54,6,97.3,86
 "India","Asia Pacific","Wallet and A2A-first markets",20,72,6,20,65,14,89,29.3
 "Indonesia","Asia Pacific","Cash-heavy, low-access markets",5,76,13,18,45,36,56.3,30
-"Japan","Asia Pacific","Mixed-payment markets",58,32,5,38,24,38,98.5,88.3
+"Japan","Asia Pacific","Card-led, diversifying markets",58,32,5,38,24,38,98.5,88.3
 "Malaysia","Asia Pacific","Wallet and A2A-first markets",25,61,8,29,46,22,88.7,56.8
 "New Zealand","Asia Pacific","Mature card markets",45,40,0,71,17,10,97.9,97.2
 "Philippines","Asia Pacific","Cash-heavy, low-access markets",18,54,23,22,36,42,50.2,32.1
 "Singapore","Asia Pacific","Mature card markets",43,51,0,39,48,12,98,91
 "South Korea","Asia Pacific","Mature card markets",55,42,0,67,26,6,96.9,96.2
-"Taiwan","Asia Pacific","Mixed-payment markets",43,40,15,35,38,25,95.6,80
+"Taiwan","Asia Pacific","Card-led, diversifying markets",43,40,15,35,38,25,95.6,80
 "Thailand","Asia Pacific","Wallet and A2A-first markets",13,69,15,12,56,30,91.8,59.1
 "Vietnam","Asia Pacific","Cash-heavy, low-access markets",16,66,16,14,52,33,70.6,56.5
 "Belgium","Europe","Mature card markets",37,48,0,64,23,12,98.2,97.3
@@ -27,17 +27,17 @@ market,region,cluster,"Online: card share 2025 (%)","Online: wallet + A2A share 
 "Spain","Europe","Mature card markets",39,55,0,50,16,34,98.4,97.1
 "Sweden","Europe","Mature card markets",26,48,0,65,28,5,98.6,98.4
 "Switzerland","Europe","Mature card markets",48,39,0,53,28,19,98.4,98
-"Turkey","Europe","Mixed-payment markets",64,27,5,54,22,20,81.6,62.4
+"Turkey","Europe","Card-led, diversifying markets",64,27,5,54,22,20,81.6,62.4
 "United Kingdom","Europe","Mature card markets",45,46,0,69,20,9,99.3,98.6
-"Argentina","Latin America","Mixed-payment markets",42,54,2,38,43,17,81.7,65.4
-"Brazil","Latin America","Mixed-payment markets",44,52,3,40,46,12,86.4,70
-"Chile","Latin America","Mixed-payment markets",62,35,0,74,9,16,85.1,77.3
+"Argentina","Latin America","Card-led, diversifying markets",42,54,2,38,43,17,81.7,65.4
+"Brazil","Latin America","Card-led, diversifying markets",44,52,3,40,46,12,86.4,70
+"Chile","Latin America","Card-led, diversifying markets",62,35,0,74,9,16,85.1,77.3
 "Colombia","Latin America","Cash-heavy, low-access markets",27,63,7,48,20,32,57.1,42.5
 "Mexico","Latin America","Cash-heavy, low-access markets",55,32,9,52,9,40,53,29.5
 "Peru","Latin America","Cash-heavy, low-access markets",41,50,7,31,38,30,59.3,46.5
 "Nigeria","Middle East and Africa","Cash-heavy, low-access markets",27,57,11,15,46,39,63.3,43.9
-"Saudi Arabia","Middle East and Africa","Mixed-payment markets",38,49,8,43,43,14,78.8,71.7
-"South Africa","Middle East and Africa","Mixed-payment markets",43,45,6,60,12,26,81.1,44.6
-"United Arab Emirates","Middle East and Africa","Mixed-payment markets",42,45,7,55,29,15,85.7,74.8
+"Saudi Arabia","Middle East and Africa","Card-led, diversifying markets",38,49,8,43,43,14,78.8,71.7
+"South Africa","Middle East and Africa","Card-led, diversifying markets",43,45,6,60,12,26,81.1,44.6
+"United Arab Emirates","Middle East and Africa","Card-led, diversifying markets",42,45,7,55,29,15,85.7,74.8
 "Canada","North America","Mature card markets",55,37,0,76,13,10,98.4,98.1
 "United States","North America","Mature card markets",48,44,0,71,17,10,97,91.3
