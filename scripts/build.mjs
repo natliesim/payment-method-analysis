@@ -111,12 +111,20 @@ must(only(cash, 'ecCagr', 1) && only(cash, 'posCagr', 1), 'cash-heavy markets gr
 must(growing.avg.acct > growing.avg.acct17 && cash.avg.acct > cash.avg.acct17, 'account ownership is rising');
 must(card.avg.dCards < 0 && growing.avg.dCards < 0 && growing.avg.dDig > 0 && cash.avg.dCash < 0, 'forecast direction');
 const a = g => g.avg, per = v => (v / 1000).toFixed(v < 995 ? 2 : 1);
+// Each group is described the same way: one plain sentence, then how people pay, access, and the outlook to 2030.
+const pay = g => `In store: cards ${a(g).posCards}%, wallets and bank transfers ${a(g).posDig}%, cash ${a(g).posCash}%. Online: cards ${a(g).ecCards}%, wallets and bank transfers ${a(g).ecDig}%, cash ${a(g).ecCash}%.`;
+const outlook = g => `Spending grows ${a(g).posCagr}% a year in store and ${a(g).ecCagr}% online. In store, cards lose ${-a(g).dCards} points of share, cash loses ${-a(g).dCash} and wallets and bank transfers gain ${a(g).dDig}.`;
+must(groups.every(g => g.avg.dCards < 0 && g.avg.dCash < 0 && g.avg.dDig > 0), 'cards and cash lose share and wallets gain in every group');
 const clusters = [
-  ['Mature card markets', card, `Most adults have bank accounts and cards: ${a(card).acct}% have an account and ${a(card).debit}% own a debit card. Card use is deeply established, at ${a(card).posCards}% of in-store spending, the highest of any group, so growth is slow: ${a(card).posCagr}% a year in store and ${a(card).ecCagr}% online to 2030, the slowest online growth of the four. Cards are forecast to lose ${-a(card).dCards} points of in-store share by 2030 while wallets and bank transfers gain ${a(card).dDig}.`],
-  ['Wallet and A2A-first markets', digital, `More spending goes through wallets or direct bank transfers than through cards: ${a(digital).ecDig}% against ${a(digital).ecCards}% online, and ${a(digital).posDig}% against ${a(digital).posCards}% in store. Cards can be bypassed here even though access is not the constraint: ${a(digital).acct}% of adults have an account and there are ${per(a(digital).debitRaw)} debit cards per adult, the most of any group.`],
-  ['Growing digital markets', growing, `Account ownership is rising, from ${a(growing).acct17}% of adults in 2017 to ${a(growing).acct}%, and people mix cash with digital methods: in store, cards take ${a(growing).posCards}%, wallets and transfers ${a(growing).posDig}% and cash ${a(growing).posCash}%. Wallets and transfers are forecast to gain ${a(growing).dDig} points of in-store share by 2030 while cards lose ${-a(growing).dCards}.`],
-  ['Cash-heavy, low-access markets', cash, `Many adults have no bank account: ${a(cash).acct}% have one, up from ${a(cash).acct17}% in 2017, and ${a(cash).digpay}% made a digital payment in the past year. Cash takes ${a(cash).posCash}% of in-store spending, the most of any group, and card access is the thinnest: ${per(a(cash).creditRaw)} credit cards per adult and ${a(cash).atmRaw} ATMs per 100,000 adults, both the lowest. Spending is moving to wallets and bank transfers, already ${a(cash).posDig}% in store against ${a(cash).posCards}% for cards. These are also the fastest-growing markets, at ${a(cash).ecCagr}% a year online and ${a(cash).posCagr}% in store.`],
-].map(([name, g, desc]) => ({ name, desc, avg: g.avg, members: g.members }));
+  ['Mature card markets', card, 'Cards are the everyday way to pay, almost everyone has a bank account, and spending is growing slowly.',
+    `${a(card).acct}% of adults have an account, the most of any group, and ${a(card).debit}% own a debit card.`],
+  ['Wallet and A2A-first markets', digital, 'Most people have bank accounts and cards, yet more money moves through wallets and bank transfers than through cards.',
+    `${a(digital).acct}% of adults have an account. There are ${per(a(digital).debitRaw)} debit cards per adult, the most of any group, so cards are available but used less.`],
+  ['Growing digital markets', growing, 'Cards, wallets and cash all carry a real share of spending, and more people are opening bank accounts each year.',
+    `${a(growing).acct}% of adults have an account, up from ${a(growing).acct17}% in 2017. ${a(growing).digpay}% made a digital payment in the past year.`],
+  ['Cash-heavy, low-access markets', cash, 'Cash is used more here than in any other group, many adults have no bank account, and spending is growing fastest.',
+    `${a(cash).acct}% of adults have an account, the fewest of any group, up from ${a(cash).acct17}% in 2017. Cards and cash machines are scarce: ${per(a(cash).creditRaw)} credit cards per adult and ${a(cash).atmRaw} ATMs per 100,000 adults, both the lowest.`],
+].map(([name, g, lead, access]) => ({ name, lead, points: [['How people pay', pay(g)], ['Access', access], ['Outlook to 2030', outlook(g)]], avg: g.avg, members: g.members }));
 clusters.forEach((c, i) => c.members.forEach(k => { data[k].cluster = i; }));
 // Two-dimensional view of the standardised features for the cluster plot.
 const pca = pca2(Z.map(z => z.map(v => v ?? 0))); // gaps sit at the average for the picture only

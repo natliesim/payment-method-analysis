@@ -93,6 +93,11 @@ th.grp2 { border-bottom: 0; padding-bottom: 0; color: var(--ink-2); font-weight:
 .grp { border-top: 1px solid var(--line); padding-top: 14px; min-width: 0; }
 .grp h3 { font: 500 19px/1.25 var(--serif); margin: 0 0 6px; display: flex; align-items: center; gap: 9px; }
 .grp p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 68ch; }
+.grp p:first-of-type { color: var(--ink); font-size: 16px; }
+.grp dl { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 8px 14px; margin: 12px 0 0; font: 13px/1.5 var(--sans); }
+.grp dt { color: var(--ink-3); font-weight: 500; }
+.grp dd { margin: 0; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) { .grp dl { grid-template-columns: minmax(0, 1fr); gap: 2px; } .grp dd { margin-bottom: 8px; } }
 .grp .ev { font: 13px/1.5 var(--sans); color: var(--ink-3); margin-top: 10px; }
 .grp .ev b { font-weight: 600; color: var(--ink-2); }
 .caveat { font: 13px/1.5 var(--sans); color: var(--ink-2); margin: 0; max-width: 95ch; }
@@ -163,7 +168,7 @@ td.m { font: 500 15px var(--serif); }
 
   <h2 class="sec">The four groups, from a Mastercard view</h2>
   <div class="groups" id="groups"></div>
-  <p class="caveat">Every figure above is a group average from the Worldpay report (payment mix, 2030 forecast), the World Bank Global Findex (accounts, debit card ownership, digital payments) or the IMF Financial Access Survey (cards and ATMs per adult, averaged over the markets that report them). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
+  <p class="caveat">Each group is described the same way so they can be compared line by line. Every figure is a group average from the Worldpay report (payment mix, 2030 forecast), the World Bank Global Findex (accounts, debit card ownership, digital payments) or the IMF Financial Access Survey (cards and ATMs per adult, averaged over the markets that report them). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
@@ -329,7 +334,7 @@ function matrix() {
   document.getElementById('pkey').innerHTML = CL.clusters.map((cl, g) => '<span>' + icon(g) + esc(cl.name) + ' (' + cl.members.length + ')</span>').join('');
   document.getElementById('groups').innerHTML = CL.clusters.map((cl, g) => {
     const mc = cl.members.map(k => DATA[k].schemes.find(r => r.m === 'Mastercard')).filter(Boolean);
-    return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.desc) + '</p><p class="ev"><b>' + cl.members.length + ' markets:</b> ' +
+    return '<div class="grp"><h3>' + icon(g) + 'Group ' + (g + 1) + ': ' + esc(cl.name) + '</h3><p>' + esc(cl.lead) + '</p><dl>' + cl.points.map(([t, d]) => '<dt>' + esc(t) + '</dt><dd>' + esc(d) + '</dd>').join('') + '</dl><p class="ev"><b>' + cl.members.length + ' markets:</b> ' +
       esc(cl.members.map(k => DATA[k].name).join(', ')) + '.<br><b>Mastercard today:</b> ' + Math.round(mc.reduce((t, r) => t + r.a, 0) / mc.length) + '% of card scheme share on average (2024' +
       (mc.length < cl.members.length ? ', ' + mc.length + ' markets with a figure' : '') + ').</p></div>'; }).join('');
 }
