@@ -103,6 +103,29 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 46,
+    "as": "46%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 27,
+    "as": "27%"
+   },
+   {
+    "m": "EFTPOS",
+    "a": 21,
+    "as": "21%"
+   },
+   {
+    "m": "American Express",
+    "a": 6,
+    "as": "6%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Afterpay",
@@ -124,7 +147,8 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "China": {
   "name": "China",
@@ -230,6 +254,24 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "China UnionPay",
+    "a": 98,
+    "as": "98%"
+   },
+   {
+    "m": "Visa",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "WeChat Pay",
@@ -246,7 +288,8 @@
     "t": "Domestic card network",
     "s": "unionpay"
    }
-  ]
+  ],
+  "cluster": 3
  },
  "Hong Kong": {
   "name": "Hong Kong",
@@ -352,6 +395,39 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "China UnionPay",
+    "a": 35,
+    "as": "35%"
+   },
+   {
+    "m": "Visa",
+    "a": 22,
+    "as": "22%"
+   },
+   {
+    "m": "EPS",
+    "a": 18,
+    "as": "18%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 13,
+    "as": "13%"
+   },
+   {
+    "m": "American Express",
+    "a": 7,
+    "as": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "as": "6%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "FPS",
@@ -373,7 +449,8 @@
     "t": "QR-code digital wallet",
     "s": "wechat-pay-hk"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "India": {
   "name": "India",
@@ -479,6 +556,29 @@
     "8%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 54,
+    "as": "54%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 31,
+    "as": "31%"
+   },
+   {
+    "m": "RuPay",
+    "a": 13,
+    "as": "13%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "UPI",
@@ -500,7 +600,8 @@
     "t": "UPI payment app",
     "s": "google-pay"
    }
-  ]
+  ],
+  "cluster": 3
  },
  "Indonesia": {
   "name": "Indonesia",
@@ -606,6 +707,29 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 43,
+    "as": "43%"
+   },
+   {
+    "m": "Visa",
+    "a": 35,
+    "as": "35%"
+   },
+   {
+    "m": "GPN",
+    "a": 16,
+    "as": "16%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "as": "6%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "BI-FAST",
@@ -627,7 +751,8 @@
     "t": "E-wallet",
     "s": "ovo"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Japan": {
   "name": "Japan",
@@ -726,6 +851,34 @@
     "1%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 41,
+    "as": "41%"
+   },
+   {
+    "m": "JCB",
+    "a": 29,
+    "as": "29%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 18,
+    "as": "18%"
+   },
+   {
+    "m": "American Express",
+    "a": 5,
+    "as": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 7,
+    "as": "7%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "PayPay",
@@ -747,7 +900,8 @@
     "t": "Domestic card network",
     "s": "jcb"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Malaysia": {
   "name": "Malaysia",
@@ -853,6 +1007,34 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "MyDebit",
+    "a": 36,
+    "as": "36%"
+   },
+   {
+    "m": "Visa",
+    "a": 30,
+    "as": "30%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 25,
+    "as": "25%"
+   },
+   {
+    "m": "American Express",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 6,
+    "as": "6%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "DuitNow",
@@ -874,7 +1056,8 @@
     "t": "E-wallet",
     "s": "boost"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "New Zealand": {
   "name": "New Zealand",
@@ -980,6 +1163,34 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 60,
+    "as": "60%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 20,
+    "as": "20%"
+   },
+   {
+    "m": "EFTPOS",
+    "a": 16,
+    "as": "16%"
+   },
+   {
+    "m": "American Express",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Eftpos NZ",
@@ -1001,7 +1212,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Philippines": {
   "name": "Philippines",
@@ -1107,6 +1319,39 @@
     "6%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 55,
+    "as": "55%"
+   },
+   {
+    "m": "Visa",
+    "a": 35,
+    "as": "35%"
+   },
+   {
+    "m": "JCB",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   },
+   {
+    "m": "BancNet",
+    "a": 2,
+    "as": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "GCash",
@@ -1128,7 +1373,8 @@
     "t": "E-wallet (Shopee)",
     "s": "shopeepay"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Singapore": {
   "name": "Singapore",
@@ -1234,6 +1480,34 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 41,
+    "as": "41%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 33,
+    "as": "33%"
+   },
+   {
+    "m": "NETS",
+    "a": 17,
+    "as": "17%"
+   },
+   {
+    "m": "American Express",
+    "a": 7,
+    "as": "7%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "GrabPay",
@@ -1255,7 +1529,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "South Korea": {
   "name": "South Korea",
@@ -1361,6 +1636,19 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Domestic schemes",
+    "a": 97,
+    "as": "97%"
+   },
+   {
+    "m": "International schemes",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "Domestic: BC, Hana, Hyundai, KB Kookmin, Lotte, NH, Samsung, Shinhan, Woori. International: American Express, China UnionPay, JCB, Mastercard, Visa.",
   "brands": [
    {
     "n": "KakaoPay",
@@ -1382,7 +1670,8 @@
     "t": "Digital wallet and finance app",
     "s": "toss"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Taiwan": {
   "name": "Taiwan",
@@ -1488,6 +1777,34 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 55,
+    "as": "55%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 34,
+    "as": "34%"
+   },
+   {
+    "m": "JCB",
+    "a": 8,
+    "as": "8%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Taiwan Pay",
@@ -1509,7 +1826,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Thailand": {
   "name": "Thailand",
@@ -1615,6 +1933,29 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 67,
+    "as": "67%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 28,
+    "as": "28%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "as": "4%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "PromptPay",
@@ -1636,7 +1977,8 @@
     "t": "Digital wallet (LINE)",
     "s": "line-pay"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Vietnam": {
   "name": "Vietnam",
@@ -1742,6 +2084,29 @@
     "6%"
    ]
   },
+  "schemes": [
+   {
+    "m": "NAPAS",
+    "a": 55,
+    "as": "55%"
+   },
+   {
+    "m": "Visa",
+    "a": 22,
+    "as": "22%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 16,
+    "as": "16%"
+   },
+   {
+    "m": "Others",
+    "a": 7,
+    "as": "7%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "MoMo",
@@ -1763,7 +2128,8 @@
     "t": "E-wallet (Shopee)",
     "s": "shopeepay"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Belgium": {
   "name": "Belgium",
@@ -1869,6 +2235,29 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Bancontact",
+    "a": 80,
+    "as": "80%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 12,
+    "as": "12%"
+   },
+   {
+    "m": "Visa",
+    "a": 7,
+    "as": "7%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Payconiq",
@@ -1890,7 +2279,8 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Denmark": {
   "name": "Denmark",
@@ -1996,6 +2386,29 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Dankort",
+    "a": 56,
+    "as": "56%"
+   },
+   {
+    "m": "Visa",
+    "a": 22,
+    "as": "22%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 21,
+    "as": "21%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "MobilePay",
@@ -2017,7 +2430,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Finland": {
   "name": "Finland",
@@ -2123,6 +2537,24 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 53,
+    "as": "53%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 46,
+    "as": "46%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "MobilePay",
@@ -2144,7 +2576,8 @@
     "t": "Pay by bank transfer",
     "s": "trustly"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "France": {
   "name": "France",
@@ -2250,6 +2683,34 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Cartes Bancaires",
+    "a": 76,
+    "as": "76%"
+   },
+   {
+    "m": "Visa",
+    "a": 11,
+    "as": "11%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 10,
+    "as": "10%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Cartes Bancaires (CB)",
@@ -2271,7 +2732,8 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Germany": {
   "name": "Germany",
@@ -2377,6 +2839,29 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Girocard",
+    "a": 67,
+    "as": "67%"
+   },
+   {
+    "m": "Visa",
+    "a": 18,
+    "as": "18%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 14,
+    "as": "14%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "girocard",
@@ -2398,7 +2883,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Ireland": {
   "name": "Ireland",
@@ -2497,6 +2983,19 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 90,
+    "as": "90%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 10,
+    "as": "10%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Apple Pay",
@@ -2513,7 +3012,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Italy": {
   "name": "Italy",
@@ -2619,6 +3119,34 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 35,
+    "as": "35%"
+   },
+   {
+    "m": "Bancomat",
+    "a": 30,
+    "as": "30%"
+   },
+   {
+    "m": "Visa",
+    "a": 27,
+    "as": "27%"
+   },
+   {
+    "m": "Poste Italiane",
+    "a": 6,
+    "as": "6%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Bancomat",
@@ -2640,7 +3168,8 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Netherlands": {
   "name": "Netherlands",
@@ -2746,6 +3275,29 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 92,
+    "as": "92%"
+   },
+   {
+    "m": "Visa",
+    "a": 6,
+    "as": "6%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "iDEAL | Wero",
@@ -2767,7 +3319,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Norway": {
   "name": "Norway",
@@ -2873,6 +3426,29 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "BankAxept",
+    "a": 49,
+    "as": "49%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 26,
+    "as": "26%"
+   },
+   {
+    "m": "Visa",
+    "a": 24,
+    "as": "24%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "BankAxept",
@@ -2894,7 +3470,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Poland": {
   "name": "Poland",
@@ -3000,6 +3577,19 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 55,
+    "as": "55%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 45,
+    "as": "45%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "BLIK",
@@ -3021,7 +3611,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Portugal": {
   "name": "Portugal",
@@ -3127,6 +3718,29 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "SIBS",
+    "a": 68,
+    "as": "68%"
+   },
+   {
+    "m": "Visa",
+    "a": 21,
+    "as": "21%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 11,
+    "as": "11%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Multibanco",
@@ -3148,7 +3762,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Spain": {
   "name": "Spain",
@@ -3254,6 +3869,24 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 53,
+    "as": "53%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 45,
+    "as": "45%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Bizum",
@@ -3275,7 +3908,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Sweden": {
   "name": "Sweden",
@@ -3381,6 +4015,24 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 70,
+    "as": "70%"
+   },
+   {
+    "m": "Visa",
+    "a": 28,
+    "as": "28%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Klarna",
@@ -3402,7 +4054,8 @@
     "t": "Online digital wallet",
     "s": "paypal"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Switzerland": {
   "name": "Switzerland",
@@ -3508,6 +4161,34 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 49,
+    "as": "49%"
+   },
+   {
+    "m": "Visa",
+    "a": 35,
+    "as": "35%"
+   },
+   {
+    "m": "PostFinance",
+    "a": 12,
+    "as": "12%"
+   },
+   {
+    "m": "American Express",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "Diners Club",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "TWINT",
@@ -3529,7 +4210,8 @@
     "t": "Buy now, pay later",
     "s": "klarna"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Turkey": {
   "name": "Turkey",
@@ -3635,6 +4317,34 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 50,
+    "as": "50%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 44,
+    "as": "44%"
+   },
+   {
+    "m": "Troy",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Troy",
@@ -3656,7 +4366,8 @@
     "t": "E-wallet",
     "s": "tosla"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "United Kingdom": {
   "name": "United Kingdom",
@@ -3762,6 +4473,24 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 58,
+    "as": "58%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 40,
+    "as": "40%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Apple Pay",
@@ -3778,7 +4507,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Argentina": {
   "name": "Argentina",
@@ -3884,6 +4614,34 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 61,
+    "as": "61%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 25,
+    "as": "25%"
+   },
+   {
+    "m": "American Express",
+    "a": 6,
+    "as": "6%"
+   },
+   {
+    "m": "Naranja X",
+    "a": 5,
+    "as": "5%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "MODO",
@@ -3905,7 +4663,8 @@
     "t": "Wallet with prepaid card",
     "s": "uala"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Brazil": {
   "name": "Brazil",
@@ -4011,6 +4770,29 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 48,
+    "as": "48%"
+   },
+   {
+    "m": "Visa",
+    "a": 37,
+    "as": "37%"
+   },
+   {
+    "m": "Elo",
+    "a": 9,
+    "as": "9%"
+   },
+   {
+    "m": "Others",
+    "a": 5,
+    "as": "5%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Pix",
@@ -4032,7 +4814,8 @@
     "t": "Digital bank",
     "s": "nubank"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Chile": {
   "name": "Chile",
@@ -4138,6 +4921,29 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Redcompra",
+    "a": 38,
+    "as": "38%"
+   },
+   {
+    "m": "Visa",
+    "a": 34,
+    "as": "34%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 27,
+    "as": "27%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Redcompra",
@@ -4159,7 +4965,8 @@
     "t": "Digital wallet with QR",
     "s": "mercado-pago"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Colombia": {
   "name": "Colombia",
@@ -4265,6 +5072,29 @@
     "6%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Mastercard",
+    "a": 54,
+    "as": "54%"
+   },
+   {
+    "m": "Visa",
+    "a": 41,
+    "as": "41%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "PSE",
@@ -4286,7 +5116,8 @@
     "t": "Instant payment system",
     "s": "bre-b"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Mexico": {
   "name": "Mexico",
@@ -4385,6 +5216,29 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 63,
+    "as": "63%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 31,
+    "as": "31%"
+   },
+   {
+    "m": "American Express",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 3,
+    "as": "3%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "OXXO",
@@ -4401,7 +5255,8 @@
     "t": "Digital wallet with QR",
     "s": "mercado-pago"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Peru": {
   "name": "Peru",
@@ -4500,6 +5355,29 @@
     "2%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 81,
+    "as": "81%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 16,
+    "as": "16%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Diners Club",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Yape",
@@ -4516,7 +5394,8 @@
     "t": "Cash and bank voucher",
     "s": "pagoefectivo"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "Nigeria": {
   "name": "Nigeria",
@@ -4622,6 +5501,24 @@
     "6%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Verve",
+    "a": 49,
+    "as": "49%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 38,
+    "as": "38%"
+   },
+   {
+    "m": "Visa",
+    "a": 13,
+    "as": "13%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Verve",
@@ -4643,7 +5540,8 @@
     "t": "National QR-code payment",
     "s": "nqr"
    }
-  ]
+  ],
+  "cluster": 2
  },
  "Saudi Arabia": {
   "name": "Saudi Arabia",
@@ -4749,6 +5647,29 @@
     "5%"
    ]
   },
+  "schemes": [
+   {
+    "m": "mada",
+    "a": 87,
+    "as": "87%"
+   },
+   {
+    "m": "Visa",
+    "a": 7,
+    "as": "7%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 5,
+    "as": "5%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "stc pay",
@@ -4770,7 +5691,8 @@
     "t": "Card-based mobile wallet",
     "s": "apple-pay"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "South Africa": {
   "name": "South Africa",
@@ -4876,6 +5798,24 @@
     "6%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 54,
+    "as": "54%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 44,
+    "as": "44%"
+   },
+   {
+    "m": "American Express",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "PayShap",
@@ -4897,7 +5837,8 @@
     "t": "Card-based mobile wallet",
     "s": "samsung-wallet"
    }
-  ]
+  ],
+  "cluster": 0
  },
  "UAE": {
   "name": "United Arab Emirates",
@@ -5003,6 +5944,34 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 52,
+    "as": "52%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 41,
+    "as": "41%"
+   },
+   {
+    "m": "American Express",
+    "a": 2,
+    "as": "2%"
+   },
+   {
+    "m": "Diners Club",
+    "a": 1,
+    "as": "1%"
+   },
+   {
+    "m": "Others",
+    "a": 4,
+    "as": "4%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Tabby",
@@ -5024,7 +5993,8 @@
     "t": "Digital wallet",
     "s": "eand-money"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "Canada": {
   "name": "Canada",
@@ -5130,6 +6100,34 @@
     "4%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 41,
+    "as": "41%"
+   },
+   {
+    "m": "Interac",
+    "a": 29,
+    "as": "29%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 27,
+    "as": "27%"
+   },
+   {
+    "m": "American Express",
+    "a": 3,
+    "as": "3%"
+   },
+   {
+    "m": "Others",
+    "a": 1,
+    "as": "1%"
+   }
+  ],
+  "schemeNote": "",
   "brands": [
    {
     "n": "Interac",
@@ -5151,7 +6149,8 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 1
  },
  "United States": {
   "name": "United States",
@@ -5257,6 +6256,29 @@
     "3%"
    ]
   },
+  "schemes": [
+   {
+    "m": "Visa",
+    "a": 58,
+    "as": "58%"
+   },
+   {
+    "m": "Mastercard",
+    "a": 24,
+    "as": "24%"
+   },
+   {
+    "m": "American Express",
+    "a": 8,
+    "as": "8%"
+   },
+   {
+    "m": "Others",
+    "a": 9,
+    "as": "9%"
+   }
+  ],
+  "schemeNote": "Others: Accel, Discover, Diners Club, NYCE, PULSE, Star.",
   "brands": [
    {
     "n": "Apple Pay",
@@ -5273,6 +6295,7 @@
     "t": "Card-based mobile wallet",
     "s": "google-wallet"
    }
-  ]
+  ],
+  "cluster": 1
  }
 }

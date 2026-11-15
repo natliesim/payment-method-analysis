@@ -1,0 +1,938 @@
+[
+ {
+  "page": 24,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "46%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "27%"
+   },
+   {
+    "name": "EFTPOS",
+    "share": "21%"
+   },
+   {
+    "name": "American Express",
+    "share": "6%"
+   }
+  ]
+ },
+ {
+  "page": 25,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "China UnionPay",
+    "share": "98%"
+   },
+   {
+    "name": "Visa",
+    "share": "1%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 26,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "China UnionPay",
+    "share": "35%"
+   },
+   {
+    "name": "Visa",
+    "share": "22%"
+   },
+   {
+    "name": "EPS",
+    "share": "18%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "13%"
+   },
+   {
+    "name": "American Express",
+    "share": "7%"
+   },
+   {
+    "name": "Others",
+    "share": "6%"
+   }
+  ]
+ },
+ {
+  "page": 27,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "54%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "31%"
+   },
+   {
+    "name": "RuPay",
+    "share": "13%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 28,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "43%"
+   },
+   {
+    "name": "Visa",
+    "share": "35%"
+   },
+   {
+    "name": "GPN",
+    "share": "16%"
+   },
+   {
+    "name": "Others",
+    "share": "6%"
+   }
+  ]
+ },
+ {
+  "page": 29,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "41%"
+   },
+   {
+    "name": "JCB",
+    "share": "29%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "18%"
+   },
+   {
+    "name": "Others",
+    "share": "7%"
+   },
+   {
+    "name": "American Express",
+    "share": "5%"
+   }
+  ]
+ },
+ {
+  "page": 30,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "MyDebit",
+    "share": "36%"
+   },
+   {
+    "name": "Visa",
+    "share": "30%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "25%"
+   },
+   {
+    "name": "Others",
+    "share": "6%"
+   },
+   {
+    "name": "American Express",
+    "share": "3%"
+   }
+  ]
+ },
+ {
+  "page": 31,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "60%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "20%"
+   },
+   {
+    "name": "EFTPOS",
+    "share": "16%"
+   },
+   {
+    "name": "American Express",
+    "share": "3%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 32,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "55%"
+   },
+   {
+    "name": "Visa",
+    "share": "35%"
+   },
+   {
+    "name": "JCB",
+    "share": "3%"
+   },
+   {
+    "name": "Others",
+    "share": "3%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   },
+   {
+    "name": "BancNet",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 33,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "41%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "33%"
+   },
+   {
+    "name": "NETS",
+    "share": "17%"
+   },
+   {
+    "name": "American Express",
+    "share": "7%"
+   },
+   {
+    "name": "Others",
+    "share": "3%"
+   }
+  ]
+ },
+ {
+  "page": 34,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Domestic",
+    "share": "97%"
+   },
+   {
+    "name": "International schemes schemes BC , Hana, Hyundai, American Express, KB Kookmin, Lotte, China UnionPay, JCB, NH, Samsung, Mastercard, Visa Shinhan, Woori",
+    "share": "3%"
+   }
+  ]
+ },
+ {
+  "page": 35,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "55%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "34%"
+   },
+   {
+    "name": "JCB",
+    "share": "8%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   },
+   {
+    "name": "Others",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 36,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "67%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "28%"
+   },
+   {
+    "name": "Others",
+    "share": "4%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 37,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "NAPAS",
+    "share": "55%"
+   },
+   {
+    "name": "Visa",
+    "share": "22%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "16%"
+   },
+   {
+    "name": "Others",
+    "share": "7%"
+   }
+  ]
+ },
+ {
+  "page": 41,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Bancontact",
+    "share": "80%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "12%"
+   },
+   {
+    "name": "Visa",
+    "share": "7%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 42,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Dankort",
+    "share": "56%"
+   },
+   {
+    "name": "Visa",
+    "share": "22%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "21%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 43,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "53%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "46%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 44,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Cartes Bancaires",
+    "share": "76%"
+   },
+   {
+    "name": "Visa",
+    "share": "11%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "10%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 45,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Girocard",
+    "share": "67%"
+   },
+   {
+    "name": "Visa",
+    "share": "18%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "14%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 46,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "90%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "10%"
+   }
+  ]
+ },
+ {
+  "page": 47,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "35%"
+   },
+   {
+    "name": "Bancomat",
+    "share": "30%"
+   },
+   {
+    "name": "Visa",
+    "share": "27%"
+   },
+   {
+    "name": "Poste Italiane",
+    "share": "6%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 48,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "92%"
+   },
+   {
+    "name": "Visa",
+    "share": "6%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 49,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "BankAxept",
+    "share": "49%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "26%"
+   },
+   {
+    "name": "Visa",
+    "share": "24%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 50,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "55%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "45%"
+   }
+  ]
+ },
+ {
+  "page": 51,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "SIBS",
+    "share": "68%"
+   },
+   {
+    "name": "Visa",
+    "share": "21%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "11%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 52,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "53%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "45%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 53,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "70%"
+   },
+   {
+    "name": "Visa",
+    "share": "28%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 54,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "49%"
+   },
+   {
+    "name": "Visa",
+    "share": "35%"
+   },
+   {
+    "name": "PostFinance",
+    "share": "12%"
+   },
+   {
+    "name": "American Express",
+    "share": "3%"
+   },
+   {
+    "name": "Diners Club",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 55,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "50%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "44%"
+   },
+   {
+    "name": "Troy",
+    "share": "3%"
+   },
+   {
+    "name": "Others",
+    "share": "2%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 56,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "58%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "40%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   }
+  ]
+ },
+ {
+  "page": 60,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "61%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "25%"
+   },
+   {
+    "name": "American Express",
+    "share": "6%"
+   },
+   {
+    "name": "Naranja X",
+    "share": "5%"
+   },
+   {
+    "name": "Others",
+    "share": "3%"
+   }
+  ]
+ },
+ {
+  "page": 61,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "48%"
+   },
+   {
+    "name": "Visa",
+    "share": "37%"
+   },
+   {
+    "name": "Elo",
+    "share": "9%"
+   },
+   {
+    "name": "Others",
+    "share": "5%"
+   }
+  ]
+ },
+ {
+  "page": 62,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Redcompra",
+    "share": "38%"
+   },
+   {
+    "name": "Visa",
+    "share": "34%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "27%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 63,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Mastercard",
+    "share": "54%"
+   },
+   {
+    "name": "Visa",
+    "share": "41%"
+   },
+   {
+    "name": "Others",
+    "share": "3%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 64,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "63%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "31%"
+   },
+   {
+    "name": "American Express",
+    "share": "3%"
+   },
+   {
+    "name": "Others",
+    "share": "3%"
+   }
+  ]
+ },
+ {
+  "page": 65,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "81%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "16%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   },
+   {
+    "name": "Diners Club",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 69,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Verve",
+    "share": "49%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "38%"
+   },
+   {
+    "name": "Visa",
+    "share": "13%"
+   }
+  ]
+ },
+ {
+  "page": 70,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "mada",
+    "share": "87%"
+   },
+   {
+    "name": "Visa",
+    "share": "7%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "5%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 71,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "54%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "44%"
+   },
+   {
+    "name": "American Express",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 72,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "52%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "41%"
+   },
+   {
+    "name": "Others",
+    "share": "4%"
+   },
+   {
+    "name": "American Express",
+    "share": "2%"
+   },
+   {
+    "name": "Diners Club",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 75,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "41%"
+   },
+   {
+    "name": "Interac",
+    "share": "29%"
+   },
+   {
+    "name": "Mastercard",
+    "share": "27%"
+   },
+   {
+    "name": "American Express",
+    "share": "3%"
+   },
+   {
+    "name": "Others",
+    "share": "1%"
+   }
+  ]
+ },
+ {
+  "page": 76,
+  "header": "2024 * card scheme share",
+  "schemes": [
+   {
+    "name": "Visa",
+    "share": "58%"
+   },
+   {
+    "name": "Mastercard Diners Club, NYCE, PULSE, Star",
+    "share": "24%"
+   },
+   {
+    "name": "Others Accel, Discover,",
+    "share": "9%"
+   },
+   {
+    "name": "American Express",
+    "share": "8%"
+   }
+  ]
+ }
+]

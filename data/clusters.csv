@@ -1,0 +1,43 @@
+market,region,cluster,ecom_digital_wallets,ecom_credit_cards,ecom_debit_cards,ecom_a2a,ecom_bnpl,ecom_cash,pos_digital_wallets,pos_credit_cards,pos_debit_cards,pos_cash,pos_a2a
+"Australia","Asia Pacific","Debit-led",43,19,18,5,13,0,21,26,37,12,3
+"China","Asia Pacific","Wallet-first",89,4,3,2,0,1,87,3,3,4,1
+"Hong Kong","Asia Pacific","Credit-led",41,31,0,19,0,2,45,33,0,6,9
+"India","Asia Pacific","Wallet-first",68,15,5,4,0,6,61,16,4,14,4
+"Indonesia","Asia Pacific","Bank transfer and cash",42,5,0,34,3,13,22,7,11,36,23
+"Japan","Asia Pacific","Credit-led",29,58,0,3,2,5,24,35,1,38,0
+"Malaysia","Asia Pacific","Bank transfer and cash",26,16,9,35,0,8,32,15,14,22,14
+"New Zealand","Asia Pacific","Debit-led",29,25,20,11,13,0,15,30,41,10,2
+"Philippines","Asia Pacific","Bank transfer and cash",41,11,7,13,0,23,29,12,10,42,7
+"Singapore","Asia Pacific","Credit-led",40,34,9,11,3,0,36,27,12,12,12
+"South Korea","Asia Pacific","Credit-led",35,49,5,7,0,0,24,53,14,6,2
+"Taiwan","Asia Pacific","Credit-led",34,39,4,6,0,15,36,32,3,25,2
+"Thailand","Asia Pacific","Bank transfer and cash",25,10,3,44,0,15,13,9,3,30,43
+"Vietnam","Asia Pacific","Bank transfer and cash",38,12,4,28,0,16,30,10,4,33,22
+"Belgium","Europe","Debit-led",42,11,26,6,12,0,22,16,48,12,1
+"Denmark","Europe","Debit-led",44,17,20,6,11,0,25,10,56,7,1
+"Finland","Europe","Debit-led",35,6,11,27,19,0,16,9,66,7,1
+"France","Europe","Debit-led",36,20,28,8,5,0,15,21,50,12,1
+"Germany","Europe","Debit-led",52,11,0,15,18,2,17,9,38,32,2
+"Ireland","Europe","Debit-led",42,16,31,4,3,0,26,13,45,15,0
+"Italy","Europe","Debit-led",43,18,9,7,0,0,19,11,30,24,0
+"Netherlands","Europe","Bank transfer and cash",12,10,3,64,10,0,24,6,60,7,2
+"Norway","Europe","Debit-led",43,22,13,0,19,1,30,11,54,4,0
+"Poland","Europe","Bank transfer and cash",11,0,5,72,3,4,13,6,28,23,30
+"Portugal","Europe","Debit-led",40,17,18,16,3,0,13,9,49,27,1
+"Spain","Europe","Debit-led",34,17,19,21,0,0,14,22,28,34,2
+"Sweden","Europe","Debit-led",44,12,14,4,25,0,28,16,49,5,0
+"Switzerland","Europe","Debit-led",34,27,21,5,8,0,27,20,32,19,1
+"Turkey","Europe","Credit-led",13,52,12,14,0,5,15,48,6,20,7
+"United Kingdom","Europe","Debit-led",40,23,22,6,8,0,20,24,43,9,0
+"Argentina","Latin America","Credit-led",39,28,14,15,0,2,33,22,16,17,10
+"Brazil","Latin America","Bank transfer and cash",10,40,4,42,0,3,12,31,9,12,34
+"Chile","Latin America","Debit-led",23,18,42,12,0,0,9,21,51,16,0
+"Colombia","Latin America","Bank transfer and cash",29,17,10,34,0,7,20,20,26,32,0
+"Mexico","Latin America","Credit-led",26,32,23,6,0,9,9,24,26,40,0
+"Peru","Latin America","Debit-led",44,18,23,6,0,7,38,11,19,30,0
+"Nigeria","Middle East and Africa","Bank transfer and cash",13,3,24,44,0,11,15,0,14,39,31
+"Saudi Arabia","Middle East and Africa","Debit-led",40,12,19,9,0,8,43,8,28,14,0
+"South Africa","Middle East and Africa","Debit-led",25,11,32,20,0,6,8,6,54,26,4
+"United Arab Emirates","Middle East and Africa","Credit-led",35,27,15,10,0,7,29,28,24,15,0
+"Canada","North America","Credit-led",32,46,9,5,5,0,13,51,23,10,0
+"United States","North America","Credit-led",40,32,16,4,6,0,17,40,28,10,0

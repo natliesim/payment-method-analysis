@@ -15,10 +15,10 @@
   --sans: "Anthropic Sans", "Styrene B", "DM Sans", "Segoe UI", system-ui, sans-serif;
 }
 body { background: var(--bg); color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.5; }
-.page { max-width: 1180px; margin: 0 auto; padding-block: 28px 40px;
+.page { max-width: 1440px; margin: 0 auto; padding-block: 28px 40px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
   display: flex; flex-direction: column; gap: 18px; }
-h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(22px, 2.6vw, 32px); line-height: 1.2; max-width: 34em; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
 .lede { margin: 6px 0 0; color: var(--ink-2); max-width: 66ch; }
 .bar-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; font-family: var(--sans); }
 .seg { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
@@ -58,6 +58,35 @@ h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 
 .brand span { font-size: 12px; color: var(--ink-2); line-height: 1.25; }
 .card .size { margin: 12px 0 0; font-size: 12px; color: var(--ink-3); }
 h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 452px; gap: 20px 32px; align-items: start; }
+.left { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.panel { min-width: 0; font-family: var(--sans); }
+.panel h2 { font: 500 22px/1.2 var(--serif); margin: 0; }
+.panel p { font-size: 13px; color: var(--ink-2); margin: 6px 0 12px; }
+.mxwrap { overflow-x: auto; }
+.mx { border-collapse: separate; border-spacing: 2px; width: auto; font-size: 12px; }
+.mx th, .mx td { padding: 0; border: 0; }
+.mx thead th { font-weight: 500; color: var(--ink-3); font-size: 11px; }
+.mx thead .grp { text-align: left; padding: 0 0 2px 2px; letter-spacing: .05em; text-transform: uppercase; }
+.mx thead .col { height: 46px; vertical-align: bottom; }
+.mx thead .col span { writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; }
+.mx .gap { width: 6px; }
+.mx tbody th { text-align: left; font-weight: 400; color: var(--ink); padding-right: 8px; white-space: nowrap; height: 15px; line-height: 15px; }
+.mx tbody td { width: 25px; min-width: 25px; height: 15px; border-radius: 2px; }
+.mx tbody td.gap { width: 6px; min-width: 6px; }
+.mx tr.ch th { font: 600 12px var(--sans); color: var(--ink); padding: 10px 0 3px; height: auto; }
+.mx tr.ch th small { font-weight: 400; color: var(--ink-3); font-size: 11px; }
+.mx tr[data-k] { cursor: pointer; }
+.mx tr[data-k].on th, .mx tr[data-k]:hover th { font-weight: 600; text-decoration: underline; }
+.mxkey { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--ink-3); margin-top: 10px; }
+.mxkey i { display: block; width: 120px; height: 8px; border-radius: 2px; background: linear-gradient(90deg, var(--track), var(--s5)); }
+.csum { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px 24px; font-family: var(--sans); }
+.csum div { border-top: 1px solid var(--line); padding-top: 10px; }
+.csum b { font: 500 16px var(--serif); display: block; }
+.csum span { font-size: 13px; color: var(--ink-2); display: block; margin-top: 2px; }
+.csum em { font-style: normal; font-size: 12px; color: var(--ink-3); display: block; margin-top: 4px; }
+.card .note { font-size: 12px; color: var(--ink-2); margin: 8px 0 0; }
+@media (max-width: 1040px) { .main { grid-template-columns: minmax(0, 1fr); } }
 .tablewrap { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font: 13px var(--sans); font-variant-numeric: tabular-nums; }
 th, td { text-align: left; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: middle; }
@@ -76,38 +105,44 @@ td.m { font: 500 15px var(--serif); }
 
 <div class="page">
   <header>
-    <h1>How the world pays, 2025</h1>
-    <p class="lede">Point at a country to see its top payment methods in 2025 and the brands people actually use there, from Alipay's QR codes to Brazil's Pix. Covers the 42 markets in Worldpay's Global Payments Report 2026.</p>
+    <h1>Payment methods across 42 countries across APAC, Europe, Latin America, Middle East and Africa, and North America</h1>
+    <p class="lede">Point at a country to see how it paid in 2025 and the brands people use there. Switch the view to compare online spending, in-store spending or card scheme share.</p>
   </header>
 
-  <div class="bar-row">
-    <div class="seg" role="group" aria-label="Payment channel">
-      <button type="button" id="ch-ecom" data-ch="ecom" aria-pressed="true">Online (e-com)</button>
-      <button type="button" id="ch-pos" data-ch="pos" aria-pressed="false">In store (POS)</button>
+  <div class="main">
+    <div class="left">
+      <div class="bar-row">
+        <div class="seg" role="group" aria-label="View">
+          <button type="button" id="ch-ecom" data-ch="ecom" aria-pressed="true">Online (e-com)</button>
+          <button type="button" id="ch-pos" data-ch="pos" aria-pressed="false">In store (POS)</button>
+          <button type="button" id="ch-schemes" data-ch="schemes" aria-pressed="false">Card schemes</button>
+        </div>
+        <div class="legend" aria-label="Map colour key">
+          <span id="legend-title"></span>
+          <span class="ramp" id="legend-ramp"></span>
+          <span class="nodata"><i></i>Not in the report</span>
+        </div>
+      </div>
+      <div class="mapwrap" id="mapwrap">
+        <svg id="map" viewBox="0 0 960 470" role="img" aria-label="World map shaded by the selected measure"></svg>
+        <div class="card" id="card" hidden></div>
+      </div>
+      <p class="hint">On a touch screen, tap a country. Hong Kong and Singapore are shown as dots.</p>
+      <div class="csum" id="csum"></div>
     </div>
-    <div class="legend" aria-label="Map colour key">
-      <span id="legend-title">Digital wallet share of online spend, 2025</span>
-      <span class="ramp">
-        <span><i style="background:var(--s1)"></i>&lt;20%</span>
-        <span><i style="background:var(--s2)"></i>20–34</span>
-        <span><i style="background:var(--s3)"></i>35–49</span>
-        <span><i style="background:var(--s4)"></i>50–64</span>
-        <span><i style="background:var(--s5)"></i>65%+</span>
-      </span>
-      <span class="nodata"><i></i>Not in the report</span>
-    </div>
-  </div>
 
-  <div class="mapwrap" id="mapwrap">
-    <svg id="map" viewBox="0 0 960 470" role="img" aria-label="World map of digital wallet share by country"></svg>
-    <div class="card" id="card" hidden></div>
+    <aside class="panel">
+      <h2>Markets grouped by k-means</h2>
+      <p id="mxnote"></p>
+      <div class="mxwrap"><table class="mx" id="mx"></table></div>
+      <div class="mxkey"><span>0%</span><i></i><span>70%+ of spending</span></div>
+    </aside>
   </div>
-  <p class="hint">On a touch screen, tap a country. Hong Kong and Singapore are shown as dots.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
 
-  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Shares are % of 2025 transaction value, read from the report's charts by script; totals may not equal 100% because of rounding. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. The clusters are our own k-means grouping of the report's figures, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
 
 <script>
@@ -115,13 +150,23 @@ const DATA = /*DATA*/null;
 const MAP = /*MAP*/null;
 const DOTS = /*DOTS*/null;
 const LOGOS = /*LOGOS*/null;
+const CL = /*CLUSTERS*/null;
 const NS = 'http://www.w3.org/2000/svg';
 const svg = document.getElementById('map'), card = document.getElementById('card'), wrap = document.getElementById('mapwrap');
 let channel = 'ecom', current = null;
-const LABEL = { ecom: 'Online (e-com)', pos: 'In store (POS)' };
+const LABEL = { ecom: 'Online (e-com) · 2025 share', pos: 'In store (POS) · 2025 share', schemes: 'Card scheme share · 2024' };
+const VIEW = {
+  ecom: { title: 'Digital wallet share of online spend, 2025', cuts: [20, 35, 50, 65], labels: ['<20%', '20–34', '35–49', '50–64', '65%+'] },
+  pos: { title: 'Digital wallet share of in-store spend, 2025', cuts: [20, 35, 50, 65], labels: ['<20%', '20–34', '35–49', '50–64', '65%+'] },
+  schemes: { title: 'Visa + Mastercard share of card spend, 2024', cuts: [25, 50, 75, 95], labels: ['<25%', '25–49', '50–74', '75–94', '95%+'] },
+};
+const INTL = ['Visa', 'Mastercard', 'International schemes'];
+const rowsFor = c => c[channel];
+const metric = k => channel === 'schemes'
+  ? DATA[k].schemes.filter(r => INTL.includes(r.m)).reduce((t, r) => t + r.a, 0)
+  : (DATA[k][channel].find(r => r.m === 'Digital wallets') || { a: 0 }).a;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const wallet = k => (DATA[k][channel].find(r => r.m === 'Digital wallets') || { a: 0 }).a;
-const bin = v => v < 20 ? 1 : v < 35 ? 2 : v < 50 ? 3 : v < 65 ? 4 : 5;
+const bin = v => 1 + VIEW[channel].cuts.filter(c => v >= c).length;
 const logo = b => '<img src="' + LOGOS[b.s] + '" alt="' + esc(b.n) + ' logo">';
 
 function el(tag, attrs) { const e = document.createElementNS(NS, tag); for (const a in attrs) e.setAttribute(a, attrs[a]); return e; }
@@ -135,30 +180,32 @@ DOTS.forEach(d => svg.appendChild(el('circle', { cx: d.x, cy: d.y, r: 5.5, 'data
 function paint() {
   svg.querySelectorAll('[data-k]').forEach(n => {
     const on = n.classList.contains('on');
-    n.setAttribute('class', 'b' + bin(wallet(n.dataset.k)) + (on ? ' on' : ''));
+    n.setAttribute('class', 'b' + bin(metric(n.dataset.k)) + (on ? ' on' : ''));
   });
-  document.getElementById('legend-title').textContent =
-    'Digital wallet share of ' + (channel === 'ecom' ? 'online' : 'in-store') + ' spend, 2025';
+  document.getElementById('legend-title').textContent = VIEW[channel].title;
+  document.getElementById('legend-ramp').innerHTML = VIEW[channel].labels.map((l, i) => '<span><i style="background:var(--s' + (i + 1) + ')"></i>' + esc(l) + '</span>').join('');
 }
 
 function cardHtml(node) {
   const k = node.dataset.k;
   if (!k) return '<h2>' + esc(node.dataset.n) + '</h2><p class="none">Not covered in the report.</p>';
-  const c = DATA[k], max = Math.max(...c[channel].map(r => Math.max(r.a, 1)));
-  const rows = c[channel].map(r =>
+  const c = DATA[k], max = Math.max(...rowsFor(c).map(r => Math.max(r.a, 1)));
+  const rows = rowsFor(c).map(r =>
     '<span>' + esc(r.m) + '</span><span class="track"><b style="width:' + (r.a / max * 100).toFixed(1) + '%"></b></span>' +
     '<span class="v">' + esc(r.as) + '</span>').join('');
   const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
-  return '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + ' · 2025 share</p>' +
+  return '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + '</p>' +
     '<div class="rows">' + rows + '</div>' +
+    (channel === 'schemes' && c.schemeNote ? '<p class="note">' + esc(c.schemeNote) + '</p>' : '') +
     '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
-    '<p class="size">' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
+    '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) +
+    (channel === 'schemes' ? '' : ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0])) + '</p>';
 }
 
 function show(node, px, py) {
   if (current !== node) {
     if (current) current.classList.remove('on');
-    current = node; node.classList.add('on');
+    current = node; node.classList.add('on'); markRow(node.dataset.k);
     if (node.tagName === 'path') svg.insertBefore(node, svg.querySelector('circle'));
     card.innerHTML = cardHtml(node); card.hidden = false;
   }
@@ -172,7 +219,30 @@ function show(node, px, py) {
   y = Math.max(Math.min(y, vBottom), vTop);
   card.style.left = x + 'px'; card.style.top = y + 'px';
 }
-function hide() { if (current) current.classList.remove('on'); current = null; card.hidden = true; }
+function hide() { if (current) current.classList.remove('on'); current = null; card.hidden = true; markRow(null); }
+function markRow(k) { document.querySelectorAll('#mx tr[data-k]').forEach(r => r.classList.toggle('on', r.dataset.k === k)); }
+
+function matrix() {
+  const f = CL.features, n = f.filter(x => x.ch === 'ecom').length;
+  const cell = (v, x) => '<td title="' + esc((x.ch === 'ecom' ? 'Online ' : 'In store ') + x.m + ': ' + v + '%') + '" style="background:' +
+    (v < 1 ? 'var(--track)' : 'rgba(12,63,125,' + Math.min(1, 0.08 + v / 70 * 0.92).toFixed(2) + ')') + '"></td>';
+  const head = '<thead><tr><th></th><th class="grp" colspan="' + n + '">Online</th><th class="gap"></th><th class="grp" colspan="' + (f.length - n) + '">In store</th></tr><tr><th></th>' +
+    f.map((x, i) => (i === n ? '<th class="gap"></th>' : '') + '<th class="col"><span>' + esc(x.short) + '</span></th>').join('') + '</tr></thead>';
+  const body = CL.clusters.map(cl => '<tr class="ch"><th colspan="' + (f.length + 2) + '">' + esc(cl.name) + ' <small>· ' + cl.members.length + ' markets</small></th></tr>' +
+    cl.members.map(k => '<tr data-k="' + esc(k) + '"><th>' + esc(DATA[k].name) + '</th>' +
+      f.map((x, i) => (i === n ? '<td class="gap"></td>' : '') + cell((DATA[k][x.ch].find(r => r.m === x.m) || { a: 0 }).a, x)).join('') + '</tr>').join('')).join('');
+  const mx = document.getElementById('mx'); mx.innerHTML = head + '<tbody>' + body + '</tbody>';
+  const nodeFor = k => svg.querySelector('[data-k="' + k + '"]');
+  mx.addEventListener('pointerover', e => { const r = e.target.closest('tr[data-k]'); if (r) show(nodeFor(r.dataset.k)); });
+  mx.addEventListener('pointerleave', hide);
+  mx.addEventListener('click', e => { const r = e.target.closest('tr[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
+  document.getElementById('mxnote').textContent = 'K-means (k = ' + CL.k + ') on each market\'s 2025 payment mix: the ' + f.length +
+    ' shares shown as columns. Darker cells mean a bigger share of spending. Silhouette score ' + CL.silhouette + ', so the groups overlap at the edges.';
+  document.getElementById('csum').innerHTML = CL.clusters.map(cl => {
+    const top = cl.centroid.map((v, i) => [v, f[i]]).sort((a, b) => b[0] - a[0]).slice(0, 3)
+      .map(([v, x]) => (/^[A-Z0-9]+$/.test(x.m) ? x.m : x.m.toLowerCase()) + ' ' + v + '% ' + (x.ch === 'ecom' ? 'online' : 'in store')).join(', ');
+    return '<div><b>' + esc(cl.name) + '</b><span>' + esc(cl.desc) + '</span><em>' + cl.members.length + ' markets. Group average: ' + esc(top) + '.</em></div>'; }).join('');
+}
 
 svg.addEventListener('pointermove', e => { const n = e.target.closest('[data-n]'); n ? show(n, e.clientX, e.clientY) : hide(); });
 svg.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hide(); });
@@ -181,9 +251,10 @@ svg.addEventListener('focusin', e => { const n = e.target.closest('[data-k]'); i
 svg.addEventListener('focusout', hide);
 
 function table() {
-  const head = '<thead><tr><th>Market</th><th>Region</th><th>Top method</th><th class="n">Share</th><th>Second</th><th class="n">Share</th><th>Popular brands</th></tr></thead>';
-  const body = Object.values(DATA).map(c => { const r = c[channel][0], r2 = c[channel][1];
-    return '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(c.region) + '</td><td>' + esc(r.m) + '</td><td class="n">' + esc(r.as) +
+  const what = channel === 'schemes' ? 'scheme' : 'method';
+  const head = '<thead><tr><th>Market</th><th>Region</th><th>K-means group</th><th>Top ' + what + '</th><th class="n">Share</th><th>Second</th><th class="n">Share</th><th>Popular brands</th></tr></thead>';
+  const body = Object.values(DATA).map(c => { const r = rowsFor(c)[0], r2 = rowsFor(c)[1];
+    return '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(c.region) + '</td><td>' + esc(CL.clusters[c.cluster].name) + '</td><td>' + esc(r.m) + '</td><td class="n">' + esc(r.as) +
       '</td><td>' + esc(r2.m) + '</td><td class="n">' + esc(r2.as) + '</td><td><div class="tlogos">' +
       c.brands.map(b => '<span title="' + esc(b.n + ': ' + b.t) + '">' + logo(b) + '</span>').join('') + '</div></td></tr>'; }).join('');
   document.getElementById('table').innerHTML = head + '<tbody>' + body + '</tbody>';
@@ -195,5 +266,5 @@ document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click'
   paint(); table();
   if (current) { const n = current; current = null; show(n); }
 }));
-paint(); table();
+paint(); table(); matrix();
 </script>
