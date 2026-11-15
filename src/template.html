@@ -46,10 +46,12 @@ h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(22px, 2.6vw, 
 .card .sub { font-size: 11px; color: var(--ink-3); margin: 3px 0 10px; letter-spacing: .05em; text-transform: uppercase; }
 .card .none { color: var(--ink-2); font-size: 13px; margin: 6px 0 2px; }
 .card h3 { font: 500 11px var(--sans); color: var(--ink-3); letter-spacing: .05em; text-transform: uppercase; margin: 12px 0 8px; padding-top: 10px; border-top: 1px solid var(--line); }
-.rows { display: grid; grid-template-columns: auto 1fr auto; gap: 6px 10px; align-items: center; font-size: 13px; }
+.rows { display: grid; grid-template-columns: auto 1fr auto auto; gap: 6px 10px; align-items: center; font-size: 13px; }
 .rows .track { height: 8px; background: var(--track); border-radius: 0 4px 4px 0; min-width: 40px; }
 .rows .track b { display: block; height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; }
 .rows .v { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.rows .usd { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+.rows .hd { font-size: 11px; color: var(--ink-3); letter-spacing: .05em; text-transform: uppercase; text-align: right; }
 .brands { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
 .brand { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .brand .logo { height: 34px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
@@ -142,7 +144,7 @@ td.m { font: 500 15px var(--serif); }
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
 
-  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. The clusters are our own k-means grouping of the report's figures, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values are our own arithmetic: share times the report's 2025 market size, and for card schemes the 2024 scheme share times 2025 spend on credit, debit and prepaid cards across both channels. That assumes each scheme's share is the same online and in store, and it leaves out cards used inside digital wallets, so treat scheme values as rough. The clusters are our own k-means grouping of the report's figures, not something the report publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
 
 <script>
@@ -186,20 +188,34 @@ function paint() {
   document.getElementById('legend-ramp').innerHTML = VIEW[channel].labels.map((l, i) => '<span><i style="background:var(--s' + (i + 1) + ')"></i>' + esc(l) + '</span>').join('');
 }
 
+// Money maths. Market sizes in the report are strings like "$89b" or "$1.1t"; work in billions of US dollars.
+const CARD_TYPES = ['Credit cards', 'Debit cards', 'Prepaid cards'];
+const toBn = t => parseFloat(t.slice(1)) * ({ t: 1000, b: 1, m: 0.001 }[t.slice(-1)]);
+const usd = v => v >= 1000 ? '$' + (v / 1000).toFixed(v >= 10000 ? 1 : 2) + 't' : v >= 100 ? '$' + Math.round(v) + 'b' : v >= 1 ? '$' + v.toFixed(1) + 'b' : v > 0 ? '$' + Math.round(v * 1000) + 'm' : '$0';
+const cardShare = (c, ch) => c[ch].filter(r => CARD_TYPES.includes(r.m)).reduce((t, r) => t + r.a, 0);
+const cardSpend = (c, ch) => toBn(c.size[ch][0]) * cardShare(c, ch) / 100;
+// Value behind one row: a method's share of its channel, or a scheme's share of all direct card spend.
+const rowValue = (c, r) => channel === 'schemes' ? (cardSpend(c, 'ecom') + cardSpend(c, 'pos')) * r.a / 100 : toBn(c.size[channel][0]) * r.a / 100;
+
 function cardHtml(node) {
   const k = node.dataset.k;
   if (!k) return '<h2>' + esc(node.dataset.n) + '</h2><p class="none">Not covered in the report.</p>';
-  const c = DATA[k], max = Math.max(...rowsFor(c).map(r => Math.max(r.a, 1)));
-  const rows = rowsFor(c).map(r =>
+  const c = DATA[k], max = Math.max(...rowsFor(c).map(r => Math.max(r.a, 1))), sch = channel === 'schemes';
+  const rows = '<span></span><span></span><span class="hd">Share</span><span class="hd">' + (sch ? 'Est. spend' : 'Value') + '</span>' + rowsFor(c).map(r =>
     '<span>' + esc(r.m) + '</span><span class="track"><b style="width:' + (r.a / max * 100).toFixed(1) + '%"></b></span>' +
-    '<span class="v">' + esc(r.as) + '</span>').join('');
+    '<span class="v">' + esc(r.as) + '</span><span class="usd">' + (sch ? '≈ ' : '') + usd(rowValue(c, r)) + '</span>').join('');
+  const head = '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + '</p><div class="rows">' + rows + '</div>';
+  if (sch) {
+    const e = cardSpend(c, 'ecom'), p = cardSpend(c, 'pos');
+    return head + (c.schemeNote ? '<p class="note">' + esc(c.schemeNote) + '</p>' : '') +
+      '<h3>How the spend is estimated</h3><p class="note" style="margin-top:0">Card spend in 2025 ≈ ' + usd(e + p) + ': ' + cardShare(c, 'ecom') + '% of ' + esc(c.size.ecom[0]) +
+      ' online (' + usd(e) + ') plus ' + cardShare(c, 'pos') + '% of ' + esc(c.size.pos[0]) + ' in store (' + usd(p) + '), counting credit, debit and prepaid cards. ' +
+      'Each scheme gets its 2024 share of that total. Cards used inside digital wallets are not included.</p>' +
+      '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + '</p>';
+  }
   const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
-  return '<h2>' + esc(c.name) + '</h2><p class="sub">' + esc(c.region) + ' · ' + LABEL[channel] + '</p>' +
-    '<div class="rows">' + rows + '</div>' +
-    (channel === 'schemes' && c.schemeNote ? '<p class="note">' + esc(c.schemeNote) + '</p>' : '') +
-    '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
-    '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) +
-    (channel === 'schemes' ? '' : ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0])) + '</p>';
+  return head + '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
+    '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
 }
 
 function show(node, px, py) {
@@ -251,12 +267,14 @@ svg.addEventListener('focusin', e => { const n = e.target.closest('[data-k]'); i
 svg.addEventListener('focusout', hide);
 
 function table() {
-  const what = channel === 'schemes' ? 'scheme' : 'method';
-  const head = '<thead><tr><th>Market</th><th>Region</th><th>K-means group</th><th>Top ' + what + '</th><th class="n">Share</th><th>Second</th><th class="n">Share</th><th>Popular brands</th></tr></thead>';
+  const sch = channel === 'schemes', what = sch ? 'scheme' : 'method', val = sch ? 'Est. spend' : 'Value';
+  const head = '<thead><tr><th>Market</th><th>Region</th><th>K-means group</th><th class="n">' + (sch ? 'Card spend 2025 (est.)' : 'Market size 2025') + '</th><th>Top ' + what +
+    '</th><th class="n">Share</th><th class="n">' + val + '</th><th>Second</th><th class="n">Share</th><th class="n">' + val + '</th>' + (sch ? '' : '<th>Popular brands</th>') + '</tr></thead>';
   const body = Object.values(DATA).map(c => { const r = rowsFor(c)[0], r2 = rowsFor(c)[1];
-    return '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(c.region) + '</td><td>' + esc(CL.clusters[c.cluster].name) + '</td><td>' + esc(r.m) + '</td><td class="n">' + esc(r.as) +
-      '</td><td>' + esc(r2.m) + '</td><td class="n">' + esc(r2.as) + '</td><td><div class="tlogos">' +
-      c.brands.map(b => '<span title="' + esc(b.n + ': ' + b.t) + '">' + logo(b) + '</span>').join('') + '</div></td></tr>'; }).join('');
+    return '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(c.region) + '</td><td>' + esc(CL.clusters[c.cluster].name) + '</td><td class="n">' +
+      (sch ? usd(cardSpend(c, 'ecom') + cardSpend(c, 'pos')) : esc(c.size[channel][0])) + '</td><td>' + esc(r.m) + '</td><td class="n">' + esc(r.as) + '</td><td class="n">' + usd(rowValue(c, r)) +
+      '</td><td>' + esc(r2.m) + '</td><td class="n">' + esc(r2.as) + '</td><td class="n">' + usd(rowValue(c, r2)) + '</td>' +
+      (sch ? '' : '<td><div class="tlogos">' + c.brands.map(b => '<span title="' + esc(b.n + ': ' + b.t) + '">' + logo(b) + '</span>').join('') + '</div></td>') + '</tr>'; }).join('');
   document.getElementById('table').innerHTML = head + '<tbody>' + body + '</tbody>';
 }
 
