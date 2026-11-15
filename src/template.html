@@ -90,6 +90,10 @@ h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
 .grp .ev { font: 13px/1.5 var(--sans); color: var(--ink-3); margin-top: 10px; }
 .grp .ev b { font-weight: 600; color: var(--ink-2); }
 .caveat { font: 13px/1.5 var(--sans); color: var(--ink-2); margin: 0; max-width: 95ch; }
+.facts { display: grid; grid-template-columns: 1fr auto; gap: 3px 12px; font-size: 12px; color: var(--ink-2); }
+.facts b { font-weight: 600; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.facts b small { font-weight: 400; color: var(--ink-3); font-size: 11px; }
+.facts b.na { font-weight: 400; color: var(--ink-3); }
 .card .note { font-size: 12px; color: var(--ink-2); margin: 8px 0 0; }
 @media (max-width: 1040px) { .main { grid-template-columns: minmax(0, 1fr); } }
 .tablewrap { overflow-x: auto; }
@@ -145,12 +149,12 @@ td.m { font: 500 15px var(--serif); }
 
   <h2 class="sec">The four groups, from a Mastercard view</h2>
   <div class="groups" id="groups"></div>
-  <p class="caveat">Every figure above is a group average from the Worldpay report (payment mix, 2030 forecast) or the World Bank Global Findex (accounts, debit cards, digital payments). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
+  <p class="caveat">Every figure above is a group average from the Worldpay report (payment mix, 2030 forecast), the World Bank Global Findex (accounts, debit card ownership, digital payments) or the IMF Financial Access Survey (cards and ATMs per adult, averaged over the markets that report them). Points this data cannot test, such as strategy, regulation, trust and infrastructure, are left out.</p>
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
 
-  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. Account, debit card and digital payment figures are from the World Bank Global Findex Database (2024 survey round where available, otherwise 2021). The clusters are our own k-means grouping of those figures and the report's, not something either source publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
+  <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. Account, debit card and digital payment figures are from the World Bank Global Findex Database (2024 survey round where available, otherwise 2021). ATM, branch, card and mobile and internet banking figures are from the IMF Financial Access Survey: 2025 where published, otherwise the latest earlier year, shown beside each figure in the hover card; some markets report none. The clusters are our own k-means grouping of all these figures, not something any of the sources publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
 
 <script>
@@ -202,6 +206,16 @@ const usd = v => v >= 1000 ? '$' + (v / 1000).toFixed(v >= 10000 ? 1 : 2) + 't' 
 // Card schemes get no dollar value: their shares are for 2024 and the market sizes are for 2025.
 const rowValue = (c, r) => toBn(c.size[channel][0]) * r.a / 100;
 
+// Access figures with the year each one refers to; the IMF ones are 2025 unless an earlier year is shown.
+const fmt = v => v >= 100 ? Math.round(v).toLocaleString('en-US') : v.toFixed(1);
+function facts(c) {
+  const row = (label, o, unit) => '<span>' + label + '</span>' + (o ? '<b>' + fmt(o.value) + (unit || '') + ' <small>' + o.year + '</small></b>' : '<b class="na">no figure</b>');
+  return row('Adults with an account', c.findex.account, '%') + row('Adults who made a digital payment', c.findex.digitalPayment, '%') +
+    row('ATMs per 100,000 adults', c.imf.atms) + row('Bank branches per 100,000 adults', c.imf.branches) +
+    row('Credit cards per 1,000 adults', c.imf.creditCards) + row('Debit cards per 1,000 adults', c.imf.debitCards) +
+    row('Mobile and internet banking transactions per 1,000 adults', c.imf.digitalBanking);
+}
+
 function cardHtml(node) {
   const k = node.dataset.k;
   if (!k) return '<h2>' + esc(node.dataset.n) + '</h2><p class="none">Not covered in the report.</p>';
@@ -214,8 +228,8 @@ function cardHtml(node) {
     '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + '</p>';
   const brands = c.brands.map(b => '<div class="brand"><div class="logo">' + logo(b) + '</div><b>' + esc(b.n) + '</b><span>' + esc(b.t) + '</span></div>').join('');
   return head + '<h3>Popular brands</h3><div class="brands">' + brands + '</div>' +
-    '<p class="size">Adults with an account: ' + c.findex.account.value + '% · made a digital payment: ' + c.findex.digitalPayment.value + '% (World Bank Findex)</p>' +
-    '<p class="size" style="margin-top:4px">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
+    '<h3>Access and infrastructure</h3><div class="facts">' + facts(c) + '</div>' +
+    '<p class="size">K-means group: ' + esc(CL.clusters[c.cluster].name) + ' · ' + (channel === 'ecom' ? 'Online' : 'In-store') + ' market size in 2025: ' + esc(c.size[channel][0]) + '</p>';
 }
 
 function show(node, px, py) {
@@ -283,7 +297,8 @@ function matrix() {
   plot.addEventListener('focusout', hide);
   plot.addEventListener('click', e => { const r = e.target.closest('[data-k]'); if (r) { show(nodeFor(r.dataset.k)); if (getComputedStyle(card).position !== 'absolute') card.scrollIntoView({ block: 'nearest' }); } });
   document.getElementById('mxnote').textContent = 'Each mark is a market, placed by ' + CL.features.length + ' features: its 2025 payment mix (cards, wallets plus bank transfers, cash; online and in store), ' +
-    'the report\'s 2030 forecast (change in card and cash share, market growth) and World Bank Findex access data (adults with an account, adults who made a digital payment). ' +
+    'the report\'s 2030 forecast (change in card and cash share, market growth), World Bank Findex access data (adults with an account, adults who made a digital payment) ' +
+    'and IMF figures per adult (ATMs, bank branches, credit cards, debit cards, mobile and internet banking transactions). Where a market has no IMF figure, that feature is skipped for it. ' +
     'The two axes keep ' + (CL.pcaShare[0] + CL.pcaShare[1]) + '% of the variation. Shaded areas outline the ' + CL.k + ' k-means groups; silhouette score ' + CL.silhouette + ', so groups touch at the edges.';
   document.getElementById('pkey').innerHTML = CL.clusters.map((cl, g) => '<span>' + icon(g) + esc(cl.name) + ' (' + cl.members.length + ')</span>').join('');
   document.getElementById('groups').innerHTML = CL.clusters.map((cl, g) => {

@@ -1,0 +1,831 @@
+{
+ "source": "IMF Financial Access Survey (dataflow IMF.STA:FAS)",
+ "indicators": {
+  "atms": "ATMs per 100,000 adults",
+  "branches": "Commercial bank branches per 100,000 adults",
+  "creditCards": "Credit cards per 1,000 adults",
+  "debitCards": "Debit cards per 1,000 adults",
+  "digitalBanking": "Mobile and internet banking transactions per 1,000 adults"
+ },
+ "markets": {
+  "Australia": {
+   "atms": {
+    "value": 100.15,
+    "year": 2025
+   },
+   "branches": {
+    "value": 14.52,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 731.86,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2185.91,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "China": {
+   "atms": {
+    "value": 62.67,
+    "year": 2025
+   },
+   "branches": {
+    "value": 8.69,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 584.94,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 8001.73,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Hong Kong": {
+   "atms": {
+    "value": 46.09,
+    "year": 2025
+   },
+   "branches": {
+    "value": 17.23,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 3729.3,
+    "year": 2025
+   },
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "India": {
+   "atms": {
+    "value": 23.95,
+    "year": 2025
+   },
+   "branches": {
+    "value": 14.82,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 99.02,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 892.88,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 162610.49,
+    "year": 2025
+   }
+  },
+  "Indonesia": {
+   "atms": {
+    "value": 45.78,
+    "year": 2025
+   },
+   "branches": {
+    "value": 10.97,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 86.59,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1504.0,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 130342.0,
+    "year": 2025
+   }
+  },
+  "Japan": {
+   "atms": {
+    "value": 106.25,
+    "year": 2025
+   },
+   "branches": {
+    "value": 33.78,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 2927.52,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 4283.84,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Malaysia": {
+   "atms": {
+    "value": 55.77,
+    "year": 2025
+   },
+   "branches": {
+    "value": 7.58,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 412.83,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1958.57,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 195224.01,
+    "year": 2025
+   }
+  },
+  "New Zealand": {
+   "atms": {
+    "value": 31.31,
+    "year": 2025
+   },
+   "branches": {
+    "value": 14.54,
+    "year": 2025
+   },
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "Philippines": {
+   "atms": {
+    "value": 28.67,
+    "year": 2025
+   },
+   "branches": {
+    "value": 8.05,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 147.07,
+    "year": 2023
+   },
+   "debitCards": {
+    "value": 875.4,
+    "year": 2023
+   },
+   "digitalBanking": {
+    "value": 15447.54,
+    "year": 2024
+   }
+  },
+  "Singapore": {
+   "atms": {
+    "value": 45.3,
+    "year": 2025
+   },
+   "branches": {
+    "value": 5.78,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1300.22,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2660.51,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "South Korea": {
+   "atms": {
+    "value": 244.47,
+    "year": 2023
+   },
+   "branches": {
+    "value": 12.39,
+    "year": 2024
+   },
+   "creditCards": {
+    "value": 2882.61,
+    "year": 2024
+   },
+   "debitCards": {
+    "value": 652.85,
+    "year": 2023
+   },
+   "digitalBanking": {
+    "value": 201730.2,
+    "year": 2024
+   }
+  },
+  "Taiwan": {
+   "atms": null,
+   "branches": null,
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "Thailand": {
+   "atms": {
+    "value": 89.14,
+    "year": 2025
+   },
+   "branches": {
+    "value": 7.66,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 429.14,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 842.31,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 522402.95,
+    "year": 2025
+   }
+  },
+  "Vietnam": {
+   "atms": {
+    "value": 26.66,
+    "year": 2025
+   },
+   "branches": {
+    "value": 3.14,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 219.72,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1534.08,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 277875.47,
+    "year": 2025
+   }
+  },
+  "Belgium": {
+   "atms": {
+    "value": 43.97,
+    "year": 2025
+   },
+   "branches": {
+    "value": 16.73,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 186.15,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2734.19,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Denmark": {
+   "atms": {
+    "value": 33.66,
+    "year": 2025
+   },
+   "branches": {
+    "value": 17.38,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 320.46,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1686.43,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 90861.98,
+    "year": 2025
+   }
+  },
+  "Finland": {
+   "atms": {
+    "value": 35.35,
+    "year": 2025
+   },
+   "branches": {
+    "value": 5.35,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1058.78,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1930.92,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 135675.14,
+    "year": 2025
+   }
+  },
+  "France": {
+   "atms": {
+    "value": 71.37,
+    "year": 2025
+   },
+   "branches": {
+    "value": 27.95,
+    "year": 2025
+   },
+   "creditCards": null,
+   "debitCards": {
+    "value": 1354.86,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 36476.98,
+    "year": 2025
+   }
+  },
+  "Germany": {
+   "atms": {
+    "value": 68.05,
+    "year": 2025
+   },
+   "branches": {
+    "value": 3.83,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 510.96,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2518.9,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Ireland": {
+   "atms": {
+    "value": 29.39,
+    "year": 2025
+   },
+   "branches": {
+    "value": 13.15,
+    "year": 2022
+   },
+   "creditCards": {
+    "value": 358.45,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1853.97,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Italy": {
+   "atms": {
+    "value": 86.38,
+    "year": 2025
+   },
+   "branches": {
+    "value": 29.27,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 266.31,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1293.22,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 20408.37,
+    "year": 2025
+   }
+  },
+  "Netherlands": {
+   "atms": {
+    "value": 32.86,
+    "year": 2025
+   },
+   "branches": {
+    "value": 0.88,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 511.43,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2346.15,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 235892.79,
+    "year": 2025
+   }
+  },
+  "Norway": {
+   "atms": {
+    "value": 24.17,
+    "year": 2024
+   },
+   "branches": null,
+   "creditCards": {
+    "value": 987.43,
+    "year": 2024
+   },
+   "debitCards": {
+    "value": 1670.6,
+    "year": 2024
+   },
+   "digitalBanking": {
+    "value": 118517.64,
+    "year": 2024
+   }
+  },
+  "Poland": {
+   "atms": {
+    "value": 65.48,
+    "year": 2025
+   },
+   "branches": {
+    "value": 20.69,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 162.97,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1291.1,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 157049.35,
+    "year": 2025
+   }
+  },
+  "Portugal": {
+   "atms": {
+    "value": 156.61,
+    "year": 2025
+   },
+   "branches": {
+    "value": 27.12,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1043.16,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2677.08,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 105569.67,
+    "year": 2025
+   }
+  },
+  "Spain": {
+   "atms": {
+    "value": 82.33,
+    "year": 2025
+   },
+   "branches": {
+    "value": 30.19,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1337.89,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1696.8,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 440.09,
+    "year": 2025
+   }
+  },
+  "Sweden": {
+   "atms": {
+    "value": 22.19,
+    "year": 2024
+   },
+   "branches": {
+    "value": 10.09,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 683.6,
+    "year": 2024
+   },
+   "debitCards": {
+    "value": 1287.38,
+    "year": 2024
+   },
+   "digitalBanking": {
+    "value": 290103.86,
+    "year": 2024
+   }
+  },
+  "Switzerland": {
+   "atms": {
+    "value": 76.97,
+    "year": 2025
+   },
+   "branches": {
+    "value": 31.31,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1116.28,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1930.99,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 194257.83,
+    "year": 2025
+   }
+  },
+  "Turkey": {
+   "atms": {
+    "value": 83.32,
+    "year": 2025
+   },
+   "branches": {
+    "value": 13.32,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 2095.62,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 3082.19,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 173576.73,
+    "year": 2025
+   }
+  },
+  "United Kingdom": {
+   "atms": {
+    "value": 73.49,
+    "year": 2025
+   },
+   "branches": null,
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "Argentina": {
+   "atms": {
+    "value": 67.18,
+    "year": 2025
+   },
+   "branches": {
+    "value": 11.67,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1102.1,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2379.46,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 76634.02,
+    "year": 2025
+   }
+  },
+  "Brazil": {
+   "atms": {
+    "value": 68.69,
+    "year": 2025
+   },
+   "branches": {
+    "value": 14.87,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 1486.52,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 931.12,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 1061827.37,
+    "year": 2025
+   }
+  },
+  "Chile": {
+   "atms": {
+    "value": 46.61,
+    "year": 2025
+   },
+   "branches": {
+    "value": 8.7,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 839.46,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1754.48,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 103340.61,
+    "year": 2025
+   }
+  },
+  "Colombia": {
+   "atms": {
+    "value": 38.06,
+    "year": 2025
+   },
+   "branches": {
+    "value": 11.23,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 359.73,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1219.27,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 423056.46,
+    "year": 2025
+   }
+  },
+  "Mexico": {
+   "atms": {
+    "value": 70.36,
+    "year": 2025
+   },
+   "branches": {
+    "value": 11.52,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 499.67,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2088.57,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 27187.8,
+    "year": 2025
+   }
+  },
+  "Peru": {
+   "atms": {
+    "value": 129.31,
+    "year": 2025
+   },
+   "branches": {
+    "value": 4.73,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 331.21,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2450.79,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Nigeria": {
+   "atms": {
+    "value": 12.32,
+    "year": 2025
+   },
+   "branches": {
+    "value": 3.34,
+    "year": 2025
+   },
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "Saudi Arabia": {
+   "atms": {
+    "value": 51.96,
+    "year": 2025
+   },
+   "branches": {
+    "value": 6.86,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 165.78,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 2252.32,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 140482.97,
+    "year": 2025
+   }
+  },
+  "South Africa": {
+   "atms": {
+    "value": 46.17,
+    "year": 2025
+   },
+   "branches": {
+    "value": 8.0,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 143.07,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1465.48,
+    "year": 2025
+   },
+   "digitalBanking": {
+    "value": 111813.93,
+    "year": 2025
+   }
+  },
+  "UAE": {
+   "atms": {
+    "value": 49.12,
+    "year": 2025
+   },
+   "branches": {
+    "value": 5.9,
+    "year": 2025
+   },
+   "creditCards": {
+    "value": 583.91,
+    "year": 2025
+   },
+   "debitCards": {
+    "value": 1174.18,
+    "year": 2025
+   },
+   "digitalBanking": null
+  },
+  "Canada": {
+   "atms": {
+    "value": 172.03,
+    "year": 2025
+   },
+   "branches": {
+    "value": 17.67,
+    "year": 2025
+   },
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  },
+  "United States": {
+   "atms": null,
+   "branches": {
+    "value": 25.38,
+    "year": 2025
+   },
+   "creditCards": null,
+   "debitCards": null,
+   "digitalBanking": null
+  }
+ }
+}
