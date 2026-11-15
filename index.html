@@ -65,6 +65,10 @@ h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(26px, 3.6vw, 
 .brand span { font-size: 12px; color: var(--ink-2); line-height: 1.25; }
 .card .size { margin: 12px 0 0; font-size: 12px; color: var(--ink-3); }
 h2.sec { font: 500 22px/1.2 var(--serif); margin: 14px 0 0; }
+h3.sub2 { font: 500 18px/1.2 var(--serif); margin: 14px 0 0; }
+td.n small { color: var(--ink-3); font-size: 11px; margin-left: 4px; }
+#table2 thead tr + tr th { white-space: normal; max-width: 104px; vertical-align: bottom; line-height: 1.25; }
+th.grp2 { border-bottom: 0; padding-bottom: 0; color: var(--ink-2); font-weight: 600; }
 .main { display: grid; grid-template-columns: minmax(0, 1fr) 452px; gap: 20px 32px; align-items: start; }
 .left { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .panel { min-width: 0; font-family: var(--sans); }
@@ -153,6 +157,10 @@ td.m { font: 500 15px var(--serif); }
 
   <h2 class="sec">All 42 markets</h2>
   <div class="tablewrap"><table id="table"></table></div>
+
+  <h3 class="sub2">Access and infrastructure features</h3>
+  <p class="caveat">World Bank Findex figures are for 2024 and IMF figures for 2025 unless a year is shown beside them. A dash means the market reports no figure.</p>
+  <div class="tablewrap"><table id="table2"></table></div>
 
   <p class="source">Source: Worldpay, <a href="https://wp-contentful-test-static-content.worldpay.com/gpr/GPR2026-Digital-Large.pdf">The Global Payments Report 2026</a> (11th edition). Payment method shares are % of 2025 transaction value and card scheme shares are for 2024 (the latest the report gives); both were read from the report by script, and totals may not equal 100% because of rounding. Dollar values for payment methods are our own arithmetic: the 2025 share times the report's 2025 market size. Card schemes get no dollar value because their shares are for 2024. Account, debit card and digital payment figures are from the World Bank Global Findex Database (2024 survey round where available, otherwise 2021). ATM, branch, card and mobile and internet banking figures are from the IMF Financial Access Survey: 2025 where published, otherwise the latest earlier year, shown beside each figure in the hover card; some markets report none. The clusters are our own k-means grouping of all these figures, not something any of the sources publishes. Brands and logos are the "popular payment methods" the report shows for each market, and are trademarks of their owners. The one-line description under each brand is ours, not the report's.</p>
 </div>
@@ -319,11 +327,22 @@ function table() {
   document.getElementById('table').innerHTML = head + '<tbody>' + body + '</tbody>';
 }
 
+function table2() {
+  const cell = (o, base, unit) => '<td class="n">' + (o ? fmt(o.value) + (unit || '') + (o.year !== base ? '<small>' + o.year + '</small>' : '') : '–') + '</td>';
+  const head = '<thead><tr><th class="grp2" colspan="2"></th><th class="grp2 n" colspan="3">World Bank Findex, % of adults</th><th class="grp2 n" colspan="5">IMF Financial Access Survey</th></tr>' +
+    '<tr><th>Market</th><th>K-means group</th><th class="n">Has an account</th><th class="n">Made a digital payment</th><th class="n">Owns a debit card</th>' +
+    '<th class="n">ATMs per 100k adults</th><th class="n">Branches per 100k adults</th><th class="n">Credit cards per 1k adults</th><th class="n">Debit cards per 1k adults</th><th class="n">Mobile and internet banking transactions per 1k adults</th></tr></thead>';
+  const body = Object.values(DATA).map(c => '<tr><td class="m">' + esc(c.name) + '</td><td>' + esc(CL.clusters[c.cluster].name) + '</td>' +
+    cell(c.findex.account, '2024', '%') + cell(c.findex.digitalPayment, '2024', '%') + cell(c.findex.debitCard, '2024', '%') +
+    cell(c.imf.atms, 2025) + cell(c.imf.branches, 2025) + cell(c.imf.creditCards, 2025) + cell(c.imf.debitCards, 2025) + cell(c.imf.digitalBanking, 2025) + '</tr>').join('');
+  document.getElementById('table2').innerHTML = head + '<tbody>' + body + '</tbody>';
+}
+
 document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
   channel = b.dataset.ch;
   document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
   paint(); table();
   if (current) { const n = current; current = null; show(n); }
 }));
-paint(); table(); matrix();
+paint(); table(); table2(); matrix();
 </script>
