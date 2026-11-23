@@ -2,6 +2,12 @@
   "name": "payment-method-analysis",
   "private": true,
   "type": "module",
-  "scripts": { "build": "node scripts/build.mjs data/raw_extraction.json" },
-  "devDependencies": { "d3-geo": "^3.1.1", "topojson-client": "^3.1.0", "world-atlas": "^2.0.2" }
+  "scripts": {
+    "build": "node scripts/build.mjs data/raw_extraction.json && node scripts/standalone.mjs"
+  },
+  "devDependencies": {
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
 }
